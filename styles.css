@@ -60,10 +60,17 @@ Blue Chill
   background-color: #151818 ;
 }
 
+.bg-slideout-menu {
+  background-color: #18181B;
+}
+
 .header-font-color {
   color: #A2BABE;
 }
 
+#slideout-menu {
+  color:  #A2BABE
+}
 .body-font-color {
   color: #96A0A2;
 }
