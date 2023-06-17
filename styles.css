@@ -5,3 +5,50 @@
 #logo {
   max-width: 8rem;
 }
+
+/*
+colors are from https://paletton.com/#uid=73m0u0k3V4WaYgf7Lb1ac80gJaQ
+also from https://www.canva.com/colors/color-palette-generator/
+the canva colors are:
+
+Mystic
+#E0EAEC
+Firefly
+#0E212C
+Bright Turquoise
+#0FC2CC
+Blue Chill
+#0F89A0
+*/
+
+.bg-body {
+  background-color: #151818;
+}
+
+.bg-header {
+  background-color: #151818 ;
+}
+
+.header-font-color {
+  color: #A2BABE;
+}
+
+.body-font-color {
+  color: #96A0A2;
+}
+
+@media only screen {
+  .top-header {margin-top: 10rem;}
+}
+
+@media only screen and (max-width: 760px) {
+  .top-header { margin-top: 2rem;}
+}
+
+.h1-color {
+  color: #0FC2CC;
+}
+
+.h2-color {
+  color: #0FC2CC;
+}
