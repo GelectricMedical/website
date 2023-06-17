@@ -69,11 +69,13 @@ Blue Chill
 }
 
 @media only screen {
-  .top-header {margin-top: 10rem;}
+  h1,h2 {margin-top: 10rem;
+	 margin-bottom: 2rem;}
 }
 
 @media only screen and (max-width: 760px) {
-  .top-header { margin-top: 2rem;}
+  h1,h2 { margin-top: 2rem;
+	  margin-bottom: 2rem;}
 }
 
 .h1-color {
