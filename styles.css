@@ -1,0 +1,7 @@
+.initial-translate {
+  transform: translateX(100%);
+}
+
+#logo {
+  max-width: 8rem;
+}
