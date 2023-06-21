@@ -2,24 +2,24 @@
 /* fonts */
 @font-face {
   font-family: "Poppins";
-  src: url("resources/fonts/Poppins/Poppins-Regular.woff") format('woff');
+  src: url("../fonts/Poppins/Poppins-Regular.woff") format('woff');
 }
 
 @font-face {
   font-family: "Poppins";
-  src: url("resources/fonts/Poppins/Poppins-Bold.woff") format('woff');
+  src: url("../fonts/Poppins/Poppins-Bold.woff") format('woff');
   font-weight: bold;
 }
 
 @font-face {
   font-family: "Poppins";
-  src: url("resources/fonts/Poppins/Poppins-Italic.woff") format('woff');
+  src: url("../fonts/Poppins/Poppins-Italic.woff") format('woff');
   font-style: italic;
 }
 
 @font-face {
   font-family: "myfont";
-  src: url("resources/fonts/Poppins/Poppins-BoldItalic.woff") format('woff');
+  src: url("../fonts/Poppins/Poppins-BoldItalic.woff") format('woff');
   font-style: italic;
   font-weight: bold;
 }
@@ -27,7 +27,7 @@
 body {
        font-family: 'Poppins', Arial, sans-serif;
 }
-/* end fonts */
+/* end */
 
 .initial-translate {
   transform: translateX(100%);

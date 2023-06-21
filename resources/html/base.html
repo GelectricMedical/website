@@ -4,10 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gelectric Medical</title>
+  <title>{% block title %}{% endblock %}</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="resources/css/styles.css">
+  <script src="resources/js/script.js" defer></script>
+  <script src="resources/js/htmx.min.js" defer></script>
+
 </head>
 
 <body class="bg-body body-font-color">
@@ -17,10 +19,10 @@
       <!-- <h1 class="text-xl font-bold">Gelectric Medical</h1> -->
       <nav id="navMenu" class="md:flex md:items-center hidden">
         <ul class="md:flex md:space-x-4">
-          <li><a href="#" class="hover:text-gray-300">About</a></li>
-          <li><a href="#" class="hover:text-gray-300">Research</a></li>
-          <li><a href="#" class="hover:text-gray-300">News</a></li>
-          <li><a href="#" class="hover:text-gray-300">Publications</a></li>
+          <li><a href="{{ url_for('about')}}" class="hover:text-gray-300 {% if active_page == "index" %}underline {% endif %}">About</a></li>
+          <li><a href="{{ url_for('research')}}" class="hover:text-gray-300 {% if active_page == "research" %}underline {% endif %}">Research</a></li>
+          <li><a href="{{ url_for('news')}}" class="hover:text-gray-300 {% if active_page == "news" %}underline {% endif %}">News</a></li>
+          <li><a href="{{ url_for('team')}}" class="hover:text-gray-300  {% if active_page == "team" %}underline {% endif %}">Team</a></li>
         </ul>
       </nav>
       <button id="hamburger" type="button" class="md:hidden text-gray-400 hover:text-white focus:text-white focus:outline-none">
@@ -36,19 +38,19 @@
 	</svg>
       </button>
       <ul class="flex flex-col space-y-2 mt-8">
-        <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">About</a></li>
-        <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Research</a></li>
-        <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">News</a></li>
-        <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Publications</a></li>
+        <li><a href="{{ url_for('about')}}" class="block px-4 py-2 hover:bg-gray-200 {% if active_page == "index" %}underline {% endif %}">About</a></li>
+        <li><a href="{{ url_for('research')}}" class="block px-4 py-2 hover:bg-gray-200 {% if active_page == "research" %}underline {% endif %}">Research</a></li>
+        <li><a href="{{ url_for('news')}}" class="block px-4 py-2 hover:bg-gray-200 {% if active_page == "news" %}underline {% endif %}">News</a></li>
+	<li><a href="{{ url_for('team')}}" class="block px-4 py-2 hover:bg-gray-200 {% if active_page == "team" %}underline {% endif %}">Team</a></li>
       </ul>
     </div>
   </header>
 
   <main class="sm:mx-auto py-8 px-4 main-container">
-    <h1 class="text-3xl font-bold top-header h2-color">Gelectric Medical</h2>
-    <p>Our company specializes in an innovative electrical adhesive gel patch for internal use. This <b>reversible patch</b> adheres securely to internal tissue surfaces, allowing targeted treatment where <b>standard sutures are difficult to use</b>. By minimizing risks and reducing recovery time, our adhesive gel patch has the potential to revolutionize internal therapies..</p>
+    {% block content %} {% endblock %}
   </main>
 
 </body>
 
 </html>
+ 
