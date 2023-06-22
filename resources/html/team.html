@@ -1,13 +1,32 @@
 {% extends 'base.html' %}
 {% set active_page = "team" %}
+{% set team = [
+{
+'photo': 'resources/images/Leah.jpeg',
+'name': 'Leah K. Borden',
+'description': "Leah, a pioneering researcher, revolutionizes biomaterials through her groundbreaking work. Her first-authored paper in Nature Communications unveils the discovery of reversible tissue adhesion using hydrogels. With numerous prestigious awards, Leah's expertise is recognized, making her a trailblazer in the field. She presents at academic conferences, sharing insights and advancements. As a cross-disciplinary collaborator, Leah drives transformative advancements in biomaterial research."
+},
+{
+'photo': 'resources/images/Matt.jpeg',
+'name': 'Matthew Dowling',
+'description':"Matt is an accomplished innovator and founder. With a background in bioengineering and chemical engineering, Matt co-created gel-e, an innovative biomaterial platform. His leadership at Medcura has secured $6.0 million in grants, resulting in 5 FDA clearances, 8 patents, and numerous high-impact publications. Matt's groundbreaking work has been featured on international media outlets, cementing his reputation as an industry trailblazer."},
+{
+'photo': 'resources/images/James.png',
+'name': 'James Borden',
+'description': 'James has a proven track record in startups, expertise in biophysics, and mastery of biotech software development. With a deep understanding of the intricacies of both the business and scientific realms, James possesses a remarkable ability to bridge the gap between the two. With a proven track record in startups, James brings invaluable experience and a sharp entrepreneurial mindset to the table.'
+}
+] %}
 {% block title %}Team{% endblock %}
 {% block content %}
-<h1 class="text-3xl font-bold top-header h2-color">Founders</h1>
+<h1 class="py-10 text-3xl font-bold top-header h2-color">Founders</h1>
 
-<div class="flex items-center space-x-4">
-    <img class="w-44 h-44 rounded" src="resources/images/2022-Leah-Borden-e1664391069381.jpeg" alt="Leah K. Borden">
-    <div class="font-medium dark:text-white">
-        <h3>Leah Klein Borden</h3>
-    </div>
+<div class="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+  {% for team_member in team %}
+    {% include 'team_member.html' %}
+    {# {% if not loop.last %} #}
+    {#   <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"> #}
+    {# {% endif %} #}
+  {% endfor %}
+  </div>
 </div>
 {% endblock %}

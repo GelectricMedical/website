@@ -39,3 +39,53 @@ document.addEventListener('click', function (event) {
     slideoutMenu.classList.add('translate-x-full'); // Add the '-translate-x-full' class
   }
 });
+
+// Get all the "Read More" links
+const readMoreLinks = document.querySelectorAll('.read-more');
+
+// Add click event listener to each "Read More" link
+readMoreLinks.forEach((link) => {
+  link.addEventListener('click', (event) => {
+    event.preventDefault();
+
+    // Get the parent container of the clicked link
+    const articleContainer = event.target.closest('.article-container');
+
+    // Toggle the visibility of the article content
+    const content = articleContainer.querySelector('.article-content');
+    content.classList.toggle('hidden');
+
+    // Toggle the "Read More" and "Read Less" links
+    const readMoreLink = articleContainer.querySelector('.read-more');
+    const readLessLinks = articleContainer.querySelectorAll('.read-less');
+    readMoreLink.classList.toggle('hidden');
+    readLessLinks.forEach((readLessLink) => {
+      readLessLink.classList.toggle('hidden');
+    });
+  });
+});
+
+// Get all the "Read Less" links
+const readLessLinks = document.querySelectorAll('.read-less');
+
+// Add click event listener to each "Read Less" link
+readLessLinks.forEach((link) => {
+  link.addEventListener('click', (event) => {
+    event.preventDefault();
+
+    // Get the parent container of the clicked link
+    const articleContainer = event.target.closest('.article-container');
+
+    // Toggle the visibility of the article content
+    const content = articleContainer.querySelector('.article-content');
+    content.classList.toggle('hidden');
+
+    // Toggle the "Read More" and "Read Less" links
+    const readMoreLink = articleContainer.querySelector('.read-more');
+    const readLessLinks = articleContainer.querySelectorAll('.read-less');
+    readMoreLink.classList.toggle('hidden');
+    readLessLinks.forEach((readLessLink) => {
+      readLessLink.classList.toggle('hidden');
+    });
+  });
+});

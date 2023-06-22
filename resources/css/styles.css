@@ -114,3 +114,7 @@ p {
   -webkit-line-clamp: initial;
   transition: -webkit-line-clamp 1s ease;
 }
+
+.article-content p {
+  margin-top: 1em;
+}
