@@ -1,0 +1,13 @@
+<div class="max-w-lg mx-auto rounded-lg overflow-hidden shadow-md">
+  <img src="{{ article.image }}" alt="Selected Image" class="w-full h-48 object-cover">
+
+  <div class="overflow-hidden transition-all duration-300 p-6 article-bg-color">
+    <a href="{{ article.href }}" target="_blank" rel="noopener noreferrer"><h3 class="text-xl pb-1 font-semibold text-gray-400">{{ article.title }}</h3></a>
+    <p class="italic text-gray-600">{{ article.journal}} {{ article.date}}</p>
+    <div class="mt-2">
+      <div class="line-clamp-3 hover:line-clamp-none">
+	  {{ article.abstract }}
+      </div>
+    </div>
+  </div>
+</div>
