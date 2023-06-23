@@ -40,7 +40,7 @@
 {% block content %}
 <h1 class="py-10 text-3xl font-bold top-header h2-color">Founders</h1>
 
-<div class="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+<div class="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 text-justify">
   {% for team_member in team %}
     {% include 'team_member.html' %}
     {# {% if not loop.last %} #}
