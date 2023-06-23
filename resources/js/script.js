@@ -47,14 +47,14 @@ const readMoreLinks = document.querySelectorAll('.read-more');
 readMoreLinks.forEach((link) => {
   link.addEventListener('click', (event) => {
     event.preventDefault();
-
     // Get the parent container of the clicked link
     const articleContainer = event.target.closest('.article-container');
-
+    
     // Toggle the visibility of the article content
     const content = articleContainer.querySelector('.article-content');
-    content.classList.toggle('hidden');
-
+    toggleClass = content.getAttribute('data-toggle-class');
+    content.classList.toggle(toggleClass);
+    
     // Toggle the "Read More" and "Read Less" links
     const readMoreLink = articleContainer.querySelector('.read-more');
     const readLessLinks = articleContainer.querySelectorAll('.read-less');
@@ -78,9 +78,11 @@ readLessLinks.forEach((link) => {
 
     // Toggle the visibility of the article content
     const content = articleContainer.querySelector('.article-content');
-    content.classList.toggle('hidden');
+    toggleClass = content.getAttribute('data-toggle-class');
+    content.classList.toggle(toggleClass);
 
     // Toggle the "Read More" and "Read Less" links
+    
     const readMoreLink = articleContainer.querySelector('.read-more');
     const readLessLinks = articleContainer.querySelectorAll('.read-less');
     readMoreLink.classList.toggle('hidden');
