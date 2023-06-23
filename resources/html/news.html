@@ -9,7 +9,7 @@
 {% block title %}News{% endblock %}
 {% block content %}
   <h1 class="py-10 text-3xl font-bold top-header h2-color">News</h1>
-  <div class="text-justify">
+  <div>
     {% for article in news_articles|sort(attribute='date') %}
       {% include 'news_article.html' %}
     {% endfor %}
