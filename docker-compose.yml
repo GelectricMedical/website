@@ -1,0 +1,10 @@
+version: '3'
+services:
+  gelectric:
+    container_name: gelectric
+    build:
+      context: .
+    ports:
+      - "5000:5000"
+    environment:
+      - YOUR_APP_MODULE=src.python.main:app
