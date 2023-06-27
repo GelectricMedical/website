@@ -13,22 +13,22 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Upload code to gelectric.co
-        uses: appleboy/scp-action@v1
+      - name: copy file via ssh password
+        uses: appleboy/scp-action@v0.1.4
         with:
           host: gelectric.co
-          username: your-username
+          username: ${{ secrets.USERNAME }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           source: .
-          target: /path/to/gelectric-main
+          target: /home/james/gelectric-website-main
 
       - name: SSH into gelectric.co and deploy gelectric-main
-        uses: appleboy/ssh-action@master
+        uses: appleboy/ssh-action@v0.1.10
         with:
           host: gelectric.co
-          username: your-username
+          username: ${{ secrets.USERNAME }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            cd /path/to/gelectric-main
+            cd /home/james/gelectric-website-main
             docker-compose down
             docker-compose up -d
