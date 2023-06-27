@@ -1,0 +1,34 @@
+name: Deploy to gelectric-main
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Upload code to gelectric.co
+        uses: appleboy/scp-action@v1
+        with:
+          host: gelectric.co
+          username: your-username
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          source: .
+          target: /path/to/gelectric-main
+
+      - name: SSH into gelectric.co and deploy gelectric-main
+        uses: appleboy/ssh-action@master
+        with:
+          host: gelectric.co
+          username: your-username
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            cd /path/to/gelectric-main
+            docker-compose down
+            docker-compose up -d

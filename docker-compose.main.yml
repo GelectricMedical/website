@@ -1,0 +1,12 @@
+version: '3'
+services:
+  gelectric-main:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: gelectric-main
+    # Additional configurations for the gelectric-main container
+    ports:
+      - "5000:5000"
+    environment:
+      - YOUR_APP_MODULE=src.python.main:app

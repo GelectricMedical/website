@@ -1,0 +1,12 @@
+version: '3'
+services:
+  gelectric-staging:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: gelectric-staging
+    # Additional configurations for the gelectric-staging container
+    ports:
+      - "5000:5000"
+    environment:
+      - YOUR_APP_MODULE=src.python.main:app
