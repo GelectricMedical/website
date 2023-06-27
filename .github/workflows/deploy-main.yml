@@ -19,7 +19,7 @@ jobs:
           host: gelectric.co
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          source: .
+          source: "resources/,src/python/,docker-compose.main.yml,Dockerfile,requirements.txt"
           target: /home/james/gelectric-website-main
 
       - name: SSH into gelectric.co and deploy gelectric-main
