@@ -4,7 +4,7 @@
 
 ```
 	source bin/activate
-	flask --app src/python/main.py --debug run
+	flask --app src/python/main.py --debug run --host orion
 ```
 
 # Logo font
