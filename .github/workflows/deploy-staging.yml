@@ -30,5 +30,6 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             cd /home/james/gelectric-website-staging
+            docker-compose -f docker-compose.staging.yml down
             docker-compose -f docker-compose.staging.yml build
-            docker-compose -f docker-compose.staging.yml restart
+            docker-compose -f docker-compose.staging.yml up -d
