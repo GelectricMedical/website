@@ -5,11 +5,11 @@
   <a href="{{ article.href }}" target="_blank" rel="noopener noreferrer"><h3 class="text-lg font-semibold">{{ article.title }}</h3></a>
   <p class="text-gray-600">{{ article.publication }}</p>
   <p class="text-gray-600">{{ article.date }}</p>
+  <a href="#" class="read-less text-blue-600 font-semibold hover:text-blue-800 hidden">Hide Abstract</a>
   <div class="article-content hidden" data-toggle-class="hidden">
       {{ article.abstract }}
   </div>
     <a href="#" class="read-more text-blue-600 font-semibold hover:text-blue-800">Show Abstract</a>
-    <a href="#" class="read-less text-blue-600 font-semibold hover:text-blue-800 hidden">Hide Abstract</a>
 </div>
 <!-- <div class="max-w-lg mx-auto rounded-lg overflow-hidden shadow-md">   -->
 <!--   <a href="{{ article.href }}" target="_blank" rel="noopener noreferrer"><img src="{{ article.image }}" alt="Selected Image" class="w-full h-48 object-cover"></a>   -->

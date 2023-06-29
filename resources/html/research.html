@@ -18,23 +18,30 @@
       'abstract': 'We demonstrate the use of electroadhesion (EA), i.e., adhesion induced by an electric field, to connect a variety of soft materials into 3D structures. EA requires a cationic and an anionic material, but these can be of diverse origin, including covalently cross-linked hydrogels made by polymerizing charged monomers or physical gels/capsules formed by the ionic cross-linking of biopolymers (e.g., alginate and chitosan). Between each cationic/anionic pair, EA is induced rapidly (in ∼10 s) by low voltages (∼10 V DC)─and the adhesion is permanent after the field is turned off. The adhesion is strong enough to allow millimeter-scale capsules/gels to be assembled in 3D into robust structures such as capsule–capsule chains, capsule arrays on a base gel, and a 3D cube of capsules. EA-based assembly of spherical building blocks can be done more precisely, rapidly, and easily than by any alternative techniques. Moreover, the adhesion can be reversed (by switching the polarity of the field)─hence any errors during assembly can be undone and fixed. EA can also be used for selective sorting of charged soft matter─for example, a ‘finger robot’ can selectively ‘pick up’ capsules of the opposite charge by EA and subsequently ‘drop off’ these structures by reversing the polarity. Overall, our work shows how electric fields can be used to connect soft matter without the need for an adhesive or glue.',
       'href': 'https://pubs.acs.org/doi/abs/10.1021/acsami.2c20793'
     },
-    {
-      'image': 'resources/images/Patent-Claim.png',
-      'title': 'Reversible Electroadhesion of Hydrogels to animal tissues for sutureless repair of cuts or tears',
-      'abstract': 'Electroadhesion, adhesion induced by an electric field, occurs between non-sticky cationic and anionic hydrogels. When gel and tissue are placed under an electric field, the pair strongly adhere, and the adhesion persists indefinitely thereafter. Applying a direct current (DC) field with reversed polarity eliminates the adhesion. The use of electroadhesion can seal cuts or tears in tissues or model anionic gels. In an example, electroadhesion gel-patches provide a robust seal over opening in bovine aorta, and a gel sleeve is able to rejoin pieces of a severed gel tube',
+] %}
+{% set patents = [
+{
+'image': 'resources/images/Patent-Claim.png',
+'title': 'Reversible Electroadhesion of Hydrogels to animal tissues for sutureless repair of cuts or tears',
+'abstract': 'Electroadhesion, adhesion induced by an electric field, occurs between non-sticky cationic and anionic hydrogels. When gel and tissue are placed under an electric field, the pair strongly adhere, and the adhesion persists indefinitely thereafter. Applying a direct current (DC) field with reversed polarity eliminates the adhesion. The use of electroadhesion can seal cuts or tears in tissues or model anionic gels. In an example, electroadhesion gel-patches provide a robust seal over opening in bovine aorta, and a gel sleeve is able to rejoin pieces of a severed gel tube',
 'href': 'https://patentcenter.uspto.gov/applications/PCT%2FUS22%2F73562',
 'journal':'PCT/US22/73562',
 'date': 'Jul 2022',
-}] %}
+}]
+%}
+%}
 {% block title %}Research{% endblock %}
 {% block content %}
-<h1 class="py-10 text-3xl font-bold top-header h2-color">Publications</h1>
-{# <div class="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3"> #}
-<div class="grid gap-6 grid-cols-1">
-  {% for article in articles|sort(attribute='date') %}
-    <div class="mb-6">
+  <div class="min-w-full">
+    <h1 class="py-10 text-3xl font-bold top-header h2-color">Publications</h1>
+    {# <div class="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3"> #}
+    {% for article in articles|sort(attribute='date') %}
       {% include 'article.html' %}
-    </div>
-  {% endfor %}
-</div>
+    {% endfor %}
+    <h1 class="py-10 text-3xl font-bold top-header h2-color">Patents</h1>
+    {# <div class="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3"> #}
+    {% for article in patents|sort(attribute='date') %}
+      {% include 'article.html' %}
+    {% endfor %}
+  </div>
 {% endblock %}
