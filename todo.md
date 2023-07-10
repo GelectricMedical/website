@@ -6,10 +6,30 @@
    1. [x] include a "info@gelectric.co" for contact
 6. [ ] Signup for socials Instagram, Twitter, LinkedIn
 7. [ ] Add socials to bottom of page
-8. [ ] More content for landing page!!
+8. [x] More content for landing page!!
 9. [x] signup GitHub
 10. [x] Make deployable from GitHub Actions
 11. [x] Point domain at digital ocean
 12. [x] Get SSL cert for site
+13. [x] need better spacing for mobile. There should be less space between and the liver image needs to be further from paragraph.
+	    also, make the headings consistently on top in mobile
+14. [x] on desktop, the landing page should have the text be Left, Right, Left, Not Left, Right, Right
+14. [ ] add images to news articles
+15. [ ] Create animation and place it up top!
+16. [ ] enable caching of images, css, javascript, etc ! (should use etag)
+
+# Script for animation
+
+1. [ ] - Zoom into section of intestine, intestine should have an incision
+2. [ ] - Apply a transparent patch
+3. [ ] - Have electrical device move over, show the button being depressed, perhaps show lightning bolts for electricity
+4. [ ] - consider also showing the voltage with a positive and negative sign
+4. [ ] - show the patch "shrinking" for adhesion, indicate it is not on properly..
+         perhaps it doesn't fully cover the wound?
+5. [ ] - show the patch can't be removed with a scapel or other instrument
+5. [ ] - have the device come in, show perhaps a switch being moved, indicate polarity of probes
+6. [ ] - show the voltage being applied, then the patch is easily removed
+7. [ ] - show the patch being moved to cover the wound
+8. [ ] - show the voltage being applied
 
 
