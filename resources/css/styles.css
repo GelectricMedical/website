@@ -146,14 +146,14 @@ p {
   transition: opacity 0.5s ease-out; /* Transition opacity */
 }
 
-.advisor-card:hover .advisor-preview {
+.advisor-description:hover + .advisor-preview {
   display: flex;
   flex-direction: column;
   opacity: 1; /* Make visible on hover */
 }
 
 /* Hide advisor-preview after hover ends with a delay */
-.advisor-card:not(:hover)  .advisor-preview {
-  transition-delay: 0.5s; /* Delay transition effects */
+.advisor-description:not(:hover) + .advisor-preview {
+  transition-delay: 3s; /* Delay transition effects */
   opacity: 0; /* Fade out when not hovering */
 }
