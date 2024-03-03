@@ -3,8 +3,8 @@
 # Run in dev mode
 
 ```
-	source bin/activate
-	flask --app src/python/main.py --debug run --host orion
+source bin/activate
+flask --app src/python/main.py --debug run --host localhost
 ```
 
 # Logo font
