@@ -125,3 +125,11 @@ p {
 .article-content p {
   margin-top: 1em;
 }
+
+.linkedin-fill-path {
+  fill: #96A0A2;
+}
+
+.linkedin-text-path {
+  fill: #151818;
+}

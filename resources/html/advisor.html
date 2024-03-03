@@ -5,6 +5,11 @@
       <h3 class="text-lg font-semibold">{{ advisor.name }}</h3>
       <p class="text-gray-600">{{ advisor.role }}</p>
       <p class="text-gray-600">{{ advisor.affiliation }}</p>
+      <a href="{{ advisor.linkedin }}" target="_blank" rel="noopener noreferrer">
+	<div class="w-6 h-6">
+	  {% include 'LinkedIn_icon.svg' %}
+	</div>
+      </a>
     </div>
   </div>
 </div>
