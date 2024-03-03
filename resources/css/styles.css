@@ -111,6 +111,7 @@ p {
 
 .main-container {
   max-width: 1280px;
+  width: 80%;
 }
 
 .line-clamp-6 {
