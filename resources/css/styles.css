@@ -125,3 +125,35 @@ p {
 .article-content p {
   margin-top: 1em;
 }
+
+.advisor-card {
+  position: relative;
+}
+
+.advisor-preview {
+  width: 200px; /* Adjust width as needed */
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  left: -40%; /* Position it to the left of the advisor card */
+  margin-top: -10px; /* Adjust as needed */
+  z-index: 1; /* Ensure it appears on top of other content */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.5s ease-out; /* Transition opacity */
+}
+
+.advisor-card:hover .advisor-preview {
+  display: flex;
+  flex-direction: column;
+  opacity: 1; /* Make visible on hover */
+}
+
+/* Hide advisor-preview after hover ends with a delay */
+.advisor-card:not(:hover)  .advisor-preview {
+  transition-delay: 0.5s; /* Delay transition effects */
+  opacity: 0; /* Fade out when not hovering */
+}
