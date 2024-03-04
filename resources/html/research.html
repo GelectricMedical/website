@@ -35,12 +35,12 @@
   <div class="min-w-full">
     <h1 class="py-10 text-3xl font-bold top-header h2-color">Publications</h1>
     {# <div class="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3"> #}
-    {% for article in articles|sort(attribute='date') %}
+    {% for article in articles|sort(attribute='date')|reverse %}
       {% include 'article.html' %}
     {% endfor %}
     <h1 class="py-10 text-3xl font-bold top-header h2-color">Patents</h1>
     {# <div class="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3"> #}
-    {% for article in patents|sort(attribute='date') %}
+    {% for article in patents|sort(attribute='date')|reverse %}
       {% include 'article.html' %}
     {% endfor %}
   </div>
