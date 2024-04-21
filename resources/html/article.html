@@ -1,26 +1,15 @@
-<div class="flex mb-4">
-  <a href="{{ article.href }}" target="_blank" rel="noopener noreferrer"><img src="{{ article.image }}" alt="{{ article.title }}" class="w-64 rounded-md mb-2"></a>
-</div>
-<div class="article-container flex-grow">
-  <a href="{{ article.href }}" target="_blank" rel="noopener noreferrer"><h3 class="text-lg font-semibold">{{ article.title }}</h3></a>
-  <p class="text-gray-600">{{ article.publication }}</p>
-  <p class="text-gray-600">{{ article.date }}</p>
-  <a href="#" class="read-less text-blue-600 font-semibold hover:text-blue-800 hidden">Hide Abstract</a>
-  <div class="article-content hidden" data-toggle-class="hidden">
-      {{ article.abstract }}
+<div class="p-y-8">
+  <div class="flex mb-4">
+    <a href="{{ article.href }}" target="_blank" rel="noopener noreferrer"><img src="{{ article.image }}" alt="{{ article.title }}" class="w-64 rounded-md mb-2"></a>
   </div>
+  <div class="article-container flex-grow">
+    <a href="{{ article.href }}" target="_blank" rel="noopener noreferrer"><h3 class="text-lg font-semibold">{{ article.title }}</h3></a>
+    <p class="text-gray-600">{{ article.publication }}</p>
+    <p class="text-gray-600">{{ article.date }}</p>
+    <a href="#" class="read-less text-blue-600 font-semibold hover:text-blue-800 hidden">Hide Abstract</a>
+    <div class="article-content hidden" data-toggle-class="hidden">
+      {{ article.abstract }}
+    </div>
     <a href="#" class="read-more text-blue-600 font-semibold hover:text-blue-800">Show Abstract</a>
+  </div>
 </div>
-<!-- <div class="max-w-lg mx-auto rounded-lg overflow-hidden shadow-md">   -->
-<!--   <a href="{{ article.href }}" target="_blank" rel="noopener noreferrer"><img src="{{ article.image }}" alt="Selected Image" class="w-full h-48 object-cover"></a>   -->
-
-<!--   <div class="overflow-hidden transition-all duration-300 p-6 article-bg-color">   -->
-<!--     <a href="{{ article.href }}" target="_blank" rel="noopener noreferrer"><h3 class="text-xl pb-1 font-semibold text-gray-400">{{ article.title }}</h3></a>   -->
-<!--     <p class="italic text-gray-600">{{ article.journal}} {{ article.date}}</p>   -->
-<!--     <div class="mt-2">   -->
-<!--       <div class="line-clamp-3 hover:line-clamp-none text-justify">   -->
-<!-- 	  {{ article.abstract }}   -->
-<!--       </div>   -->
-<!--     </div>   -->
-<!--   </div>   -->
-<!-- </div>   -->

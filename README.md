@@ -4,7 +4,7 @@
 
 ```
 source bin/activate
-flask --app src/python/main.py --debug run --host localhost
+flask --app src/python/main.py --debug run --host localhost --port 5001
 ```
 
 # Logo font
