@@ -2041,23 +2041,6 @@
             height: 300px;
         }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     /* ESTILOS MOBILE */
 
     @media (max-width: 768px) {
@@ -2070,14 +2053,22 @@
 
         /* 01 WRAPPER HEADER MOBILE */
         .wrapper-header {
-            width: 100%;
-            margin: 0 auto;
-            margin-top: 20px;
+	    margin-left: auto;
+	    margin-right: auto;
+	    justify-content: space-between;
+	    margin-top: 0;
+	    margin-bottom: 0;
+	    width: 100%;
         }
 
-
+	header {
+	  padding-top: 1rem;
+	  padding-bottom: 1rem;
+	  padding-right: 1rem;
+	  padding-left: 1rem;
+	}
         header .logo img {
-            height: 100px;
+            height: 4em;
         }
 
         header .logo p {
@@ -2104,81 +2095,84 @@
 
 
         .navigation-wrapper-pro {
-            position: relative;
+          position: relative;
+	  width: auto;
+	  margin-bottom: 1rem;
+	  margin-right: 1rem;
         }
 
         .menu {
-                display: none;
-                flex-direction: column;
-                flex-wrap: wrap; /* Permite que los elementos se envuelvan si el contenedor es demasiado pequeño */
-                background-color: #333;
-                position: absolute;
-                top: 140px;
-                left: 30px;
-                padding-left: 10px;
-            }
+          display: none;
+          flex-direction: column;
+          flex-wrap: wrap; /* Permite que los elementos se envuelvan si el contenedor es demasiado pequeño */
+          background-color: #333;
+          position: absolute;
+          top: 140px;
+          left: 30px;
+          padding-left: 10px;
+        }
 
 
-            nav .menu-icon {
-                position: relative;
-                left: 18px;
-                top: -16px;
-                display: flex;
-            }
+        nav .menu-icon {
+          position: relative;
+          /* left: 18px; */
+          /* top: -16px; */
+          display: flex;
+        }
 
 
 
-            nav .menu li {
-                text-align: center;
-                margin: 10px 0;
-                width: 110px;
-            }
+        nav .menu li {
+          text-align: center;
+          margin: 10px 0;
+          width: 110px;
+        }
 
-            nav .menu li a {
-                font-size: 0.7em;
-                color: white;
-            }
+        nav .menu li a {
+          font-size: 0.7em;
+          color: white;
+        }
 
-            nav .menu li a:hover {
-                color: white;
-            }
+        nav .menu li a:hover {
+          color: white;
+        }
 
-            .menu.active {
-                display: flex;
-                position: absolute;
-                top: 60px;
-                font-size: 1.6em;
-                line-height: 1em;
-                z-index: 20;
-                left: -90px;
-                background-color: #43597D;
-                border-left: 3px solid #1C5153;
-                padding-right: 10px;
-                border-radius: 6px;
-            }
-
-
-            h1 {
-
-                font-size: 1.8em;
-                top: 10px;
-                left: 0;
-                padding-left: 0;
-            }
-
-            h2 {
-                font-size: 1.6em;
-                line-height: 1.1em;
-                padding: 0px;
-
-            }
+        .menu.active {
+          display: flex;
+          position: absolute;
+          top: 60px;
+          font-size: 1.6em;
+          line-height: 1em;
+          z-index: 20;
+          left: -6rem;
+          background-color: #43597D;
+          border-left: 3px solid #1C5153;
+          padding-right: 10px;
+          border-radius: 6px;
+        }
 
 
-            h3 {
-                font-size: 1.6em;
-            }
+        h1 {
+
+          font-size: 1.8em;
+          top: 10px;
+          left: 0;
+          padding-left: 0;
+        }
+
+        h2 {
+          font-size: 1.6em;
+          line-height: 1.1em;
+          padding: 0px;
+
+        }
 
 
+        h3 {
+          font-size: 1.6em;
+        }
+
+	
 
         .line-pro {
             height: 4px;
@@ -2186,11 +2180,7 @@
             width: 100%;
         }
 
-
-
-
-
-            .color-white {
+        .color-white {
                 color: white;
                 font-size: 2em;
             }
@@ -3253,16 +3243,19 @@
 
         /* Home SECTION 09 - FOOTER MOBILE */
 
+	footer .logo {
+	  margin: 0;
+        }
+
         .container-pro-footer {
             grid-template-columns: 1fr;
             grid-template-rows: 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr; 
             column-gap: 10px;
             row-gap: 10px;
             padding: 20px;
-            width: 100%;
+            /* width: 100%; */
             color: #00A099;
         }
-
 
         /* VACIO */
         .grid-item-footer-01 {
@@ -3380,12 +3373,6 @@
                 margin-top: 30px;
             }
 
-
-
-
-
-
-
             .footer-section {
                 margin: 1rem auto; /* Margen superior e inferior de 2rem y centrado horizontal */
                 padding: 1rem; /* Espaciado interno de 2rem */
@@ -3401,12 +3388,9 @@
 
 
             .logo-footer-img {
-                background-image: url('../images/gelectric-logo-sept.png');
-                background-size: cover;
-                background-position: left;
-                background-repeat: no-repeat;
-                margin-bottom: 0;
-                margin-left: 30px;
+              background-size: cover;
+              background-position: left;
+              background-repeat: no-repeat;
             }
 
 
