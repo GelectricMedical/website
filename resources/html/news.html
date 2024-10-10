@@ -8,16 +8,15 @@
 },
 {
 'title': 'Gelectric Medical Inc. Awarded TEDCO Maryland Innovation Initiative (MII) Phase II Grant',
-'date' : 'Mar 4th, 2024',
+'date' : 'Feb 27th, 2024',
 'content_file': 'news_articles/Mar-4-2024-MII-PII.html'
 }
 ] %}
 {% block title %}News{% endblock %}
 {% block content %}
-  <h1 class="py-10 text-3xl font-bold top-header h2-color">News</h1>
-  <div>
-    {% for article in news_articles|sort(attribute='date')|reverse %}
-      {% include 'news_article.html' %}
-    {% endfor %}
-  </div>
+<main>
+  {% for article in news_articles|sort(attribute='date') %}
+  {% include 'news_article.html' %}
+  {% endfor %}
+</main>
 {% endblock %}

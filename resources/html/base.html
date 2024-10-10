@@ -1,57 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <title>{% block title %}{% endblock %}</title>
   <link rel="stylesheet" href="resources/css/styles.css">
   <link rel="icon" type="image/x-icon" href="resources/images/favicon.ico">
+  <!-- this should probably be replaced with a local copy -->
+  <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <script src="resources/js/script.js" defer></script>
-  <script src="https://cdn.tailwindcss.com"></script>
-
-
 </head>
-
-<body class="bg-body body-font-color text-left leading-relaxed min-h-screen flex flex-col">
-  <header class="bg-header header-font-color py-4 px-4">
-    <div class="mx-auto flex items-center justify-between">
-      <a href="/"><img id="logo" src="resources/images/logo.png"></img></a>
-      <!-- <h1 class="text-xl font-bold">Gelectric Medical</h1> -->
-      <nav id="navMenu" class="md:flex md:items-center hidden">
-        <ul class="md:flex md:space-x-4">
-          <li><a href="{{ url_for('about')}}" class="hover:text-gray-300 {% if active_page == "index" %}underline {% endif %}">About</a></li>
-          <li><a href="{{ url_for('research')}}" class="hover:text-gray-300 {% if active_page == "research" %}underline {% endif %}">Research</a></li>
-          <li><a href="{{ url_for('news')}}" class="hover:text-gray-300 {% if active_page == "news" %}underline {% endif %}">News</a></li>
-          <li><a href="{{ url_for('team')}}" class="hover:text-gray-300  {% if active_page == "team" %}underline {% endif %}">Team</a></li>
-        </ul>
-      </nav>
-      <button id="hamburger" type="button" class="md:hidden text-gray-400 hover:text-white focus:text-white focus:outline-none">
-        <svg viewBox="0 0 20 20" fill="currentColor" class="h-6 w-6">
-          <path fill-rule="evenodd" d="M2.7 5h14.6a.7.7 0 0 1 0 1.4H2.7a.7.7 0 0 1 0-1.4zm0 5h14.6a.7.7 0 0 1 0 1.4H2.7a.7.7 0 1 1 0-1.4zm0 5h14.6a.7.7 0 0 1 0 1.4H2.7a.7.7 0 0 1 0-1.4z" clip-rule="evenodd"></path>
-        </svg>
-      </button>
-    </div>
-    <div id="slideout-menu" class="bg-slideout-menu w-64 h-screen fixed top-0 right-0 initial-translate translate-x-full">
-      <button id="close-button" class="absolute top-2 right-2 text-gray-400 hover:text-white focus:text-white focus:outline-none">
-	<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" class="h-6 w-6">
-	  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-	</svg>
-      </button>
-      <ul class="flex flex-col space-y-2 mt-8">
-        <li><a href="{{ url_for('about')}}" class="block px-4 py-2 hover:bg-gray-200 {% if active_page == "index" %}underline {% endif %}">About</a></li>
-        <li><a href="{{ url_for('research')}}" class="block px-4 py-2 hover:bg-gray-200 {% if active_page == "research" %}underline {% endif %}">Research</a></li>
-        <li><a href="{{ url_for('news')}}" class="block px-4 py-2 hover:bg-gray-200 {% if active_page == "news" %}underline {% endif %}">News</a></li>
-	<li><a href="{{ url_for('team')}}" class="block px-4 py-2 hover:bg-gray-200 {% if active_page == "team" %}underline {% endif %}">Team</a></li>
-      </ul>
-    </div>
-  </header>
-
-  <main class="sm:mx-auto py-8 px-4 main-container flex-grow">
-    {% block content %} {% endblock %}
-  </main>
+<body>
+  {% include 'header.html' %}
+  {% block content %} {% endblock %}
   {% include 'footer.html' %}
 </body>
-
 </html>
  

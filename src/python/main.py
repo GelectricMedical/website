@@ -24,3 +24,11 @@ def news():
 @app.route("/team")
 def team():
     return render_template('team.html')
+
+@app.route("/products")
+def products():
+    return render_template('products.html')
+
+@app.route("/contact")
+def contact():
+    return render_template('contact.html')

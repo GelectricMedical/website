@@ -1,5 +1,14 @@
-<li class="flex flex-col items-center">
-  <img src="{{ team_member.photo }}" alt="Staff Photo" class="w-40 h-40 object-cover rounded mb-2">
-  <h3 class="text-lg font-semibold">{{ team_member.name }}</h3>
-  <p class="text-gray-600">{{ team_member.description }}</p>
-</li>
+<section class="section-standard">
+  <div class="container-about">
+    <div class="grid-item-about-01">
+      <h2>{{ team_member.name}}</h2>
+    </div>
+    <div class="grid-item-about-02" style="background-image: url('{{ team_member.photo }}')">
+    </div>
+    <div class="grid-item-about-03">
+      <p>
+	{{ team_member.description }}
+      </p>
+    </div>
+  </div>
+</section>

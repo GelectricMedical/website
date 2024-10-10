@@ -1,0 +1,178 @@
+      
+        header .container {
+            display: flex;
+            align-items: center;
+            padding: 0px;
+            margin-top: 30px;
+        }
+
+
+
+        .contact-img-surgeons {
+            position: absolute;
+            background-image: url('../images/contact-img-surgeons.webp');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 150px;
+            right: 0;
+            top: 80px;
+            border-radius: 12px;
+        }
+
+
+
+
+
+
+
+        .card-doctora-levanta {
+            position: relative;
+            background-image: url('../images/invest.png');
+            background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+            background-position: center; /* Centra la imagen dentro del contenedor */
+            background-repeat: no-repeat; /* Evita que la imagen se repita */
+            height: 490px;
+            border-radius: 12px;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+        .card-doctora-microscope {
+            background-color: #00A099;
+            background-image: url('../images/micro-search.jpg');
+            background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+            background-position: center; /* Centra la imagen dentro del contenedor */
+            background-repeat: no-repeat; /* Evita que la imagen se repita */
+            width: 390px;
+            height: 570px;
+
+            border-radius: 12px;
+        }
+
+
+
+
+        .card-products-tissue {
+            position: relative;
+            background-image: url('../images/patcher-electro.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 600px;
+            height: 410px;
+            border-radius: 12px;
+        }
+
+
+
+
+
+
+        .grid-item-03-research {
+          grid-column-start: 1;
+          grid-column-end: 3;
+          grid-template-rows: 1fr 3fr;
+        }
+
+
+
+
+          .container-anasto {
+            padding: 30px;
+        }
+
+
+        .footer-card {
+            width: 25%;
+            color: #fff; /* Color de texto blanco */
+            border-radius: 12px; /* Bordes curvos */
+            padding: 20px; /* Espaciado interno */
+            flex: 1; /* Hace que los cards sean flexibles y ocupen el mismo espacio */
+            margin: 0.5rem; /* Margen entre los cards */
+            min-width: 200px; /* Ancho mínimo para que los cards no se vuelvan demasiado pequeños */
+            max-width: 24%; /* Máximo ancho para cada card */
+            text-align: center; /* Centra el texto */
+            min-height: 280px;
+        }
+
+
+        .footer-card h4 {
+            margin-bottom: 1rem; /* Margen inferior del título */
+            color: #4DBECF;
+            font-size: 1.4em;
+            font-weight: 300;
+        }
+
+
+        #research .card-horizontal-transp {
+            top: 30px;
+            color: black;
+            min-width: 200px;
+            width: 220px;
+            left: -30px;
+            /* min-width: 100px; */
+        }
+
+
+
+
+        .footer-card p {
+            line-height: 1.5em; /* Altura de línea */
+            font-size: 0.9em;
+            margin-bottom: 20px;
+            min-height: 120px;
+            color: blue;
+        }
+
+
+
+        .contact-slogan {
+            position: absolute;
+            top: 470px;
+            right: 15px;
+
+            color: white;
+
+        }
+
+
+
+        .card-horizontal-contact {
+            font-size: 1em;
+            width: 400px;
+            height: 160px;
+            color: white;
+            position: absolute;
+            left: 30px;
+            top: 150px;
+        }
+
+
+        .contact-title {
+            width: 300px;
+            color: white;
+            position: absolute;
+            left: 30px;
+            top: 30px;
+        }
+
+
+        .section-white.surgical-technique h2 {
+                font-size: 2.2em;
+                position: absolute;
+                min-height: 60px;
+                max-width: 120px;
+                top: 20px;
+                left: 30px;
+        }

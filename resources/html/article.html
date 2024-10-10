@@ -1,15 +1,21 @@
-<div class="p-y-8">
-  <div class="flex mb-4">
-    <a href="{{ article.href }}" target="_blank" rel="noopener noreferrer"><img src="{{ article.image }}" alt="{{ article.title }}" class="w-64 rounded-md mb-2"></a>
-  </div>
-  <div class="article-container flex-grow">
-    <a href="{{ article.href }}" target="_blank" rel="noopener noreferrer"><h3 class="text-lg font-semibold">{{ article.title }}</h3></a>
-    <p class="text-gray-600">{{ article.publication }}</p>
-    <p class="text-gray-600">{{ article.date }}</p>
-    <a href="#" class="read-less text-blue-600 font-semibold hover:text-blue-800 hidden">Hide Abstract</a>
-    <div class="article-content hidden" data-toggle-class="hidden">
-      {{ article.abstract }}
+<section class="section-standard">
+  <div class="container-research" style="
+					 {% if article.container_research is defined and article.container_research.grid_template_columns is defined %} 
+					 grid-template-columns: {{ article.container_research.grid_template_columns }}; 
+					 {% endif %}
+					 {% if article.container_research is defined and article.container_research.grid_template_rows is defined %} 
+					 grid-template-rows: {{ article.container_research.grid_template_rows }}; 
+					 {% endif %}">
+    <div class="grid-item-research-01">
+      <h2>{{ article.title }}</h2>
     </div>
-    <a href="#" class="read-more text-blue-600 font-semibold hover:text-blue-800">Show Abstract</a>
+    <div class="grid-item-research-02" style="background-image: url('{{ article.image }}'); height: {{ article.image_height }}; {% if article.width %} width: {{ article.width }}; {% endif %} "></div>
+    <div class="grid-item-research-03" style="{% if article.grid_row %} grid-row: {{ article.grid_row }}; {% endif %} {% if article.grid_column %} grid-column: {{ article.grid_column }}; {% endif %}">
+      {{ article.abstract | safe }}
+      <br>
+      <a href="{{article.href}}" target="_blank">{{ label }}</a>
+    </div>
+    <div class="grid-item-research--04">
+    </div>
   </div>
-</div>
+</section>

@@ -1,0 +1,46 @@
+<header>
+  <div class="wrapper-header">
+    <div class="logo">
+      <a href="index.html"><img src="resources/images/Gelectric_Logo.png" alt="Gelectric Logo"></a>
+    </div>
+
+    <nav class="navigation-wrapper-pro">
+      <div class="menu-icon" id="menu-icon">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+
+      <div class="nav-wrapper">
+        <ul class="menu" id="menu">
+          <li><a {% if active_page == "index" %}
+		 class="current"
+		 {% endif %}
+		 href="/">Home</a></li>
+          <li><a {% if active_page == "team" %}
+		 class="current"
+		 {% endif %}
+		 href="/team">About Us</a></li>
+          <li><a {% if active_page == "products" %}
+		 class="current"
+		 {% endif %}
+		 href="/products">Products</a></li>
+          <li><a {% if active_page == "research" %}
+		 class="current"
+		 {% endif %}
+		 href="/research">Research</a></li>
+          <li><a {% if active_page == "news" %}
+		 class="current"
+		 {% endif %}
+		 href="/news">News</a></li>
+          <li><a {% if active_page == "contact" %}
+		 class="current"
+		 {% endif %}
+		 href="contact">Contact</a></li>
+        </ul>
+      </div>
+
+    </nav>
+
+  </div>
+</header>

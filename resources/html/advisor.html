@@ -1,15 +1,21 @@
-<div class="advisor-card">
-  <div class="flex items-center mb-4 advisor-description">
-    <img src="{{ advisor.avatar }}" alt="{{ advisor.name }}" class="w-40 h-40 rounded-full mr-4">
-    <div>
-      <h3 class="text-lg font-semibold">{{ advisor.name }}</h3>
-      <p class="text-gray-600">{{ advisor.role }}</p>
-      <p class="text-gray-600">{{ advisor.affiliation }}</p>
-      <a href="{{ advisor.linkedin }}" target="_blank" rel="noopener noreferrer">
-	<div class="w-6 h-6">
-	  {% include 'LinkedIn_icon.svg' %}
-	</div>
-      </a>
+<section class="section-standard">
+  <div class="container-about">
+    <div class="grid-item-about-01">
+      <h2>{{advisor.name}}</h2>
+    </div>
+    <div class="grid-item-about-02" style="background-image: url('{{ advisor.photo }}')">
+      <a href="{{ advisor.linkedin }}" target="_blank">
+        <div class="linkedin"></div></a>
+    </div>
+    <div class="grid-item-about-03">
+      <P>{{ advisor.description }} </P>
+      <br>
+      <ul>
+        <li>{{ advisor.role }}</li>
+	{% if advisor.affiliation != "" %}
+	  <li><a href="{{ advisor.affiliation_link}}" target="_blank">{{ advisor.affiliation }}</a></li>		      
+	{% endif %}
+      </ul>
     </div>
   </div>
-</div>
+</section>

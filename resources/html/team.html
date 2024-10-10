@@ -21,45 +21,83 @@
 ] %}
 {% set advisors = [
 {
+"name": "Lou Lieto, Ph.D",
+"affiliation": "Wilson, Sonsini, Goodrich and Rosati",
+"affiliation_link":"https://www.wsgr.com/en/people/lou-lieto.html",
+"role": "Patent Attorney",
+"photo": 'resources/images/lou.jpeg',
+"linkedin": 'https://www.linkedin.com/in/srinivasa-srini-raghavan-4b673110/',
+"description":"Dr. Lou Lieto is a Partner in the patents and innovations practice at Wilson Sonsini Goodrich & Rosati. Lou focuses on patent prosecution, licensing, strategic patent counseling, mergers & acquisitions, capital markets, global generics, and IP due diligence in a variety of fields, including biologics, pharmaceuticals,nutraceuticals, clean energy, diagnostics, embryonic stem cells, medical devices, transgenic animals, and gene therapy. Lou received his J.D. from the George Washington University Law School and his Ph.D. from the University of Kentucky.",
+},
+{
 "name": "Srinivasa R. Raghavan, Ph.D",
 "affiliation": "University of Maryland, College Park",
+"affiliation_link":"https://complexfluids.umd.edu",
 "role": "Scientific Advisor",
-"avatar": 'resources/images/Srini.jpeg',
-"linkedin": 'https://www.linkedin.com/in/srinivasa-srini-raghavan-4b673110/'
+"photo": 'resources/images/Srini.jpeg',
+"linkedin": 'https://www.linkedin.com/in/srinivasa-srini-raghavan-4b673110/',
+"description": "Dr. Srinivasa Raghavan is a Scientific Advisor to Gelectric. He is Full Professor in the Department of Chemical and Biomolecular Engineering at UMD. He is the principal investigator of the Complex Fluids and Nanomaterials Laboratory. He has authored over 100 technical papers in peer reviewed journals and is a recipient of a 2004 NSF Career Award for his work in self-assembled stimuli-responsive nanomaterials. He was the winner of the 2010 E. Robert Kent Outstanding Teaching Award from the Clark School of Engineering at UMD."
 },
 {
 "name": "Mayur Narayan, MD, MBA",
 "affiliation": "Rutgers University",
+"affiliation_link": "https://rwjms.rutgers.edu/people/mayur-narayan",
 "role": "Medical Advisor",
-"avatar": 'resources/images/Mayur.jpeg',
-"linkedin": 'https://www.linkedin.com/in/mayur-narayan-md-mph-mba-mhpe-facs-fccm-fics-fact-faim-mamse-661a709/'
+"photo": 'resources/images/Mayur.jpeg',
+"linkedin": 'https://www.linkedin.com/in/mayur-narayan-md-mph-mba-mhpe-facs-fccm-fics-fact-faim-mamse-661a709/',
+"description": "Dr. Mayur Narayan is Chair of Surgery at RJW Barnabas Health in New Brunswick, NJ. He is a high-volume anastomosis surgeon, and is considered a clinical thought leader in the space. He has authored over 50 technical papers in peer reviewed journals, with over 500 citations and was one of the pioneers in the development of the fibrin sealant bandage during his time as a US Army doctor. Mayur is also an MBA with Board Advisement experience at innovative, established medical device companies, such as Z-Medica and Medcura."
 },
 {
 "name": "Tricia Kontoudis",
 "affiliation": "",
+"affiliation_link":"https://www.bizapedia.com/md/kontoudis-regulatory-consulting-llc.html",
 "role": "Regulatory Advisor",
-"avatar": 'resources/images/Tricia.jpeg',
-"linkedin": 'https://www.linkedin.com/in/tricia-kontoudis-4481731a/'
+"photo": 'resources/images/Tricia.jpeg',
+"linkedin": 'https://www.linkedin.com/in/tricia-kontoudis-4481731a/',
+"description": "Tricia has worked in medical devices (both Class II and Class III), regulatory affairs, and manufacturing for more than 15 years. Most recently, she has acted as Senior VP of regulatory affairs at Stryker in their spinal devices group. Before that she was at MCRA, which is one of the top medical device regulatory advisement firms in the US. Patricia routinely assists clients in the preparation of regulatory submissions, including premarket notifications, premarket approval applications, investigational device exemption submissions, investigational new drug applications, and biologics license applications. She also assists in the review of validation protocols, standard operating procedures, QSR compliance documentation, supplier audits, and facility audits."
 }
 ] %}
-{% block title %}Team{% endblock %}
+{% block title %}About Us{% endblock %}
 {% block content %}
-<h1 class="py-10 text-3xl font-bold top-header h2-color">Founders</h1>
-
-<div class="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-  {% for team_member in team %}
-    {% include 'team_member.html' %}
-    {# {% if not loop.last %} #}
-    {#   <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"> #}
-    {# {% endif %} #}
-  {% endfor %}
-  </div>
+ <main>
+    <!-- ABOUT US SECTION 01 - Our Company -->
+    <section class="section-standard">
+        <div class="container-about-about-us">
+            <div class="grid-item-about-about-01">
+                <h1>GELECTRIC MEDICAL</h1>
+            </div>
+            <div class="grid-item-about-about-02">
+                <p>Our company specializes in an innovative electrical adhesive gel patch.  This reversibly adhesive patch adheres securely to tissue surfaces, allowing targeted treatment where standard sutures fail. Through the phenomena of electroadhesion, our adhesive gel patch has the potential to revolutionize tissue repairs.</p>
+            </div>
+            <div class="grid-item-about-about-03"></div>
+        </div>
+    </section>
+    <!-- ABOUT US SECTION 02 - Transforming -->
+        <section class="section-standard">
+            <div class="container-about-transforming">
+            <div class="grid-item-about-transform-01">
+                <h2>TRANSFORMING SURGICAL TECHNIQUES</h2>  
+            </div>
+            <div class="grid-item-about-transform-02">
+                <p>Gelectric Medical's approach is simple yet revolutionary. Our adhesive gel patch provides secure adhesion to tissue surfaces via application of an electric field, enabling targeted treatment in areas where traditional sutures may not suffice. The adhesive properties can be reversed by changing the polarity of the electrical field.</p>
+            </div>
+            <div class="grid-item-about-transform-03"></div>
+            </div>
+        </section>
+    <!-- ABOUT US SECTION 03 - Founders Paragraph -->
+	<section id="founders-paragraph">
+          <p>FOUNDERS</p>
+	</section>
+	{% for team_member in team %}
+	  {% include 'team_member.html' %}
+	{% endfor %}
+	<!-- ABOUT US SECTION 07 - Section Advisors title  -->
+	<section id="founders-paragraph">
+          <p>ADVISORS</p>
+	</section>
+	{% for advisor in advisors %}
+	  {% include 'advisor.html' %}
+	{% endfor %}
 </div>
-
-<h1 class="py-10 text-3xl font-bold top-header h2-color">Advisors</h1>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-  {% for advisor in advisors %}
-    {% include 'advisor.html' %}
-  {% endfor %}
-</div>
+</main>
 {% endblock %}
