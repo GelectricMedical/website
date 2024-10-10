@@ -1,4683 +1,3474 @@
-        /* GELECTRIC CSS 31 AGO 2024 */
-
-        html, body {
-            max-width: 100%;
-            overflow-x: hidden; /* Evita el desplazamiento horizontal */
-        }
-
-        *, ::before,*::after{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body, html {
-            margin: 0;
-            padding: 0;
-            overflow-x: hidden; /* Previene desbordamiento horizontal */
-        }
-
-        body {
-            font-family: 'Saira', sans-serif;
-            font-weight: 300;
-            font-size: 1em;
-            line-height: 1.6em;
-            background-color: white;
-            color: #141819;
-        }
-
-        /* unvisited link */
-        a:link {
-          color: #43597D;
-        }
-
-        /* visited link */
-        a:visited {
-          color: #696969;
-        }
-
-        /* mouse over link */
-        a:hover {
-          color: #074A4C;
-        }
-
-        /* selected link */
-        a:active {
-          color: darkblue;
-        }
-
-        .section-standard ul {
-            margin-left: 16px;
-        }
-
-        /* 01 WRAPPER HEADER DESKTOP */
-
-        .wrapper-header {
-            width: 74%;
-            display: flex;
-            align-items: center;
-            margin: 0 auto;
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
-
-        header .logo img {
-            height: 80px;
-        }
-
-        /* 01 NAV WRAPPER DESKTOP */
-        .nav-wrapper {
-            position: relative;
-            }
-
-        .navigation-wrapper-pro {
-            height: 100%;
-            width: 80%;
-        }
-
-        .menu {
-            display: flex;
-            list-style: none;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            justify-content: flex-end;
-        }
-
-
-        nav .menu li {
-            min-width: 100px;
-            text-align: center;
-        }
-
-
-        nav .menu li a {
-            text-decoration: none;
-            transition: background-color 0.3s;
-        }
-
-        nav .menu li a:hover {
-            color: #43597D;
-            font-weight: 500;
-        }
-
-        .current {
-            font-weight: 600;
-        }
-
-
-        nav .menu-icon {
-            display: none;
-            flex-direction: column;
-            cursor: pointer;
-        }
-
-        nav .menu-icon .bar {
-            width: 25px;
-            height: 3px;
-            background: linear-gradient(90deg, rgba(28,81,83,1) 0%, rgba(62,181,185,1) 100%);
-            margin: 4px 0;
-        }
-
-
-        h1, h2, h3, h4, h5, h6 {
-            font-family: 'Maven Pro', sans-serif;
-            font-weight: 400; 
-            color: #097B76;
-            display: contents;
-
-        }
-
-
-        h1 {
-
-            font-size: 2.2em;
-            line-height: 1.1em;
-        }
-
-        h2 {
-            font-size: 2.2em;
-            line-height: 1.2em;
-        }
-
-        h3 {
-            font-size: 2em;
-            line-height: 1.2em;
-
-        }
-
-        strong {
-            font-weight: 600;
-        }
-
-
-        #toggleEnlace, #toggleEnlace-2, #toggleEnlace-3 {
-            cursor: pointer; /* Hace que el puntero sea una mano, como en un enlace normal */
-        }
-
-
-
-        .section-standard {
-            width: 74%;
-            margin: 0 auto; /* Margen superior e inferior de 2rem y centrado horizontal */
-            padding-bottom: 60px;
-        }
-
-
-
-
-        .section-dark-green {
-            width: 74%;
-            min-height: 480px;
-            color: black;
-            background-color: #43597D;
-            margin: 0rem auto; /* Margen superior e inferior de 2rem y centrado horizontal */
-            margin-bottom: 60px;
-        }
-
-        .section-advisors {
-            width: 74%;
-            margin: 0rem auto; /* Margen superior e inferior de 2rem y centrado horizontal */
-        }
-
-        /* HOME PAGE DESKTOP */
-
-        .bread-crumbs {
-            color: #0962F6;
-        }
-
-
-        /* Home SECTION 01 - Banner Surgeons Desktop */
-
-        .section-banner-surgeons {
-            width: 74%;
-            min-height: 600px;
-            background-color: #43597D;
-            margin: 0 auto; /* Margen superior e inferior de 2rem y centrado horizontal */
-            margin-top: 10px;
-            background-image: url('../images/surgi.jpg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            border-radius: 18px;
-            margin-bottom: 60px;
-        }
-
-            .color-white {
-                color: white;
-                font-size: 2.2em;
-            }
-
-            .grand-title {
-                font-size: 2.2em;
-            }
-
-        /* Home 02 - Innovative electrical adhesive gel patch Desktop */
-        .container-pro-innovative {
-            display: grid;
-            grid-template-columns: 6fr 6fr;
-            grid-template-rows: 1fr 2fr 9fr;
-            column-gap: 60px;
-            row-gap: 10px;
-            background-image: url('../images/back-dots-defined.png');
-            background-size: contain;
-            background-position: left top;
-            background-repeat: no-repeat;
-            padding-top: 30px;
-            padding-left: 30px;
-        }
-
-        .grid-item-01 {
-            grid-column: 1 / 3; 
-        }
-
-        .grid-item-02 {
-            grid-column: 1 / 3;
-        }
-
-        .grid-item-03 {
-            grid-column: 1 / 2;
-            padding-top: 10px;
-            font-size: 108%;
-            line-height: 1.5em;
-            text-align: justify;
-        }
-
-        .grid-item-04 {
-            grid-column: 2 / 3;
-        }
-
-        .grid-item-05 {
-          grid-column-start: 1;
-          grid-column-end: 3;
-        }
-
-
-        .grid-item-05 {
-          grid-column-start: 1;
-          grid-column-end: 3;
-        }
-
-        /* Home SECTION 03 - Transforming Surgical Techniques Desktop */
-
-        .container-pro-transforming {
-            display: grid;
-            grid-template-columns: 8fr 5fr;
-            grid-template-rows: 1fr 6fr;
-            column-gap: 60px;
-            row-gap: 30px;
-            background-image: url('../images/back-dots-defined.png');
-            background-size: contain;
-            background-position: left top;
-            background-repeat: no-repeat;
-            padding-top: 30px;
-            padding-left: 30px;
-        }
-
-        .grid-item-01-transforming {
-            grid-column: 1 / 3; 
-            grid-row: 1 / 2;    
-        }
-
-        .grid-item-02-transforming {
-            grid-column: 1 / 2; 
-            grid-row: 2 / 3;  
-            background-image: url('../images/cicle-pro.png');
-            background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
-            background-position: center; /* Centra la imagen dentro del contenedor */
-            background-repeat: no-repeat; /* Evita que la imagen se repita */
-            width: 100%;
-            height: 400px;
-            border-radius: 12px;
-        }
-
-        .grid-item-03-transforming {
-            grid-column: 2 / 3;
-            grid-row: 2 / 3;
-            font-size: 104%;
-            line-height: 1.5em;
-            text-align: justify;
-        }
-
-        .grid-item-04-transforming {
-            grid-column: 2 / 3; /* O la fracción deseada */
-            grid-row: 2 / 3;    /* O la fracción deseada */    
-            margin-top: 290px;
-        }
-
-        /* Home SECTION 04 - Reimagining tissue reppair */
-
-        .container-pro-reimagining {
-            display: grid;
-            grid-template-columns: 4fr 6fr;
-            grid-template-rows: 1fr 6fr;
-            column-gap: 60px;
-            row-gap: 30px;
-            background-image: url('../images/back-dots-defined.png');
-            background-size: contain;
-            background-position: left top;
-            background-repeat: no-repeat;
-            padding-top: 30px;
-            padding-left: 30px;
-        }
-
-        .grid-item-01-reimagining {
-            grid-column: 1 / 3; 
-            grid-row: 1 / 2;  
-        }
-
-        .grid-item-01-reimagining h1 {
-            color: white;
-        }
-
-        .grid-item-02-reimagining {
-            grid-column: 1 / 2;
-            grid-row: 2 / 3;
-            font-size: 130%;
-            line-height: 1.5em;
-            text-align: justify;
-        }
-
-        .grid-item-03-reimagining {
-            grid-column: 1 / 2; /* O la fracción deseada */
-            grid-row: 2 / 3;    /* O la fracción deseada */
-            margin-top: 180px;
-        }
-
-        .grid-item-04-reimagining {
-            grid-column: 2 / 3; /* O la fracción deseada */
-            grid-row: 2 / 3;    /* O la fracción deseada */
-            background-image: url('../images/tejido.jpg');
-            background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
-            background-position: center; /* Centra la imagen dentro del contenedor */
-            background-repeat: no-repeat; /* Evita que la imagen se repita */
-            width: 100%;
-            height: 320px;
-            border-radius: 12px;
-        }
-
-        /* Home SECTION 05 - Container Texture */
-
-        .section-white {
-            width: 74%;
-            margin: 0 auto; /* Margen superior e inferior de 2rem y centrado horizontal */
-        }
-
-        .container-texture {
-            width: 100%;
-            height: 125px;
-            background-image: url('../images/back-textu.png');
-            background-size: cover;
-            background-position: left;
-            background-repeat: no-repeat;
-        }
-
-        /* Home SECTION 06 - MEET THE TEAM */
-        .section-team {
-            width: 74%;
-            color: white;
-            background-color: #43597D;
-            margin: 0rem auto; /* Margen superior e inferior de 2rem y centrado horizontal */
-            margin-bottom: 60px;
-        }
-
-        .container-pro-team {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 6fr 1fr;
-            column-gap: 10px;
-            row-gap: 10px;
-            color: #00A099;
-        }
-
-        /* Container Layout Grid DESKTOP */
-        .container-pro-team-general {
-            display: grid;
-            grid-template-columns: 2fr 4fr;
-            grid-template-rows: 1fr 4fr;
-            padding: 30px;
-            column-gap: 20px;
-            min-height: 460px;
-            padding-top: 40px;
-        }
-
-        .grid-item-pro-team-general-01 {
-            grid-column: 1 / 3; 
-            grid-row: 1 / 2;  
-        }
-
-        .grid-item-pro-team-general-02 {
-            grid-column: 1 / 2; 
-            grid-row: 2 / 3;   
-            text-align: justify;
-            font-size: 114%;
-        }
-
-        .grid-item-pro-team-general-03 {
-            grid-column: 2 / 3; 
-            grid-row: 2 / 3;    
-        }
-
-        .grid-item-team-01 {
-            grid-column: 1 / 2; 
-            grid-row: 1 / 2;    
-            background-image: url('../images/leah.jpg');
-            background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
-            background-position: center; /* Centra la imagen dentro del contenedor */
-            background-repeat: no-repeat; /* Evita que la imagen se repita */
-            height: 240px;
-            border-radius: 12px;
-        }
-
-        .grid-item-team-02 {
-            grid-column: 2 / 3; 
-            grid-row: 1 / 2;    
-            background-image: url('../images/matt.jpg');
-            background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
-            background-position: center; /* Centra la imagen dentro del contenedor */
-            background-repeat: no-repeat; /* Evita que la imagen se repita */
-            height: 240px;
-            border-radius: 12px;
-        }
-
-        .grid-item-team-03 {
-            grid-column: 3 / 4; 
-            grid-row: 1 / 2;    
-            background-image: url('../images/james.png');
-            background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
-            background-position: center; /* Centra la imagen dentro del contenedor */
-            background-repeat: no-repeat; /* Evita que la imagen se repita */
-            height: 240px;
-            border-radius: 12px;
-        }
-
-        .grid-item-team-04 {
-            grid-column: 1 / 2; 
-            grid-row: 2 / 3;
-            text-align: center;
-        }
-
-        .grid-item-team-05 {
-            grid-column: 2 / 3; 
-            grid-row: 2 / 3;
-            text-align: center;
-        }
-
-        .grid-item-team-06 {
-            grid-column: 3 / 4; 
-            grid-row: 2 / 3;
-            text-align: center;
-        }
-
-        /* Home SECTION 07 - ADVISORS */
-
-        .container-pro-advisors {
-            display: grid;
-            grid-template-columns: 4fr 9fr;
-            grid-template-rows: 1fr 8fr;
-            column-gap: 60px;
-            row-gap: 30px;
-            background-image: url('../images/back-dots-defined.png');
-            background-size: contain;
-            background-position: left top;
-            background-repeat: no-repeat;
-            padding-top: 30px;
-            padding-left: 30px;
-        }
-
-        .grid-item-01-advisors {
-            grid-column: 1 / 2; 
-            grid-row: 1 / 2;    
-        }
-
-
-        .grid-item-02-advisors {
-            grid-column: 1 / 2;
-            grid-row: 2 / 3;
-            font-size: 126%;
-            line-height: 1.5em;
-            text-align: justify;
-        }
-
-        .grid-item-03-advisors {
-            display: grid;
-            grid-column: 2 / 3; 
-            grid-row: 2 / 3;    
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            grid-template-rows: 2fr 0fr 0fr;
-            column-gap: 10px;
-            row-gap: 10px;
-
-        }
-
-        .grid-item-04-advisors {
-            grid-column: 1 / 2; 
-            grid-row: 2 / 3;    
-            margin-top: 120px;
-        }
-
-        .grid-item-advisors-card-01 {
-            color: #000; /* Color de texto negro */
-            border-radius: 12px; /* Bordes curvos */
-            height: 240px;
-            grid-column: 1 / 2; 
-            grid-row: 1 / 2; 
-            background-image: url('../images/lou.jpeg');
-            background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
-            background-position: center; /* Centra la imagen dentro del contenedor */
-            background-repeat: no-repeat; /* Evita que la imagen se repita */
-        }
-
-        .grid-item-advisors-card-02 {
-            color: #000; /* Color de texto negro */
-            border-radius: 12px; /* Bordes curvos */
-            height: 240px;
-            grid-column: 2/ 3; 
-            grid-row: 1 / 2; 
-            background-image: url('../images/srini.jpeg');
-            background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
-            background-position: center; /* Centra la imagen dentro del contenedor */
-            background-repeat: no-repeat; /* Evita que la imagen se repita */
-        }
-
-
-        .grid-item-advisors-card-03 {
-            color: #000; /* Color de texto negro */
-            border-radius: 12px; /* Bordes curvos */
-            height: 240px;
-            grid-column: 3 / 4; 
-            grid-row: 1 / 2; 
-            background-image: url('../images/mayur.jpeg');
-            background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
-            background-position: center; /* Centra la imagen dentro del contenedor */
-            background-repeat: no-repeat; /* Evita que la imagen se repita */
-        }
-
-
-        .grid-item-advisors-card-04 {
-            color: #000; /* Color de texto negro */
-            border-radius: 12px; /* Bordes curvos */
-            height: 240px;
-            grid-column: 4 / 5; 
-            grid-row: 1 / 2; 
-            background-image: url('../images/tricia.jpeg');
-            background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
-            background-position: center; /* Centra la imagen dentro del contenedor */
-            background-repeat: no-repeat; /* Evita que la imagen se repita */
-        }
-
-
-        .grid-item-advisors-card-05 {
-            grid-column: 1 / 2; 
-            grid-row: 2 / 3; 
-            text-align: center;
-        }
-
-
-        .grid-item-advisors-card-06 {
-            grid-column: 2 / 3; 
-            grid-row: 2 / 3; 
-            text-align: center;
-        }
-
-        .grid-item-advisors-card-07 {
-            grid-column: 3 / 4; 
-            grid-row: 2 / 3; 
-            text-align: center;
-        }
-
-        .grid-item-advisors-card-08 {
-            grid-column: 4 / 5; 
-            grid-row: 2 / 3; 
-            text-align: center;
-        }
-
-
-
-        .grid-item-advisors-card-09 {
-            grid-column: 1 / 2; 
-            grid-row: 3 / 4; 
-            text-align: center;
-            font-size: 80%;
-            line-height: 1.5em;
-        }
-
-        .grid-item-advisors-card-10 {
-            grid-column: 2 / 3; 
-            grid-row: 3 / 4; 
-            text-align: center;
-            font-size: 80%;
-            line-height: 1.5em;
-        }
-
-
-        .grid-item-advisors-card-11 {
-            grid-column: 3 / 4; 
-            grid-row: 3 / 4;
-            text-align: center;
-            font-size: 80%;
-            line-height: 1.5em;
-        }
-
-        .grid-item-advisors-card-12 {
-            grid-column: 4 / 5; 
-            grid-row: 3 / 4; 
-            text-align: center;
-            font-size: 80%;
-            line-height: 1.5em;
-        }
-
-        /* Home SECTION 08 - TEXTURE */
-
-
-        /* Home SECTION 09 - FOOTER DESKTOP */
-
-        .container-pro-footer {
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
-            grid-template-rows: 1fr 4fr 1fr 1fr; 
-            column-gap: 10px;
-            row-gap: 10px;
-            padding: 30px;
-            width: 74%;
-            color: #00A099;
-        }
-
-
-        .grid-item-footer-01, .grid-item-footer-02, .grid-item-footer-03, .grid-item-footer-04, .grid-item-footer-05 {
-            text-align: center; /* Alinea el texto dentro de cada grid item */
-        }
-
-
-        .footer-section {
-            border-radius: 12px;
-            width: 74%;
-            color: #00A099;
-            margin: 2rem auto; /* Margen superior e inferior de 2rem y centrado horizontal */
-            padding: 1rem; /* Espaciado interno de 2rem */
-            display: flex;
-            justify-content: space-between; /* Espacio igual entre los elementos */
-            flex-wrap: wrap; /* Permite que los elementos se envuelvan si el contenedor es demasiado pequeño */
-            margin: 1rem 0; /* Margen superior e inferior */
-            align-items: center;
-            margin: 0 auto;
-            margin-bottom: 30px;
-            vertical-align: top;
-        }
-
-        .grid-item-footer-01 {
-            grid-column: 1 / 2; 
-            grid-row: 2 / 3;  
-        }
-
-        .grid-item-footer-02 {
-            grid-column: 2 / 3; 
-            grid-row: 1 / 2;    
-
-        }
-
-        .grid-item-footer-03 {
-            grid-column: 3 / 4; 
-            grid-row: 1 / 2;
-
-        }
-
-        .grid-item-footer-04 {
-            grid-column: 4 / 5; 
-            grid-row: 1 / 2;    
-        }
-
-        .grid-item-footer-05 {
-            grid-column: 5 / 6; 
-            grid-row: 1 / 2;    
-        }
-
-        .grid-item-footer-06 {
-            grid-column: 1 / 2; 
-            grid-row: 2 / 3;    
-            align-content: center; 
-        }
-
-
-        .grid-item-footer-07 {
-            grid-column: 2 / 3; 
-            grid-row: 2 / 3;  
-            text-align: center; 
-        }
-
-
-        .grid-item-footer-08 {
-            grid-column: 3 / 4; 
-            grid-row: 2 / 3;  
-            text-align: center;   
-        }
-
-        .grid-item-footer-09 {
-            grid-column: 4 / 5; 
-            grid-row: 2 / 3;  
-            text-align: center; 
-        }
-
-        .grid-item-footer-10 {
-            grid-column: 5 / 6; 
-            grid-row: 2 / 3;  
-            text-align: center;   
-        }
-
-        .grid-item-footer-11 {
-            grid-column: 1 / 6; 
-            grid-row: 3 / 4;    
-        }
-
-        .grid-item-footer-12 {
-            grid-column: 1 / 6; 
-            grid-row: 4 / 5; 
-            text-align: center;    
-        }
-
-        .logo-footer-img {
-            height: 50px;
-            background-size: cover;
-            background-position: left;
-            background-repeat: no-repeat;
-
-        }
-
-        /* ABOUT US PAGE - STYLES DESKTOP SEPT 2024 */
-
-
-        /* ABOUT US SECTION 01 - Our Company Desktop */
-
-        .container-about-about-us {
-            display: grid;
-            grid-template-columns: 4fr 6fr;
-            grid-template-rows: 1fr 8fr;
-            column-gap: 60px;
-            row-gap: 30px;
-            background-image: url('../images/back-dots-defined.png');
-            background-position: left top;
-            background-repeat: no-repeat;
-            padding-top: 30px;
-            padding-left: 30px;
-        }
-
-
-        .grid-item-about-about-01 {
-            grid-column: 1 / 3; 
-            grid-row: 1 / 2;   
-        }
-
-        .grid-item-about-about-02 {
-            grid-column: 1 / 2;
-            grid-row: 2 / 3;
-            font-size: 130%;
-            line-height: 1.5em;
-            text-align: justify;
-        }
-
-
-        .grid-item-about-about-03 {
-            grid-column: 2 / 3; 
-            grid-row: 2 / 3;   
-            background-image: url('../images/04-gelectric-doctora.png');
-            background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
-            background-position: center; /* Centra la imagen dentro del contenedor */
-            background-repeat: no-repeat; /* Evita que la imagen se repita */
-            height: 340px;
-            border-radius: 12px;
-
-        }
-
-        /* ABOUT US SECTION 02 - Transforming DESKTOP */
-
-        .container-about-transforming {
-            display: grid;
-            grid-template-columns: 5fr 5fr;
-            grid-template-rows: 1fr 8fr;
-            column-gap: 60px;
-            row-gap: 30px;
-            background-image: url('../images/back-dots-defined.png');
-            background-size: contain;
-            background-position: left top;
-            background-repeat: no-repeat;
-            padding-top: 30px;
-            padding-left: 30px;
-        }
-
-        .grid-item-about-transform-01 {
-            grid-column: 1 / 3; 
-            grid-row: 1 / 2;   
-        }
-
-
-        .grid-item-about-transform-02 {
-            grid-column: 2 / 3;
-            grid-row: 2 / 3;
-            font-size: 130%;
-            line-height: 1.5em;
-            text-align: justify;
-        }
-
-        .grid-item-about-transform-03 {
-            grid-column: 1 / 2; 
-            grid-row: 2 / 3;   
-            background-image: url('../images/doctor-clock.jpg');
-            background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
-            background-position: center; /* Centra la imagen dentro del contenedor */
-            background-repeat: no-repeat; /* Evita que la imagen se repita */
-            height: 330px;
-            border-radius: 12px;
-        }
-
-        /* ABOUT US SECTION 03 - FOUNDERS TITLE DESKTOP */
-
-        /* ABOUT US  */
-
-	.container-about {
-            display: grid;
-            grid-template-columns: 1fr 3fr;
-            grid-template-rows: 0fr 4fr;
-            row-gap: 30px;
-            background-image: url('../images/back-dots-defined.png');
-            background-size: contain;
-            background-position: left top;
-            background-repeat: no-repeat;
-            padding-left: 30px;
-            padding-top: 30px;
-        }
-
-       	.container-about-01 {
-            display: grid;
-            grid-template-columns: 1fr 3fr;
-            grid-template-rows: 0fr 4fr;
-            row-gap: 30px;
-            background-image: url('../images/back-dots-defined.png');
-            background-size: contain;
-            background-position: left top;
-            background-repeat: no-repeat;
-            padding-left: 30px;
-            padding-top: 30px;
-        }
-
-	.grid-item-about-01 {
-	  grid-column: 1 / 3;
-	  grid-row: 1 / 2;
-	}
-
-	.grid-item-about-01 h2 {
-	  text-transform: uppercase;
-	}
-	
+/* GELECTRIC CSS 31 AGO 2024 */
+html,body {
+	max-width:100%;
+	overflow-x:hidden;
+	/* Evita el desplazamiento horizontal */
+}
+*,::before,*::after {
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+body,html {
+	margin:0;
+	padding:0;
+	overflow-x:hidden;
+	/* Previene desbordamiento horizontal */
+}
+body {
+	font-family:'Saira',sans-serif;
+	font-weight:300;
+	font-size:1em;
+	line-height:1.6em;
+	background-color:white;
+	color: #141819;
+}
+/* unvisited link */
+a:link {
+	color: #43597D;
+}
+/* visited link */
+a:visited {
+	color: #696969;
+}
+/* mouse over link */
+a:hover {
+	color: #074A4C;
+}
+/* selected link */
+a:active {
+	color:darkblue;
+}
+.section-standard ul {
+	margin-left: 16px;
+}
+/* 01 WRAPPER HEADER DESKTOP */
+.wrapper-header {
+	width:74%;
+	display:flex;
+	align-items:center;
+	margin:0 auto;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+header .logo img {
+	height: 80px;
+}
+/* 01 NAV WRAPPER DESKTOP */
+.nav-wrapper {
+	position:relative;
+}
+.navigation-wrapper-pro {
+	height:100%;
+	width:80%;
+}
+.menu {
+	display:flex;
+	list-style:none;
+	padding-top:10px;
+	padding-bottom:10px;
+	justify-content:flex-end;
+}
+nav .menu li {
+	min-width:100px;
+	text-align:center;
+}
+nav .menu li a {
+	text-decoration:none;
+	transition:background-color 0.3s;
+}
+nav .menu li a:hover {
+	color:#43597D;
+	font-weight:500;
+}
+.current {
+	font-weight:600;
+}
+nav .menu-icon {
+	display:none;
+	flex-direction:column;
+	cursor:pointer;
+}
+nav .menu-icon .bar {
+	width:25px;
+	height:3px;
+	background:linear-gradient(90deg,rgba(28,81,83,1) 0%,rgba(62,181,185,1) 100%);
+	margin:4px 0;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-family:'Maven Pro',sans-serif;
+	font-weight:400;
+	color:#097B76;
+	display:contents;
+}
+h1 {
+	font-size:2.2em;
+	line-height:1.1em;
+}
+h2 {
+	font-size:2.2em;
+	line-height:1.2em;
+}
+h3 {
+	font-size:2em;
+	line-height:1.2em;
+}
+strong {
+	font-weight:600;
+}
+#toggleEnlace,#toggleEnlace-2,#toggleEnlace-3 {
+	cursor: pointer;
+	/* Hace que el puntero sea una mano,como en un enlace normal */
+}
+.section-standard {
+	width:74%;
+	margin:0 auto;
+	/* Margen superior e inferior de 2rem y centrado horizontal */
+	padding-bottom:60px;
+}
+.section-dark-green {
+	width:74%;
+	min-height:480px;
+	color:black;
+	background-color:#43597D;
+	margin:0rem auto;
+	/* Margen superior e inferior de 2rem y centrado horizontal */
+	margin-bottom:60px;
+}
+.section-advisors {
+	width:74%;
+	margin: 0rem auto;
+	/* Margen superior e inferior de 2rem y centrado horizontal */
+}
+/* HOME PAGE DESKTOP */
+.bread-crumbs {
+	color: #0962F6;
+}
+/* Home SECTION 01 - Banner Surgeons Desktop */
+.section-banner-surgeons {
+	width:74%;
+	min-height:600px;
+	background-color:#43597D;
+	margin:0 auto;
+	/* Margen superior e inferior de 2rem y centrado horizontal */
+	margin-top:10px;
+	background-image:url('../images/surgi.jpg');
+	background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;
+	border-radius:18px;
+	margin-bottom:60px;
+}
+.color-white {
+	color:white;
+	font-size:2.2em;
+}
+.grand-title {
+	font-size: 2.2em;
+}
+/* Home 02 - Innovative electrical adhesive gel patch Desktop */
+.container-pro-innovative {
+	display:grid;
+	grid-template-columns:6fr 6fr;
+	grid-template-rows:1fr 2fr 9fr;
+	column-gap:60px;
+	row-gap:10px;
+	background-image:url('../images/back-dots-defined.png');
+	background-size:contain;
+	background-position:left top;
+	background-repeat:no-repeat;
+	padding-top:30px;
+	padding-left:30px;
+}
+.grid-item-01 {
+	grid-column:1 / 3;
+}
+.grid-item-02 {
+	grid-column:1 / 3;
+}
+.grid-item-03 {
+	grid-column:1 / 2;
+	padding-top:10px;
+	font-size:108%;
+	line-height:1.5em;
+	text-align:justify;
+}
+.grid-item-04 {
+	grid-column:2 / 3;
+}
+.grid-item-05 {
+	grid-column-start:1;
+	grid-column-end:3;
+}
+.grid-item-05 {
+	grid-column-start:1;
+	grid-column-end: 3;
+}
+/* Home SECTION 03 - Transforming Surgical Techniques Desktop */
+.container-pro-transforming {
+	display:grid;
+	grid-template-columns:8fr 5fr;
+	grid-template-rows:1fr 6fr;
+	column-gap:60px;
+	row-gap:30px;
+	background-image:url('../images/back-dots-defined.png');
+	background-size:contain;
+	background-position:left top;
+	background-repeat:no-repeat;
+	padding-top:30px;
+	padding-left:30px;
+}
+.grid-item-01-transforming {
+	grid-column:1 / 3;
+	grid-row: 1 / 2;
+}
+.grid-item-02-transforming {
+	grid-column:1 / 2;
+	grid-row:2 / 3;
+	background-image:url('../images/cicle-pro.png');
+	background-size:cover;
+	/* Ajusta la imagen para cubrir todo el contenedor */
+	background-position:center;
+	/* Centra la imagen dentro del contenedor */
+	background-repeat:no-repeat;
+	/* Evita que la imagen se repita */
+	width:100%;
+	height:400px;
+	border-radius:12px;
+}
+.grid-item-03-transforming {
+	grid-column:2 / 3;
+	grid-row:2 / 3;
+	font-size:104%;
+	line-height:1.5em;
+	text-align: justify;
+}
+.grid-item-04-transforming {
+	grid-column:2 / 3;
+	/* O la fracción deseada */
+	grid-row:2 / 3;
+	/* O la fracción deseada */ margin-top:290px;
+}
+/* Home SECTION 04 - Reimagining tissue reppair */
+.container-pro-reimagining {
+	display:grid;
+	grid-template-columns:4fr 6fr;
+	grid-template-rows:1fr 6fr;
+	column-gap:60px;
+	row-gap:30px;
+	background-image:url('../images/back-dots-defined.png');
+	background-size:contain;
+	background-position:left top;
+	background-repeat:no-repeat;
+	padding-top:30px;
+	padding-left:30px;
+}
+.grid-item-01-reimagining {
+	grid-column:1 / 3;
+	grid-row:1 / 2;
+}
+.grid-item-01-reimagining h1 {
+	color:white;
+}
+.grid-item-02-reimagining {
+	grid-column:1 / 2;
+	grid-row:2 / 3;
+	font-size:130%;
+	line-height:1.5em;
+	text-align: justify;
+}
+.grid-item-03-reimagining {
+	grid-column:1 / 2;
+	/* O la fracción deseada */
+	grid-row:2 / 3;
+	/* O la fracción deseada */
+	margin-top:180px;
+}
+.grid-item-04-reimagining {
+	grid-column:2 / 3;
+	/* O la fracción deseada */
+	grid-row:2 / 3;
+	/* O la fracción deseada */
+	background-image:url('../images/tejido.jpg');
+	background-size:cover;
+	/* Ajusta la imagen para cubrir todo el contenedor */
+	background-position:center;
+	/* Centra la imagen dentro del contenedor */
+	background-repeat:no-repeat;
+	/* Evita que la imagen se repita */
+	width:100%;
+	height:320px;
+	border-radius:12px;
+}
+/* Home SECTION 05 - Container Texture */
+.section-white {
+	width:74%;
+	margin:0 auto;
+	/* Margen superior e inferior de 2rem y centrado horizontal */
+}
+.container-texture {
+	width:100%;
+	height:125px;
+	background-image:url('../images/back-textu.png');
+	background-size:cover;
+	background-position:left;
+	background-repeat: no-repeat;
+}
+/* Home SECTION 06 - MEET THE TEAM */
+.section-team {
+	width:74%;
+	color:white;
+	background-color:#43597D;
+	margin:0rem auto;
+	/* Margen superior e inferior de 2rem y centrado horizontal */
+	margin-bottom:60px;
+}
+.container-pro-team {
+	display:grid;
+	grid-template-columns:1fr 1fr 1fr;
+	grid-template-rows:6fr 1fr;
+	column-gap:10px;
+	row-gap:10px;
+	color: #00A099;
+}
+/* Container Layout Grid DESKTOP */
+.container-pro-team-general {
+	display:grid;
+	grid-template-columns:2fr 4fr;
+	grid-template-rows:1fr 4fr;
+	padding:30px;
+	column-gap:20px;
+	min-height:460px;
+	padding-top:40px;
+}
+.grid-item-pro-team-general-01 {
+	grid-column:1 / 3;
+	grid-row:1 / 2;
+}
+.grid-item-pro-team-general-02 {
+	grid-column:1 / 2;
+	grid-row:2 / 3;
+	text-align:justify;
+	font-size:114%;
+}
+.grid-item-pro-team-general-03 {
+	grid-column:2 / 3;
+	grid-row: 2 / 3;
+}
+.grid-item-team-01 {
+	grid-column:1 / 2;
+	grid-row:1 / 2;
+	background-image:url('../images/leah.jpg');
+	background-size:cover;
+	/* Ajusta la imagen para cubrir todo el contenedor */
+	background-position:center;
+	/* Centra la imagen dentro del contenedor */
+	background-repeat:no-repeat;
+	/* Evita que la imagen se repita */
+	height:240px;
+	border-radius:12px;
+}
+.grid-item-team-02 {
+	grid-column:2 / 3;
+	grid-row:1 / 2;
+	background-image:url('../images/matt.jpg');
+	background-size:cover;
+	/* Ajusta la imagen para cubrir todo el contenedor */
+	background-position:center;
+	/* Centra la imagen dentro del contenedor */
+	background-repeat:no-repeat;
+	/* Evita que la imagen se repita */
+	height:240px;
+	border-radius:12px;
+}
+.grid-item-team-03 {
+	grid-column:3 / 4;
+	grid-row:1 / 2;
+	background-image:url('../images/james.png');
+	background-size:cover;
+	/* Ajusta la imagen para cubrir todo el contenedor */
+	background-position:center;
+	/* Centra la imagen dentro del contenedor */
+	background-repeat:no-repeat;
+	/* Evita que la imagen se repita */
+	height:240px;
+	border-radius:12px;
+}
+.grid-item-team-04 {
+	grid-column:1 / 2;
+	grid-row:2 / 3;
+	text-align:center;
+}
+.grid-item-team-05 {
+	grid-column:2 / 3;
+	grid-row:2 / 3;
+	text-align:center;
+}
+.grid-item-team-06 {
+	grid-column:3 / 4;
+	grid-row:2 / 3;
+	text-align: center;
+}
+/* Home SECTION 07 - ADVISORS */
+.container-pro-advisors {
+	display:grid;
+	grid-template-columns:4fr 9fr;
+	grid-template-rows:1fr 8fr;
+	column-gap:60px;
+	row-gap:30px;
+	background-image:url('../images/back-dots-defined.png');
+	background-size:contain;
+	background-position:left top;
+	background-repeat:no-repeat;
+	padding-top:30px;
+	padding-left:30px;
+}
+.grid-item-01-advisors {
+	grid-column:1 / 2;
+	grid-row:1 / 2;
+}
+.grid-item-02-advisors {
+	grid-column:1 / 2;
+	grid-row:2 / 3;
+	font-size:126%;
+	line-height:1.5em;
+	text-align:justify;
+}
+.grid-item-03-advisors {
+	display:grid;
+	grid-column:2 / 3;
+	grid-row:2 / 3;
+	grid-template-columns:1fr 1fr 1fr 1fr;
+	grid-template-rows:2fr 0fr 0fr;
+	column-gap:10px;
+	row-gap:10px;
+}
+.grid-item-04-advisors {
+	grid-column:1 / 2;
+	grid-row:2 / 3;
+	margin-top: 120px;
+}
+.grid-item-advisors-card-01 {
+	color:#000;
+	/* Color de texto negro */
+	border-radius:12px;
+	/* Bordes curvos */
+	height:240px;
+	grid-column:1 / 2;
+	grid-row:1 / 2;
+	background-image:url('../images/lou.jpeg');
+	background-size:cover;
+	/* Ajusta la imagen para cubrir todo el contenedor */
+	background-position:center;
+	/* Centra la imagen dentro del contenedor */
+	background-repeat:no-repeat;
+	/* Evita que la imagen se repita */
+}
+.grid-item-advisors-card-02 {
+	color:#000;
+	/* Color de texto negro */
+	border-radius:12px;
+	/* Bordes curvos */
+	height:240px;
+	grid-column:2/ 3;
+	grid-row:1 / 2;
+	background-image:url('../images/srini.jpeg');
+	background-size:cover;
+	/* Ajusta la imagen para cubrir todo el contenedor */
+	background-position:center;
+	/* Centra la imagen dentro del contenedor */
+	background-repeat:no-repeat;
+	/* Evita que la imagen se repita */
+}
+.grid-item-advisors-card-03 {
+	color:#000;
+	/* Color de texto negro */
+	border-radius:12px;
+	/* Bordes curvos */
+	height:240px;
+	grid-column:3 / 4;
+	grid-row:1 / 2;
+	background-image:url('../images/mayur.jpeg');
+	background-size:cover;
+	/* Ajusta la imagen para cubrir todo el contenedor */
+	background-position:center;
+	/* Centra la imagen dentro del contenedor */
+	background-repeat:no-repeat;
+	/* Evita que la imagen se repita */
+}
+.grid-item-advisors-card-04 {
+	color:#000;
+	/* Color de texto negro */
+	border-radius:12px;
+	/* Bordes curvos */
+	height:240px;
+	grid-column:4 / 5;
+	grid-row:1 / 2;
+	background-image:url('../images/tricia.jpeg');
+	background-size:cover;
+	/* Ajusta la imagen para cubrir todo el contenedor */
+	background-position:center;
+	/* Centra la imagen dentro del contenedor */
+	background-repeat:no-repeat;
+	/* Evita que la imagen se repita */
+}
+.grid-item-advisors-card-05 {
+	grid-column:1 / 2;
+	grid-row:2 / 3;
+	text-align:center;
+}
+.grid-item-advisors-card-06 {
+	grid-column:2 / 3;
+	grid-row:2 / 3;
+	text-align:center;
+}
+.grid-item-advisors-card-07 {
+	grid-column:3 / 4;
+	grid-row:2 / 3;
+	text-align:center;
+}
+.grid-item-advisors-card-08 {
+	grid-column:4 / 5;
+	grid-row:2 / 3;
+	text-align:center;
+}
+.grid-item-advisors-card-09 {
+	grid-column:1 / 2;
+	grid-row:3 / 4;
+	text-align:center;
+	font-size:80%;
+	line-height:1.5em;
+}
+.grid-item-advisors-card-10 {
+	grid-column:2 / 3;
+	grid-row:3 / 4;
+	text-align:center;
+	font-size:80%;
+	line-height:1.5em;
+}
+.grid-item-advisors-card-11 {
+	grid-column:3 / 4;
+	grid-row:3 / 4;
+	text-align:center;
+	font-size:80%;
+	line-height:1.5em;
+}
+.grid-item-advisors-card-12 {
+	grid-column:4 / 5;
+	grid-row:3 / 4;
+	text-align:center;
+	font-size:80%;
+	line-height: 1.5em;
+}
+/* Home SECTION 08 - TEXTURE */
+/* Home SECTION 09 - FOOTER DESKTOP */
+.container-pro-footer {
+	margin:0 auto;
+	display:grid;
+	grid-template-columns:2fr 1fr 1fr 1fr 1fr;
+	grid-template-rows:1fr 4fr 1fr 1fr;
+	column-gap:10px;
+	row-gap:10px;
+	padding:30px;
+	width:74%;
+	color:#00A099;
+}
+.grid-item-footer-01,.grid-item-footer-02,.grid-item-footer-03,.grid-item-footer-04,.grid-item-footer-05 {
+	text-align: center;
+	/* Alinea el texto dentro de cada grid item */
+}
+.footer-section {
+	border-radius:12px;
+	width:74%;
+	color:#00A099;
+	margin:2rem auto;
+	/* Margen superior e inferior de 2rem y centrado horizontal */
+	padding:1rem;
+	/* Espaciado interno de 2rem */
+	display:flex;
+	justify-content:space-between;
+	/* Espacio igual entre los elementos */
+	flex-wrap:wrap;
+	/* Permite que los elementos se envuelvan si el contenedor es demasiado pequeño */
+	margin:1rem 0;
+	/* Margen superior e inferior */
+	align-items:center;
+	margin:0 auto;
+	margin-bottom:30px;
+	vertical-align:top;
+}
+.grid-item-footer-01 {
+	grid-column:1 / 2;
+	grid-row:2 / 3;
+}
+.grid-item-footer-02 {
+	grid-column:2 / 3;
+	grid-row:1 / 2;
+}
+.grid-item-footer-03 {
+	grid-column:3 / 4;
+	grid-row:1 / 2;
+}
+.grid-item-footer-04 {
+	grid-column:4 / 5;
+	grid-row:1 / 2;
+}
+.grid-item-footer-05 {
+	grid-column:5 / 6;
+	grid-row:1 / 2;
+}
+.grid-item-footer-06 {
+	grid-column:1 / 2;
+	grid-row:2 / 3;
+	align-content:center;
+}
+.grid-item-footer-07 {
+	grid-column:2 / 3;
+	grid-row:2 / 3;
+	text-align:center;
+}
+.grid-item-footer-08 {
+	grid-column:3 / 4;
+	grid-row:2 / 3;
+	text-align:center;
+}
+.grid-item-footer-09 {
+	grid-column:4 / 5;
+	grid-row:2 / 3;
+	text-align:center;
+}
+.grid-item-footer-10 {
+	grid-column:5 / 6;
+	grid-row:2 / 3;
+	text-align:center;
+}
+.grid-item-footer-11 {
+	grid-column:1 / 6;
+	grid-row:3 / 4;
+}
+.grid-item-footer-12 {
+	grid-column:1 / 6;
+	grid-row:4 / 5;
+	text-align:center;
+}
+.logo-footer-img {
+	height:50px;
+	background-size:cover;
+	background-position:left;
+	background-repeat: no-repeat;
+}
+/* ABOUT US PAGE - STYLES DESKTOP SEPT 2024 */
+/* ABOUT US SECTION 01 - Our Company Desktop */
+.container-about-about-us {
+	display:grid;
+	grid-template-columns:4fr 6fr;
+	grid-template-rows:1fr 8fr;
+	column-gap:60px;
+	row-gap:30px;
+	background-image:url('../images/back-dots-defined.png');
+	background-position:left top;
+	background-repeat:no-repeat;
+	padding-top:30px;
+	padding-left:30px;
+}
+.grid-item-about-about-01 {
+	grid-column:1 / 3;
+	grid-row:1 / 2;
+}
+.grid-item-about-about-02 {
+	grid-column:1 / 2;
+	grid-row:2 / 3;
+	font-size:130%;
+	line-height:1.5em;
+	text-align: justify;
+}
+.grid-item-about-about-03 {
+	grid-column:2 / 3;
+	grid-row:2 / 3;
+	background-image:url('../images/04-gelectric-doctora.png');
+	background-size:cover;
+	/* Ajusta la imagen para cubrir todo el contenedor */
+	background-position:center;
+	/* Centra la imagen dentro del contenedor */
+	background-repeat:no-repeat;
+	/* Evita que la imagen se repita */
+	height:340px;
+	border-radius:12px;
+}
+/* ABOUT US SECTION 02 - Transforming DESKTOP */
+.container-about-transforming {
+	display:grid;
+	grid-template-columns:5fr 5fr;
+	grid-template-rows:1fr 8fr;
+	column-gap:60px;
+	row-gap:30px;
+	background-image:url('../images/back-dots-defined.png');
+	background-size:contain;
+	background-position:left top;
+	background-repeat:no-repeat;
+	padding-top:30px;
+	padding-left:30px;
+}
+.grid-item-about-transform-01 {
+	grid-column:1 / 3;
+	grid-row:1 / 2;
+}
+.grid-item-about-transform-02 {
+	grid-column:2 / 3;
+	grid-row:2 / 3;
+	font-size:130%;
+	line-height:1.5em;
+	text-align: justify;
+}
+.grid-item-about-transform-03 {
+	grid-column:1 / 2;
+	grid-row:2 / 3;
+	background-image:url('../images/doctor-clock.jpg');
+	background-size:cover;
+	/* Ajusta la imagen para cubrir todo el contenedor */
+	background-position:center;
+	/* Centra la imagen dentro del contenedor */
+	background-repeat:no-repeat;
+	/* Evita que la imagen se repita */
+	height:330px;
+	border-radius:12px;
+}
+/* ABOUT US SECTION 03 - FOUNDERS TITLE DESKTOP */
+/* ABOUT US */
+.container-about {
+	display:grid;
+	grid-template-columns:1fr 3fr;
+	grid-template-rows:0fr 4fr;
+	row-gap:30px;
+	background-image:url('../images/back-dots-defined.png');
+	background-size:contain;
+	background-position:left top;
+	background-repeat:no-repeat;
+	padding-left:30px;
+	padding-top:30px;
+}
+	.container-about-01 {
+	display:grid;
+	grid-template-columns:1fr 3fr;
+	grid-template-rows:0fr 4fr;
+	row-gap:30px;
+	background-image:url('../images/back-dots-defined.png');
+	background-size:contain;
+	background-position:left top;
+	background-repeat:no-repeat;
+	padding-left:30px;
+	padding-top:30px;
+}
+.grid-item-about-01 {
+	 grid-column:1 / 3;
+	 grid-row:1 / 2;
+}
+.grid-item-about-01 h2 {
+	 text-transform: uppercase;
+}
 	.grid-item-about-02 {
-	  grid-column: 1 / 2; 
-          grid-row: 2 / 3;  
-          position: relative;
-          background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
-          background-position: center; /* Centra la imagen dentro del contenedor */
-          background-repeat: no-repeat; /* Evita que la imagen se repita */
-          width: 240px;
-          height: 280px;
-          border-radius: 12px;
-	}
-
-	.grid-item-about-03 {
-          grid-column: 2 / 3;
-          grid-row: 2 / 3;
-          font-size: 130%;
-          text-align: justify;
-          line-height: 1.5em;
-          padding-left: 46px;
-        }
-
-
-        /* ABOUT US SECTION 07 - ADVISORS TITLE  DESKTOP */
-
-        .color-white-team a {
-            color: white;
-        }
-
-        /* PRODUCTS PAGE - STYLES DESKTOP */
-
-
-
-        /* PRODUCTS SECTION 01 - ELECTRO DESKTOP */
-
-        .container-products-electro {
-            display: grid;
-            grid-template-columns: 9fr 6fr;
-            grid-template-rows: 1fr 8fr;
-            column-gap: 60px;
-            row-gap: 30px;
-            background-image: url('../images/back-dots-defined.png');
-            background-size: contain;
-            background-position: left top;
-            background-repeat: no-repeat;
-            padding-top: 30px;
-            padding-left: 30px;
-        }
-
-
-        .grid-item-products-electro-01 {
-            grid-column: 1 / 3; 
-            grid-row: 1 / 2;   
-        }
-
-        .grid-item-products-electro-02 {
-            grid-column: 1 / 2; 
-            grid-row: 2 / 3;   
-            position: relative;
-            background-color: #00A099;
-            background-image: url('../images/tape-around.png');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            width: 100%;
-            height: 320px;
-            border-radius: 12px;
-        }
-
-        .grid-item-products-electro-03 {
-            grid-column: 2 / 3;
-            grid-row: 2 / 3;
-            font-size: 130%;
-            line-height: 1.5em;
-            text-align: justify;
-        }
-
-
-        .grid-item-products-electro-04 {
-            grid-column: 1 / 3; 
-            grid-row: 3 / 4;   
-        }
-
-
-        /* PRODUCTS SECTION 02 - REVOLUTIONIZING */
-
-        .container-products-revolution {
-            display: grid;
-            grid-template-columns: 6fr 11fr;
-            grid-template-rows: 0fr 4fr;
-            column-gap: 60px;
-            row-gap: 30px;
-            background-image: url('../images/back-dots-defined.png');
-            background-size: contain;
-            background-position: left top;
-            background-repeat: no-repeat;
-            padding-top: 30px;
-            padding-left: 30px;
-        }
-
-
-        .grid-item-products-revolution-01 {
-            grid-column: 1 / 3; 
-            grid-row: 1 / 2;   
-        }
-
-        .grid-item-products-revolution-02 {
-            grid-column: 1 / 2;
-            grid-row: 2 / 3;
-            font-size: 120%;
-            line-height: 1.5em;
-            text-align: justify;
-        }
-
-        .grid-item-products-revolution-03 {
-            grid-column: 2 / 3; 
-            grid-row: 2 / 3;   
-            position: relative;
-            background-image: url('../images/grandf.jpg');
-            background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
-            background-position: center; /* Centra la imagen dentro del contenedor */
-            background-repeat: no-repeat; /* Evita que la imagen se repita */
-            width: 100%;
-            height: 460px;
-            border-radius: 12px;
-        }
-
-        /* PRODUCTS SECTION 03 - REIMAGINING DESKTOP */
-
-        .container-products-reimagining {
-            display: grid;
-            grid-template-columns: 4fr 3fr;
-            grid-template-rows: 1fr 8fr;
-            column-gap: 60px;
-            row-gap: 30px;
-            background-image: url('../images/back-dots-defined.png');
-            background-size: contain;
-            background-position: left top;
-            background-repeat: no-repeat;
-            padding-top: 30px;
-            padding-left: 30px;
-        }
-
-
-        .grid-item-products-reimagining-01 {
-            grid-column: 1 / 3; 
-            grid-row: 1 / 2;   
-        }
-
-        .grid-item-products-reimagining-02 {
-            grid-column: 1 / 2; 
-            grid-row: 2 / 3;   
-            background-image: url('../images/patcher-electro.png');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            height: 340px;
-            border-radius: 12px;
-        }
-
-        .grid-item-products-reimagining-03 {
-            grid-column: 2 / 3;
-            grid-row: 2 / 3;
-            font-size: 120%;
-            line-height: 1.5em;
-            text-align: justify;
-        }
-
-        /* RESEARCH PAGE - STYLES DESKTOP */
-        /* RESEARCH SECTION 01 - TITLE PUBLICATIONS DESKTOP */
-
-        /* RESEARCH SECTION 02 - UNIVERSAL WAY DESKTOP */
-        .container-research {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 0fr 0fr 0fr;
-            column-gap: 60px;
-            row-gap: 30px;
-            background-image: url('../images/back-dots-defined.png');
-            background-size: contain;
-            background-position: left top;
-            background-repeat: no-repeat;
-            padding-top: 30px;
-            padding-left: 30px;
-        }
-
-	.grid-item-research-01 {
-            grid-column: 1 / 3; 
-            grid-row: 1 / 2;   
-        }
-
-	 .grid-item-research-02 {
-            grid-column: 1 / 2; 
-            grid-row: 2 / 3;   
-            background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
-	    /* background-size: 101%; /\* play with this to zoom it out *\/ */
-            background-position: center; /* Centra la imagen dentro del contenedor */
-            background-repeat: no-repeat; /* Evita que la imagen se repita */
-            width: 80%;
-            margin: 0 auto;
-            border-radius: 12px;
-         }
-	 
-        .grid-item-research-03 {
-            grid-column: 1 / 2;
-            grid-row: 3 / 4;
-            font-size: 120%;
-            line-height: 1.5em;
-            text-align: justify;
-        }
-	
+	 grid-column:1 / 2;
+	grid-row:2 / 3;
+	position:relative;
+	background-size:cover;
+	/* Ajusta la imagen para cubrir todo el contenedor */
+	background-position:center;
+	/* Centra la imagen dentro del contenedor */
+	background-repeat:no-repeat;
+	/* Evita que la imagen se repita */
+	width:240px;
+	height:280px;
+	border-radius:12px;
+}
+.grid-item-about-03 {
+	grid-column:2 / 3;
+	grid-row:2 / 3;
+	font-size:130%;
+	text-align:justify;
+	line-height:1.5em;
+	padding-left: 46px;
+}
+/* ABOUT US SECTION 07 - ADVISORS TITLE DESKTOP */
+.color-white-team a {
+	color: white;
+}
+/* PRODUCTS PAGE - STYLES DESKTOP */
+/* PRODUCTS SECTION 01 - ELECTRO DESKTOP */
+.container-products-electro {
+	display:grid;
+	grid-template-columns:9fr 6fr;
+	grid-template-rows:1fr 8fr;
+	column-gap:60px;
+	row-gap:30px;
+	background-image:url('../images/back-dots-defined.png');
+	background-size:contain;
+	background-position:left top;
+	background-repeat:no-repeat;
+	padding-top:30px;
+	padding-left:30px;
+}
+.grid-item-products-electro-01 {
+	grid-column:1 / 3;
+	grid-row:1 / 2;
+}
+.grid-item-products-electro-02 {
+	grid-column:1 / 2;
+	grid-row:2 / 3;
+	position:relative;
+	background-color:#00A099;
+	background-image:url('../images/tape-around.png');
+	background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;
+	width:100%;
+	height:320px;
+	border-radius:12px;
+}
+.grid-item-products-electro-03 {
+	grid-column:2 / 3;
+	grid-row:2 / 3;
+	font-size:130%;
+	line-height:1.5em;
+	text-align:justify;
+}
+.grid-item-products-electro-04 {
+	grid-column:1 / 3;
+	grid-row: 3 / 4;
+}
+/* PRODUCTS SECTION 02 - REVOLUTIONIZING */
+.container-products-revolution {
+	display:grid;
+	grid-template-columns:6fr 11fr;
+	grid-template-rows:0fr 4fr;
+	column-gap:60px;
+	row-gap:30px;
+	background-image:url('../images/back-dots-defined.png');
+	background-size:contain;
+	background-position:left top;
+	background-repeat:no-repeat;
+	padding-top:30px;
+	padding-left:30px;
+}
+.grid-item-products-revolution-01 {
+	grid-column:1 / 3;
+	grid-row:1 / 2;
+}
+.grid-item-products-revolution-02 {
+	grid-column:1 / 2;
+	grid-row:2 / 3;
+	font-size:120%;
+	line-height:1.5em;
+	text-align: justify;
+}
+.grid-item-products-revolution-03 {
+	grid-column:2 / 3;
+	grid-row:2 / 3;
+	position:relative;
+	background-image:url('../images/grandf.jpg');
+	background-size:cover;
+	/* Ajusta la imagen para cubrir todo el contenedor */
+	background-position:center;
+	/* Centra la imagen dentro del contenedor */
+	background-repeat:no-repeat;
+	/* Evita que la imagen se repita */
+	width:100%;
+	height:460px;
+	border-radius:12px;
+}
+/* PRODUCTS SECTION 03 - REIMAGINING DESKTOP */
+.container-products-reimagining {
+	display:grid;
+	grid-template-columns:4fr 3fr;
+	grid-template-rows:1fr 8fr;
+	column-gap:60px;
+	row-gap:30px;
+	background-image:url('../images/back-dots-defined.png');
+	background-size:contain;
+	background-position:left top;
+	background-repeat:no-repeat;
+	padding-top:30px;
+	padding-left:30px;
+}
+.grid-item-products-reimagining-01 {
+	grid-column:1 / 3;
+	grid-row:1 / 2;
+}
+.grid-item-products-reimagining-02 {
+	grid-column:1 / 2;
+	grid-row:2 / 3;
+	background-image:url('../images/patcher-electro.png');
+	background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;
+	height:340px;
+	border-radius:12px;
+}
+.grid-item-products-reimagining-03 {
+	grid-column:2 / 3;
+	grid-row:2 / 3;
+	font-size:120%;
+	line-height:1.5em;
+	text-align: justify;
+}
+/* RESEARCH PAGE - STYLES DESKTOP */
+/* RESEARCH SECTION 01 - TITLE PUBLICATIONS DESKTOP */
+/* RESEARCH SECTION 02 - UNIVERSAL WAY DESKTOP */
+.container-research {
+	display:grid;
+	grid-template-columns:1fr;
+	grid-template-rows:0fr 0fr 0fr;
+	column-gap:60px;
+	row-gap:30px;
+	background-image:url('../images/back-dots-defined.png');
+	background-size:contain;
+	background-position:left top;
+	background-repeat:no-repeat;
+	padding-top:30px;
+	padding-left:30px;
+}
+.grid-item-research-01 {
+	grid-column:1 / 3;
+	grid-row: 1 / 2;
+}
+ .grid-item-research-02 {
+	grid-column:1 / 2;
+	grid-row:2 / 3;
+	background-size:cover;
+	/* Ajusta la imagen para cubrir todo el contenedor */
+	/* background-size:101%;/\* play with this to zoom it out *\/ */
+	background-position:center;
+	/* Centra la imagen dentro del contenedor */
+	background-repeat:no-repeat;
+	/* Evita que la imagen se repita */
+	width:80%;
+	margin:0 auto;
+	border-radius:12px;
+}
+ .grid-item-research-03 {
+	grid-column:1 / 2;
+	grid-row:3 / 4;
+	font-size:120%;
+	line-height:1.5em;
+	text-align:justify;
+}
 	.grid-item-research-04 {
-            grid-column: 2 / 3; 
-            grid-row: 3 / 4;   
-        }
-
-        /* NEWS SECTION - NEWS 01 y 02  */
-
-        .container-news {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 0fr 0fr 3fr;
-            row-gap: 30px;
-            background-image: url('../images/back-dots-defined.png');
-            background-size: contain;
-            background-position: left top;
-            background-repeat: no-repeat;
-            padding-top: 30px;
-            padding-left: 30px;
-        }
-
-
-        .grid-item-news-01 {
-            grid-column: 1 / 3; 
-            grid-row: 1 / 2;   
-            padding-bottom: 30px;
-        }
-
-        .grid-item-news-02 {
-            grid-column: 1 / 3; 
-            grid-row: 2 / 3;   
-        }
-
-        .grid-item-news-03 {
-            grid-column: 1 / 3;
-            grid-row: 3 / 4;
-            font-size: 120%;
-            line-height: 1.5em;
-            text-align: justify;
-        }
-
-
-        .grid-item-news-04 {
-            grid-column: 1 / 3; 
-            grid-row: 3 / 4;   
-        }
-
-
-        /* CONTACT PAGE - STYLES DESKTOP */
-
-        /* CONTACT A SECTION */
-
-        .container-contact {
-            display: grid;
-            grid-template-columns: 2fr 4fr;
-            grid-template-rows: 0fr 4fr 0fr;
-            column-gap: 60px;
-            row-gap: 30px;
-            background-image: url('../images/back-dots-defined.png');
-            background-size: contain;
-            background-position: left top;
-            background-repeat: no-repeat;
-            padding-top: 30px;
-            padding-left: 30px;
-        }
-
-
-        .grid-item-contact-01 {
-            grid-column: 1 / 3; 
-            grid-row: 1 / 2;   
-        }
-
-        .grid-item-contact-02 {
-            grid-column: 1 / 2;
-            grid-row: 2 / 3;
-            font-size: 110%;
-            line-height: 1.5em;
-            text-align: justify;
-        }
-
-        .grid-item-contact-03 {
-            grid-column: 2 / 3; 
-            grid-row: 2 / 3;   
-            width: 100%;
-        }
-
-
-        .grid-item-contact-04 {
-            grid-column: 1 / 3; 
-            grid-row: 3 / 4;   
-        }
-
-        .home-section p {
-            line-height: 1.6; /* Espaciado de línea de 1.6 */
-        }
-
-        .card-horizontal-fondverd {
-            width: 400px;
-            height: 160px;
-            color: white;
-            position: relative;
-            left: 0px;
-            top: 260px;
-        }
-
-        .card-horizontal-researcharea {
-            position: relative;
-            font-size: 0.9em;
-            width: 560px;
-            color: white;
-            left: -26px;
-            top: 130px;
-            padding: 0px;
-        }
-
-        #research-big h3 {
-            position: absolute;
-            top: 670px;
-            left: 1040px;
-            font-size: 1.8em;
-        }
-
-        .card-horizontal-researchlast {
-            position: relative;
-            font-size: 1em;
-            width: 600px;
-            color: white;
-            left: -40px;
-            top: 20px;
-            padding: 20px;
-        }
-
-        .card-horizontal-patentsarea {
-            position: relative;
-            font-size: 1em;
-            width: 580px;
-            color: white;
-            left: -30px;
-            top: 33px;
-            /* padding: 20px; */
-        }
-
-        .card-horizontal-about {
-            position: absolute;
-            font-size: 1em;
-            width: 460px;
-            height: 160px;
-            color: #141819;
-            left: 40px;
-            top: 200px;
-        }
-
-        .line-pro {
-            height: 10px;
-            background-color: blue;
-            width: 100%;
-        }
-
-        .surgical-technique .card-horizontal-transp {
-            top: 160px;
-        }
-
-        .patient-outcomes .card-horizontal-transp {
-            top: 170px;
-            max-width: 430px;
-        }
-
-        .tissue-repair .card-horizontal-transp {
-            left: -30px;
-            top: 170px;
-            max-width: 400px;
-        }
-
-        .founders-section .card-horizontal-transp {
-            left: -230px;
-            width: 280px;
-            height: 300px;
-            color: white;
-        }
-
-        #research .card-horizontal-transp {
-            color: black;
-        }
-
-        .element-4-columns {
-            grid-column: span 4; /* Ocupar 4 columnas */
-        }
-
-        .sub-title {
-            position: relative;
-            width: 400px;
-            top: 260px;
-            left: -30px;
-        }
-
-        .sub-title-news-02 {
-            position: absolute;
-            top: 240px;
-            right: 760px;
-            font-size: 1em;
-            width: 310px;
-
-        }
-
-        .sub-title-news-03 {
-            position: absolute;
-            bottom: -10px;
-            left: 30px;
-            font-size: 1.2em;
-            width: 400px;
-        }
-
-        .tissue-slogan {
-            position: absolute;
-            top: 479px;
-            left: 850px;
-            font-size: 1em;
-            color: white;
-        }
-
-        #news-03 p {
-            position: absolute;
-            color: white;
-            top: 200px;
-            left: 520px;
-            width: 560px;
-        }
-
-        .card-doctora {
-            position: relative;
-            background-image: url('../images/tissue-reppair-hands.jpg');
-            background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
-            background-position: center; /* Centra la imagen dentro del contenedor */
-            background-repeat: no-repeat; /* Evita que la imagen se repita */
-            height: 300px;
-            border-radius: 12px;
-        }
-
-        .card-secure {
-            position: absolute;
-            background-color: #00A099;
-            background-image: url('../images/lady.jpg');
-            background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
-            background-position: center; /* Centra la imagen dentro del contenedor */
-            background-repeat: no-repeat; /* Evita que la imagen se repita */
-            width: 200px;
-            height: 300px;
-            right: 260px;
-            top: 30px;
-            border-radius: 12px;
-        }
-
-        .founders-card-ficho {
-            position: relative;
-            background-image: url('../images/ficho.png');
-            background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
-            background-position: center; /* Centra la imagen dentro del contenedor */
-            background-repeat: no-repeat; /* Evita que la imagen se repita */
-            width: 320px;
-            height: 360px;
-
-            border-radius: 12px;
-        }
-
-        .founders-card-advisorficho {
-            position: relative;
-            background-color: #00A099;
-            background-image: url('../images/tejidoso.png');
-            background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
-            background-position: center; /* Centra la imagen dentro del contenedor */
-            background-repeat: no-repeat; /* Evita que la imagen se repita */
-            width: 320px;
-            height: 360px;
-            right: 30px;
-            top: 30px;
-            border-radius: 12px;
-        }
-
-        #home-01 .card-tejido {
-            position: relative;
-
-            background-image: url('../images/03-gelectric-operador.png');
-            background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
-            background-position: center; /* Centra la imagen dentro del contenedor */
-            background-repeat: no-repeat; /* Evita que la imagen se repita */
-            width: 240px;
-            height: 360px;
-            right: 290px;
-            top: 30px;
-            border-radius: 12px;
-        }
-
-        .card-products-one {
-            position: relative;
-            background-image: url('../images/tape-around.png');
-            background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
-            background-position: center; /* Centra la imagen dentro del contenedor */
-            background-repeat: no-repeat; /* Evita que la imagen se repita */
-            width: 430px;
-            height: 290px;
-            border-radius: 12px;
-        }
-
-        .gel-concept {
-            position: absolute;
-            background-image: url('../images/gel-electric.svg');
-            background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
-            background-position: center; /* Centra la imagen dentro del contenedor */
-            background-repeat: no-repeat; /* Evita que la imagen se repita */
-            width: 160px;
-            height: 56px;
-            left: 300px;
-            top: 290px;
-        }
-
-        .surgical-technique h3 {
-            position: absolute;
-            top: 470px;
-            left: 30px;
-            font-size: 2em;
-        }
-
-        .gel-concept-green {
-            position: absolute;
-            background-image: url('../images/gelectric-ray.svg');
-            background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
-            background-position: center; /* Centra la imagen dentro del contenedor */
-            background-repeat: no-repeat; /* Evita que la imagen se repita */
-            width: 153px;
-            height: 89px;
-            right: 211px;
-            top: 200px;
-        }
-
-        button {
-            background-color: #1C5153; 
-            color: #fff; /* Color del texto blanco */
-            padding: 14px 40px; /* Padding adecuado */
-            border: none; /* Sin borde */
-            border-radius: 22px; /* Bordes curvos de 12px */
-            cursor: pointer; /* Cursor de puntero al pasar sobre el botón */
-            font-size: 1em; /* Tamaño de fuente */
-            transition: background-color 0.3s ease; /* Transición suave para el hover */
-            min-width: 120px;
-        }
-
-        button:hover {
-            background-color: #00A099; /* Color de fondo azul en hover */
-        }
-
-
-        .card-vertical-medium {
-            border-radius: 12px;
-            position: absolute;
-            background-color: #20279E;
-            right: 0;
-        }
-
-        footer .logo {
-            height: 50px;
-            width: 160px;
-            margin: 0 auto;
-        }
-
-        .footer-section.copyright {
-            display: flex;
-            justify-content: left; /* Centra horizontalmente */
-
-            height: 50px;
-        }
-
-        #founders-leah h2, #founders-james h2  {
-            color: white;
-            position: absolute;
-            top: 30px;
-            left: 30px;
-            max-width: 220px;
-            font-size: 2em;
-        }
-
-        #founders-mathew h2 {
-            color: white;
-            position: absolute;
-            top: 30px;
-            left: 30px;
-            max-width: 260px;
-            font-size: 2em;
-        }
-
-
-        #about-us-company h1 {
-            left: 20px;
-        }
-
-
-        #electroadhesive-gel h1 {
-            position: absolute;
-            left: 30px;
-            /* top: 0px; */
-            padding-left: 0;
-        }
-
-        .section-dark-green.research-area h2 {
-            position: relative;
-            font-size: 2em;
-            width: 590px;
-            color: white;
-            left: -30px;
-        }
-
-        #patents-big {
-            min-height: 760px;
-        }
-
-        .patient-outcomes h3 {
-            position: absolute;
-            left: 30px;
-            top: 470px;
-        }
-
-        #patents-big h3 {
-            position: absolute;
-            top: 430px;
-            right: -480px;
-            color: white;
-            font-size: 1.8em;
-        }
-
-        .tissue-repair h3 {
-            position: relative;
-            left: 20px;
-            top: 460px;
-            font-size: 2em;
-        }
-
-        #transforming h2 {
-            position: relative;
-            font-size: 2.2em;
-            left: -10px;
-            top: 0;
-        }
-
-        .card-horizontal-strong {
-            background-color: #1C5153;
-            width: 480px;
-            height: 168px;
-            right: 30px;
-            top: 260px;
-            border-radius: 12px;
-        }
-
-        .patients-out {
-            background-image: url('../images/grandf.jpg');
-            background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
-            background-position: center; /* Centra la imagen dentro del contenedor */
-            background-repeat: no-repeat; /* Evita que la imagen se repita */
-            width: 108px;
-            height: 130px;
-            right: 350px;
-            top: 20px;
-            border-radius: 12px;
-        }
-
-        .patient-out-text {
-            position: relative;
-            width: 298px;
-            height: 178px;
-            right: 34px;
-            top: 20px;
-            font-size: 1em;
-            color: black;
-        }
-
-        .card-horizontal-tissue {
-            position: absolute;
-            background-image: url('../images/tissue-repair.jpg');
-            background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
-            background-position: center; /* Centra la imagen dentro del contenedor */
-            background-repeat: no-repeat; /* Evita que la imagen se repita */
-            width: 480px;
-            height: 220px;
-            right: 30px;
-            top: 10px;
-            border-radius: 12px;
-        }
-
-        .card-rectangle-microscope {
-            position: relative;
-            background-image: url('../images/patcher-electro.png');
-            background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
-            background-position: center; /* Centra la imagen dentro del contenedor */
-            background-repeat: no-repeat; /* Evita que la imagen se repita */
-            background-color: #1E1E1E;
-            width: 600px;
-            height: 380px;
-            right: 30px;
-            top: 30px;
-            border-radius: 12px;
-        }
-
-        .founders-white {
-            color: white;
-        }
-
-        .card-rectangle-skin {
-            position: absolute;
-            background-color: #1E1E1E;
-            width: 160px;
-            height: 160px;
-            right: 30px;
-            top: 260px;
-            border-radius: 12px;
-        }
-
-        .founders-horizontal {
-            position: absolute;
-            display: flex;
-            max-width: 690px;
-            top: 100px;
-            left: 380px;
-            justify-content: space-between; /* Espacio igual entre los elementos */
-            flex-wrap: wrap; /* Permite que los elementos se envuelvan si el contenedor es demasiado pequeño */
-
-        }
-
-        .advisors-horizontal {
-            position: relative;
-            display: flex;
-            max-width: 690px;
-            justify-content: space-between; /* Espacio igual entre los elementos */
-            flex-wrap: wrap; /* Permite que los elementos se envuelvan si el contenedor es demasiado pequeño */
-        }
-
-        button.advisors-button:hover {
-            background-color: #141819;
-        }
-
-    /* ABOUT US PAGE - SECTION 03 - TITLE FOUNDERS DESKTOP */
-        section#founders-paragraph {
-            width: 74%;
-            height: 160px;
-            position: relative;
-            margin: 0 auto;
-            font-size: 3em;
-            align-content: center;
-            font-weight: 400;
-        }
-
-        section#research-paragraph {
-            padding-top: 44px;
-            width: 74%;
-            height: 120px;
-            position: relative;
-            margin: 30px auto;
-            font-size: 3em;
-            font-weight: 400;
-        }
-
-        section#founders-mathew .founders-card.dos {
-            left: 0px;
-        }
-
-        section#founders-james .founders-card.tres {
-            left: 0px;
-        }
-
-        .button-wrapper button.founders-button {
-
-            background-color: #00A099;
-            color: white;
-        }
-
-        .button-wrapper button.founders-button:hover {
-            background-color: #4DBECF;
-            color: #1C5153;
-        }
-
-        .linkedin {
-            background-image: url('../images/linkedin.png');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            position: relative;
-            left: 70%;
-            bottom: -76%;
-            width: 64px;
-            height: 64px;
-            z-index: 20;
-        }
-
-        .card-horizontal-products {
-            background-image: url('../images/electro.jpg');
-            background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
-            background-position: center; /* Centra la imagen dentro del contenedor */
-            background-repeat: no-repeat; /* Evita que la imagen se repita */
-            position: absolute;
-            background-color: #1E1E1E;
-            width: 420px;
-            height: 160px;
-            right: 40px;
-            top: 350px;
-            border-radius: 12px;
-        }
-
-        #electroadhesive-gel h3 {
-            position: absolute;
-            font-size: 2.2em;
-            left: 30px;
-            top: 460px;
-        }
-
-        #news-01 .sub-title {
-            position: relative;
-            width: 300px;
-            top: -360px;
-            left: 656px;
-        }
-
-        .section-neon-green.advisors-section h2 {
-            position: relative;
-            max-width: 200px;
-            left: 30px;
-            top: 20px;
-        }
-
-        .parrafo-reparar {
-            position: absolute;
-            color: white;
-            max-width: 400px;
-            top: 230px;
-            left: 30px;
-        }
-
-        #news-02 .sub-title {
-            font-size: 0.7em;
-            top: 0;
-        }
-
-        #research-last.section-neon-green h3 {
-            position: absolute;
-            top: 480px;
-            left: 870px;
-            font-size: 1.8em;
-        }
-
-        .about-us-parrafos  {
-            color: white;
-            position: absolute;
-            top: 530px;
-            left: -190px;
-        }
-
-        .about-us-parrafos p {
-            min-width: 400px;
-        }
-
-        .about-us-parradvisors  {
-            position: relative;
-            color: white;
-            top: 160px;
-            left: 72px;
-            max-width: 620px;
-        }
-
-        .news-area h2 {
-            font-size: 1.8em;
-            min-width: 460px;
-            width: 500px;
-            position: relative;
-            top: -20px;
-            left: -10px;
-            color: white;    
-        }
-
-        .section-neon-green .news-area .sub-title h3 {
-            position: absolute;
-            color: #78BA5C;
-            left: -180px;
-            top: -220px;
-            font-size: 0.7em;
-        }
-
-        .section-dark-green .news-area .sub-title h3 {
-            position: absolute;
-            color: #78BA5C;
-            min-width: 300px;
-            left: -670px;
-            top: -260px;
-            font-size: 2em;
-        }
-
-        .section-dark-green .news-area h3 {
-            position: absolute;
-            color: white;
-            min-width: 300px;
-            left: 40px;
-            top: 830px;
-            font-size: 2.2em;
-        }
-
-        #news-01 p {
-            color: white;
-            position: relative;
-            width: 600px;
-            top: 80px;
-            left: 420px;
-        }
-
-        #news-02 p {
-            color: white;
-            position: relative;
-            width: 600px;
-            top: 80px;
-            right: -440px;
-        }
-
-
-
-        #news-01.section-dark-green {
-            min-height: 960px;
-        }
-
-
-
-        #news-02.section-neon-green {
-            min-height: 830px;
-        }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        section#about-us-company h3 {
-            position: absolute;
-            top: 470px;
-            right: 30px;
-            font-size: 2em;
-        }
-
-
-        section#transforming h3 {
-            position: absolute;
-            top: 460px;
-            right: 30px;
-            font-size: 2em;
-        }
-
-
-        #about-us-company p {
-            position: relative;
-            top: -80px;
-            width: 400px;
-        }
-
-
-
-
-        #advisor1 h2 {
-            font-size: 2.2em;
-            min-width: 320px;
-        }
-
-
-        #advisor2 h2 {
-            font-size: 2.2em;
-            min-width: 320px;
-        }
-
-
-        #advisor2 h3 {
-            font-size: 2.2em;
-            min-width: 320px;
-        }
-
-
-
-
-
-
-        #revolution-patients p {
-            position: absolute;
-            top: 220px;
-            left: 30px;
-            color: white;
-            width: 400px;
-            min-width: 400px;
-        }
-
-
-        section#revolution-patients.section-dark-green h3 {
-            font-size: 2em;
-            position: absolute;
-            top: 470px;
-            right: -160px;
-            color: #4DBECF;
-            width: 400px;
-            min-width: 400px;
-        }
-
-
-        .reimaging-tissue {
-            position: absolute;
-            left: 30px;
-            width: 300px;
-            top: 30px;
-            font-size: 2.2em;
-        }
-
-        .parrafo-leah {
-            width: 500px;
-            color: white;
-            position: relative;
-            top: 140px;
-            left: -15px;
-        }
-
-
-
-
-
-        .parrafo-james {
-            width: 500px;
-            color: white;
-            position: relative;
-            top: 160px;
-            left: -15px;
-        }
-
-
-
-        .electro-parrafo {
-            width: 500px;
-            color: black;
-            position: relative;
-            top: 160px;
-            left: -15px;
-        }
-
-
-        .founders-names {
-            font-size: 1.2em;
-        }
-
-        .advisors-names {
-            position: relative;
-            display: flex;
-            top: 220px;
-            right: 0px;
-            font-size: 1.2em;
-
-        }
-
-        #founders-mathew.section-dark-green {
-            min-height: 690px;
-        }
-
-        .advisors-names-a, .advisors-names-b, .advisors-names-c {
-            width: 220px;
-            align-content: center;
-            text-align: center;
-            padding: 10px;
-            align-content: space-evenly;
-
-        }
-
-        .parrafo-founders {
-            position: relative;
-            width: 460px;
-            top: 270px;
-
-
-        }
-
-        .section-neon-green.research-area h1 {
-            font-size: 2em;
-            max-width: 540px;
-            left: 20px;
-        }
-
-        #research-last h2 {
-            position: relative;
-            font-size: 2em;
-            min-width: 400px;
-            width: 500px;
-            left: -20px;
-        }
-
-        .section-white.patient-outcomes h2 {
-            position: absolute;
-            left: 20px;
-            top: 30px;
-            max-width: 120px;
-            font-size: 2.2em;
-        }
-
-
-
-        .tissue-repair h2 {
-            position: relative;
-            left: 20px;
-            top: 30px;
-            max-width: 120px;
-            font-size: 2.2em;
-        }
-
-
-
-
-
-
-
-
-
-        #revolution-patients h2 {
-            max-width: 180px;
-            position: absolute;
-            color: white;
-            font-size: 2.2em;
-            left: 30px;
-            top: 30px;
-        }
-
-
-
-        #products h2 {
-            color: white;
-            font-size: 2.2em;
-            position: absolute;
-            left: 30px;
-            top: 30px;
-        }
-
-
-
-        #research-big {
-            min-height: 790px;
-        }
-
-
-        #founders h2 {
-            position: absolute;
-            color: white;
-            top: 30px;
-            left: 30px;
-        }
-
-
-
-        .surgical-technique .card-horizontal-transp p {
-            left: -50px;
-            top: 290px;
-            width: 230px;
-            height: 300px;
-        }
-
-    /* ESTILOS MOBILE */
-
-    @media (max-width: 768px) {
-
-        body {
-            font-size: 0.9em;
-            line-height: 1.3;
-        }
-
-
-        /* 01 WRAPPER HEADER MOBILE */
-        .wrapper-header {
-	    margin-left: auto;
-	    margin-right: auto;
-	    justify-content: space-between;
-	    margin-top: 0;
-	    margin-bottom: 0;
-	    width: 100%;
-        }
-
-	header {
-	  padding-top: 1rem;
-	  padding-bottom: 1rem;
-	  padding-right: 1rem;
-	  padding-left: 1rem;
+	grid-column:2 / 3;
+	grid-row: 3 / 4;
+}
+/* NEWS SECTION - NEWS 01 y 02 */
+.container-news {
+	display:grid;
+	grid-template-columns:1fr;
+	grid-template-rows:0fr 0fr 3fr;
+	row-gap:30px;
+	background-image:url('../images/back-dots-defined.png');
+	background-size:contain;
+	background-position:left top;
+	background-repeat:no-repeat;
+	padding-top:30px;
+	padding-left:30px;
+}
+.grid-item-news-01 {
+	grid-column:1 / 3;
+	grid-row:1 / 2;
+	padding-bottom:30px;
+}
+.grid-item-news-02 {
+	grid-column:1 / 3;
+	grid-row:2 / 3;
+}
+.grid-item-news-03 {
+	grid-column:1 / 3;
+	grid-row:3 / 4;
+	font-size:120%;
+	line-height:1.5em;
+	text-align:justify;
+}
+.grid-item-news-04 {
+	grid-column:1 / 3;
+	grid-row: 3 / 4;
+}
+/* CONTACT PAGE - STYLES DESKTOP */
+/* CONTACT A SECTION */
+.container-contact {
+	display:grid;
+	grid-template-columns:2fr 4fr;
+	grid-template-rows:0fr 4fr 0fr;
+	column-gap:60px;
+	row-gap:30px;
+	background-image:url('../images/back-dots-defined.png');
+	background-size:contain;
+	background-position:left top;
+	background-repeat:no-repeat;
+	padding-top:30px;
+	padding-left:30px;
+}
+.grid-item-contact-01 {
+	grid-column:1 / 3;
+	grid-row:1 / 2;
+}
+.grid-item-contact-02 {
+	grid-column:1 / 2;
+	grid-row:2 / 3;
+	font-size:110%;
+	line-height:1.5em;
+	text-align:justify;
+}
+.grid-item-contact-03 {
+	grid-column:2 / 3;
+	grid-row:2 / 3;
+	width:100%;
+}
+.grid-item-contact-04 {
+	grid-column:1 / 3;
+	grid-row:3 / 4;
+}
+.home-section p {
+	line-height:1.6;
+	/* Espaciado de línea de 1.6 */
+}
+.card-horizontal-fondverd {
+	width:400px;
+	height:160px;
+	color:white;
+	position:relative;
+	left:0px;
+	top:260px;
+}
+.card-horizontal-researcharea {
+	position:relative;
+	font-size:0.9em;
+	width:560px;
+	color:white;
+	left:-26px;
+	top:130px;
+	padding:0px;
+}
+#research-big h3 {
+	position:absolute;
+	top:670px;
+	left:1040px;
+	font-size:1.8em;
+}
+.card-horizontal-researchlast {
+	position:relative;
+	font-size:1em;
+	width:600px;
+	color:white;
+	left:-40px;
+	top:20px;
+	padding:20px;
+}
+.card-horizontal-patentsarea {
+	position:relative;
+	font-size:1em;
+	width:580px;
+	color:white;
+	left:-30px;
+	top:33px;
+	/* padding:20px;*/
+}
+.card-horizontal-about {
+	position:absolute;
+	font-size:1em;
+	width:460px;
+	height:160px;
+	color:#141819;
+	left:40px;
+	top:200px;
+}
+.line-pro {
+	height:10px;
+	background-color:blue;
+	width:100%;
+}
+.surgical-technique .card-horizontal-transp {
+	top:160px;
+}
+.patient-outcomes .card-horizontal-transp {
+	top:170px;
+	max-width:430px;
+}
+.tissue-repair .card-horizontal-transp {
+	left:-30px;
+	top:170px;
+	max-width:400px;
+}
+.founders-section .card-horizontal-transp {
+	left:-230px;
+	width:280px;
+	height:300px;
+	color:white;
+}
+#research .card-horizontal-transp {
+	color:black;
+}
+.element-4-columns {
+	grid-column:span 4;
+	/* Ocupar 4 columnas */
+}
+.sub-title {
+	position:relative;
+	width:400px;
+	top:260px;
+	left:-30px;
+}
+.sub-title-news-02 {
+	position:absolute;
+	top:240px;
+	right:760px;
+	font-size:1em;
+	width:310px;
+}
+.sub-title-news-03 {
+	position:absolute;
+	bottom:-10px;
+	left:30px;
+	font-size:1.2em;
+	width:400px;
+}
+.tissue-slogan {
+	position:absolute;
+	top:479px;
+	left:850px;
+	font-size:1em;
+	color:white;
+}
+#news-03 p {
+	position:absolute;
+	color:white;
+	top:200px;
+	left:520px;
+	width: 560px;
+}
+.card-doctora {
+	position:relative;
+	background-image:url('../images/tissue-reppair-hands.jpg');
+	background-size:cover;
+	/* Ajusta la imagen para cubrir todo el contenedor */
+	background-position:center;
+	/* Centra la imagen dentro del contenedor */
+	background-repeat:no-repeat;
+	/* Evita que la imagen se repita */
+	height:300px;
+	border-radius:12px;
+}
+.card-secure {
+	position:absolute;
+	background-color:#00A099;
+	background-image:url('../images/lady.jpg');
+	background-size:cover;
+	/* Ajusta la imagen para cubrir todo el contenedor */
+	background-position:center;
+	/* Centra la imagen dentro del contenedor */
+	background-repeat:no-repeat;
+	/* Evita que la imagen se repita */
+	width:200px;
+	height:300px;
+	right:260px;
+	top:30px;
+	border-radius:12px;
+}
+.founders-card-ficho {
+	position:relative;
+	background-image:url('../images/ficho.png');
+	background-size:cover;
+	/* Ajusta la imagen para cubrir todo el contenedor */
+	background-position:center;
+	/* Centra la imagen dentro del contenedor */
+	background-repeat:no-repeat;
+	/* Evita que la imagen se repita */
+	width:320px;
+	height:360px;
+	border-radius:12px;
+}
+.founders-card-advisorficho {
+	position:relative;
+	background-color:#00A099;
+	background-image:url('../images/tejidoso.png');
+	background-size:cover;
+	/* Ajusta la imagen para cubrir todo el contenedor */
+	background-position:center;
+	/* Centra la imagen dentro del contenedor */
+	background-repeat:no-repeat;
+	/* Evita que la imagen se repita */
+	width:320px;
+	height:360px;
+	right:30px;
+	top:30px;
+	border-radius:12px;
+}
+#home-01 .card-tejido {
+	position:relative;
+	background-image:url('../images/03-gelectric-operador.png');
+	background-size:cover;
+	/* Ajusta la imagen para cubrir todo el contenedor */
+	background-position:center;
+	/* Centra la imagen dentro del contenedor */
+	background-repeat:no-repeat;
+	/* Evita que la imagen se repita */
+	width:240px;
+	height:360px;
+	right:290px;
+	top:30px;
+	border-radius:12px;
+}
+.card-products-one {
+	position:relative;
+	background-image:url('../images/tape-around.png');
+	background-size:cover;
+	/* Ajusta la imagen para cubrir todo el contenedor */
+	background-position:center;
+	/* Centra la imagen dentro del contenedor */
+	background-repeat:no-repeat;
+	/* Evita que la imagen se repita */
+	width:430px;
+	height:290px;
+	border-radius:12px;
+}
+.gel-concept {
+	position:absolute;
+	background-image:url('../images/gel-electric.svg');
+	background-size:cover;
+	/* Ajusta la imagen para cubrir todo el contenedor */
+	background-position:center;
+	/* Centra la imagen dentro del contenedor */
+	background-repeat:no-repeat;
+	/* Evita que la imagen se repita */
+	width:160px;
+	height:56px;
+	left:300px;
+	top:290px;
+}
+.surgical-technique h3 {
+	position:absolute;
+	top:470px;
+	left:30px;
+	font-size: 2em;
+}
+.gel-concept-green {
+	position:absolute;
+	background-image:url('../images/gelectric-ray.svg');
+	background-size:cover;
+	/* Ajusta la imagen para cubrir todo el contenedor */
+	background-position:center;
+	/* Centra la imagen dentro del contenedor */
+	background-repeat:no-repeat;
+	/* Evita que la imagen se repita */
+	width:153px;
+	height:89px;
+	right:211px;
+	top:200px;
+}
+button {
+	background-color:#1C5153;
+	color:#fff;
+	/* Color del texto blanco */
+	padding:14px 40px;
+	/* Padding adecuado */
+	border:none;
+	/* Sin borde */
+	border-radius:22px;
+	/* Bordes curvos de 12px */
+	cursor:pointer;
+	/* Cursor de puntero al pasar sobre el botón */
+	font-size:1em;
+	/* Tamaño de fuente */
+	transition:background-color 0.3s ease;
+	/* Transición suave para el hover */
+	min-width:120px;
+}
+button:hover {
+	background-color:#00A099;
+	/* Color de fondo azul en hover */
+}
+.card-vertical-medium {
+	border-radius:12px;
+	position:absolute;
+	background-color:#20279E;
+	right:0;
+}
+footer .logo {
+	height:50px;
+	width:160px;
+	margin: 0 auto;
+}
+.footer-section.copyright {
+	display:flex;
+	justify-content:left;
+	/* Centra horizontalmente */
+	height:50px;
+}
+#founders-leah h2,#founders-james h2 {
+	color:white;
+	position:absolute;
+	top:30px;
+	left:30px;
+	max-width:220px;
+	font-size:2em;
+}
+#founders-mathew h2 {
+	color:white;
+	position:absolute;
+	top:30px;
+	left:30px;
+	max-width:260px;
+	font-size:2em;
+}
+#about-us-company h1 {
+	left: 20px;
+}
+#electroadhesive-gel h1 {
+	position:absolute;
+	left:30px;
+	/* top:0px;*/
+	padding-left:0;
+}
+.section-dark-green.research-area h2 {
+	position:relative;
+	font-size:2em;
+	width:590px;
+	color:white;
+	left:-30px;
+}
+#patents-big {
+	min-height:760px;
+}
+.patient-outcomes h3 {
+	position:absolute;
+	left:30px;
+	top:470px;
+}
+#patents-big h3 {
+	position:absolute;
+	top:430px;
+	right:-480px;
+	color:white;
+	font-size:1.8em;
+}
+.tissue-repair h3 {
+	position:relative;
+	left:20px;
+	top:460px;
+	font-size:2em;
+}
+#transforming h2 {
+	position:relative;
+	font-size:2.2em;
+	left:-10px;
+	top:0;
+}
+.card-horizontal-strong {
+	background-color:#1C5153;
+	width:480px;
+	height:168px;
+	right:30px;
+	top:260px;
+	border-radius: 12px;
+}
+.patients-out {
+	background-image:url('../images/grandf.jpg');
+	background-size:cover;
+	/* Ajusta la imagen para cubrir todo el contenedor */
+	background-position:center;
+	/* Centra la imagen dentro del contenedor */
+	background-repeat:no-repeat;
+	/* Evita que la imagen se repita */
+	width:108px;
+	height:130px;
+	right:350px;
+	top:20px;
+	border-radius:12px;
+}
+.patient-out-text {
+	position:relative;
+	width:298px;
+	height:178px;
+	right:34px;
+	top:20px;
+	font-size:1em;
+	color: black;
+}
+.card-horizontal-tissue {
+	position:absolute;
+	background-image:url('../images/tissue-repair.jpg');
+	background-size:cover;
+	/* Ajusta la imagen para cubrir todo el contenedor */
+	background-position:center;
+	/* Centra la imagen dentro del contenedor */
+	background-repeat:no-repeat;
+	/* Evita que la imagen se repita */
+	width:480px;
+	height:220px;
+	right:30px;
+	top:10px;
+	border-radius:12px;
+}
+.card-rectangle-microscope {
+	position:relative;
+	background-image:url('../images/patcher-electro.png');
+	background-size:cover;
+	/* Ajusta la imagen para cubrir todo el contenedor */
+	background-position:center;
+	/* Centra la imagen dentro del contenedor */
+	background-repeat:no-repeat;
+	/* Evita que la imagen se repita */
+	background-color:#1E1E1E;
+	width:600px;
+	height:380px;
+	right:30px;
+	top:30px;
+	border-radius:12px;
+}
+.founders-white {
+	color:white;
+}
+.card-rectangle-skin {
+	position:absolute;
+	background-color:#1E1E1E;
+	width:160px;
+	height:160px;
+	right:30px;
+	top:260px;
+	border-radius: 12px;
+}
+.founders-horizontal {
+	position:absolute;
+	display:flex;
+	max-width:690px;
+	top:100px;
+	left:380px;
+	justify-content:space-between;
+	/* Espacio igual entre los elementos */
+	flex-wrap:wrap;
+	/* Permite que los elementos se envuelvan si el contenedor es demasiado pequeño */
+}
+.advisors-horizontal {
+	position:relative;
+	display:flex;
+	max-width:690px;
+	justify-content:space-between;
+	/* Espacio igual entre los elementos */
+	flex-wrap:wrap;
+	/* Permite que los elementos se envuelvan si el contenedor es demasiado pequeño */
+}
+button.advisors-button:hover {
+	background-color: #141819;
+}
+/* ABOUT US PAGE - SECTION 03 - TITLE FOUNDERS DESKTOP */
+section#founders-paragraph {
+	width:74%;
+	height:160px;
+	position:relative;
+	margin:0 auto;
+	font-size:3em;
+	align-content:center;
+	font-weight:400;
+}
+section#research-paragraph {
+	padding-top:44px;
+	width:74%;
+	height:120px;
+	position:relative;
+	margin:30px auto;
+	font-size:3em;
+	font-weight:400;
+}
+section#founders-mathew .founders-card.dos {
+	left:0px;
+}
+section#founders-james .founders-card.tres {
+	left:0px;
+}
+.button-wrapper button.founders-button {
+	background-color:#00A099;
+	color:white;
+}
+.button-wrapper button.founders-button:hover {
+	background-color:#4DBECF;
+	color:#1C5153;
+}
+.linkedin {
+	background-image:url('../images/linkedin.png');
+	background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;
+	position:relative;
+	left:70%;
+	bottom:-76%;
+	width:64px;
+	height:64px;
+	z-index: 20;
+}
+.card-horizontal-products {
+	background-image:url('../images/electro.jpg');
+	background-size:cover;
+	/* Ajusta la imagen para cubrir todo el contenedor */
+	background-position:center;
+	/* Centra la imagen dentro del contenedor */
+	background-repeat:no-repeat;
+	/* Evita que la imagen se repita */
+	position:absolute;
+	background-color:#1E1E1E;
+	width:420px;
+	height:160px;
+	right:40px;
+	top:350px;
+	border-radius:12px;
+}
+#electroadhesive-gel h3 {
+	position:absolute;
+	font-size:2.2em;
+	left:30px;
+	top:460px;
+}
+#news-01 .sub-title {
+	position:relative;
+	width:300px;
+	top:-360px;
+	left:656px;
+}
+.section-neon-green.advisors-section h2 {
+	position:relative;
+	max-width:200px;
+	left:30px;
+	top:20px;
+}
+.parrafo-reparar {
+	position:absolute;
+	color:white;
+	max-width:400px;
+	top:230px;
+	left:30px;
+}
+#news-02 .sub-title {
+	font-size:0.7em;
+	top:0;
+}
+#research-last.section-neon-green h3 {
+	position:absolute;
+	top:480px;
+	left:870px;
+	font-size:1.8em;
+}
+.about-us-parrafos {
+	color:white;
+	position:absolute;
+	top:530px;
+	left:-190px;
+}
+.about-us-parrafos p {
+	min-width:400px;
+}
+.about-us-parradvisors {
+	position:relative;
+	color:white;
+	top:160px;
+	left:72px;
+	max-width:620px;
+}
+.news-area h2 {
+	font-size:1.8em;
+	min-width:460px;
+	width:500px;
+	position:relative;
+	top:-20px;
+	left:-10px;
+	color:white;
+}
+.section-neon-green .news-area .sub-title h3 {
+	position:absolute;
+	color:#78BA5C;
+	left:-180px;
+	top:-220px;
+	font-size:0.7em;
+}
+.section-dark-green .news-area .sub-title h3 {
+	position:absolute;
+	color:#78BA5C;
+	min-width:300px;
+	left:-670px;
+	top:-260px;
+	font-size:2em;
+}
+.section-dark-green .news-area h3 {
+	position:absolute;
+	color:white;
+	min-width:300px;
+	left:40px;
+	top:830px;
+	font-size:2.2em;
+}
+#news-01 p {
+	color:white;
+	position:relative;
+	width:600px;
+	top:80px;
+	left:420px;
+}
+#news-02 p {
+	color:white;
+	position:relative;
+	width:600px;
+	top:80px;
+	right:-440px;
+}
+#news-01.section-dark-green {
+	min-height:960px;
+}
+#news-02.section-neon-green {
+	min-height:830px;
+}
+section#about-us-company h3 {
+	position:absolute;
+	top:470px;
+	right:30px;
+	font-size:2em;
+}
+section#transforming h3 {
+	position:absolute;
+	top:460px;
+	right:30px;
+	font-size:2em;
+}
+#about-us-company p {
+	position:relative;
+	top:-80px;
+	width:400px;
+}
+#advisor1 h2 {
+	font-size:2.2em;
+	min-width:320px;
+}
+#advisor2 h2 {
+	font-size:2.2em;
+	min-width:320px;
+}
+#advisor2 h3 {
+	font-size:2.2em;
+	min-width:320px;
+}
+#revolution-patients p {
+	position:absolute;
+	top:220px;
+	left:30px;
+	color:white;
+	width:400px;
+	min-width:400px;
+}
+section#revolution-patients.section-dark-green h3 {
+	font-size:2em;
+	position:absolute;
+	top:470px;
+	right:-160px;
+	color:#4DBECF;
+	width:400px;
+	min-width:400px;
+}
+.reimaging-tissue {
+	position:absolute;
+	left:30px;
+	width:300px;
+	top:30px;
+	font-size:2.2em;
+}
+.parrafo-leah {
+	width:500px;
+	color:white;
+	position:relative;
+	top:140px;
+	left:-15px;
+}
+.parrafo-james {
+	width:500px;
+	color:white;
+	position:relative;
+	top:160px;
+	left:-15px;
+}
+.electro-parrafo {
+	width:500px;
+	color:black;
+	position:relative;
+	top:160px;
+	left:-15px;
+}
+.founders-names {
+	font-size:1.2em;
+}
+.advisors-names {
+	position:relative;
+	display:flex;
+	top:220px;
+	right:0px;
+	font-size:1.2em;
+}
+#founders-mathew.section-dark-green {
+	min-height:690px;
+}
+.advisors-names-a,.advisors-names-b,.advisors-names-c {
+	width:220px;
+	align-content:center;
+	text-align:center;
+	padding:10px;
+	align-content:space-evenly;
+}
+.parrafo-founders {
+	position:relative;
+	width:460px;
+	top:270px;
+}
+.section-neon-green.research-area h1 {
+	font-size:2em;
+	max-width:540px;
+	left:20px;
+}
+#research-last h2 {
+	position:relative;
+	font-size:2em;
+	min-width:400px;
+	width:500px;
+	left:-20px;
+}
+.section-white.patient-outcomes h2 {
+	position:absolute;
+	left:20px;
+	top:30px;
+	max-width:120px;
+	font-size:2.2em;
+}
+.tissue-repair h2 {
+	position:relative;
+	left:20px;
+	top:30px;
+	max-width:120px;
+	font-size:2.2em;
+}
+#revolution-patients h2 {
+	max-width:180px;
+	position:absolute;
+	color:white;
+	font-size:2.2em;
+	left:30px;
+	top:30px;
+}
+#products h2 {
+	color:white;
+	font-size:2.2em;
+	position:absolute;
+	left:30px;
+	top:30px;
+}
+#research-big {
+	min-height:790px;
+}
+#founders h2 {
+	position:absolute;
+	color:white;
+	top:30px;
+	left:30px;
+}
+.surgical-technique .card-horizontal-transp p {
+	left:-50px;
+	top:290px;
+	width:230px;
+	height: 300px;
+}
+/* ESTILOS MOBILE */
+@media (max-width:768px) {
+	 body {
+		 font-size:0.9em;
+		 line-height: 1.3;
 	}
-        header .logo img {
-            height: 4em;
-        }
-
-        header .logo p {
-            font-size: 0.7em;
-            padding: 6px;
-        }
-
-        header .logo p {
-            font-size: 0.9em;
-            padding: 6px;
-        }
-
-
-        /* 01 NAV WRAPPER MOBILE */
-        .nav-wrapper {
-
-            position: relative;
-            left: 10px;
-            display: contents;
-            min-height: 50px;
-            padding: 0.5rem; /* Agrega un poco de padding para que los elementos no estén pegados a los bordes */ 
-
-        }
-
-
-        .navigation-wrapper-pro {
-          position: relative;
-	  width: auto;
-	  margin-bottom: 1rem;
-	  margin-right: 1rem;
-        }
-
-        .menu {
-          display: none;
-          flex-direction: column;
-          flex-wrap: wrap; /* Permite que los elementos se envuelvan si el contenedor es demasiado pequeño */
-          background-color: #333;
-          position: absolute;
-          top: 140px;
-          left: 30px;
-          padding-left: 10px;
-        }
-
-
-        nav .menu-icon {
-          position: relative;
-          /* left: 18px; */
-          /* top: -16px; */
-          display: flex;
-        }
-
-
-
-        nav .menu li {
-          text-align: center;
-          margin: 10px 0;
-          width: 110px;
-        }
-
-        nav .menu li a {
-          font-size: 0.7em;
-          color: white;
-        }
-
-        nav .menu li a:hover {
-          color: white;
-        }
-
-        .menu.active {
-          display: flex;
-          position: absolute;
-          top: 60px;
-          font-size: 1.6em;
-          line-height: 1em;
-          z-index: 20;
-          left: -6rem;
-          background-color: #43597D;
-          border-left: 3px solid #1C5153;
-          padding-right: 10px;
-          border-radius: 6px;
-        }
-
-
-        h1 {
-
-          font-size: 1.8em;
-          top: 10px;
-          left: 0;
-          padding-left: 0;
-        }
-
-        h2 {
-          font-size: 1.6em;
-          line-height: 1.1em;
-          padding: 0px;
-
-        }
-
-
-        h3 {
-          font-size: 1.6em;
-        }
-
+	/* 01 WRAPPER HEADER MOBILE */
+	.wrapper-header {
+		 margin-left:auto;
+		 margin-right:auto;
+		 justify-content:space-between;
+		 margin-top:0;
+		 margin-bottom:0;
+		 width:100%;
+	}
+	 header {
+		 padding-top:1rem;
+		 padding-bottom:1rem;
+		 padding-right:1rem;
+		 padding-left:1rem;
+	}
+	header .logo img {
+		height:4em;
+	}
+	header .logo p {
+		font-size:0.7em;
+		padding:6px;
+	}
+	header .logo p {
+		font-size:0.9em;
+		padding: 6px;
+	}
+	/* 01 NAV WRAPPER MOBILE */
+	.nav-wrapper {
+		position:relative;
+		left:10px;
+		display:contents;
+		min-height:50px;
+		padding:0.5rem;
+		/* Agrega un poco de padding para que los elementos no estén pegados a los bordes */
+	}
+	.navigation-wrapper-pro {
+		position:relative;
+		 width:auto;
+		 margin-bottom:1rem;
+		 margin-right: 1rem;
+	}
+	.menu {
+		display:none;
+		flex-direction:column;
+		flex-wrap:wrap;
+		/* Permite que los elementos se envuelvan si el contenedor es demasiado pequeño */
+		background-color:#333;
+		position:absolute;
+		top:140px;
+		left:30px;
+		padding-left:10px;
+	}
+	nav .menu-icon {
+		position:relative;
+		/* left:18px;*/
+		/* top:-16px;*/
+		display:flex;
+	}
+	nav .menu li {
+		text-align:center;
+		margin:10px 0;
+		width:110px;
+	}
+	nav .menu li a {
+		font-size:0.7em;
+		color:white;
+	}
+	nav .menu li a:hover {
+		color:white;
+	}
+	.menu.active {
+		display:flex;
+		position:absolute;
+		top:60px;
+		font-size:1.6em;
+		line-height:1em;
+		z-index:20;
+		left:-6rem;
+		background-color:#43597D;
+		border-left:3px solid #1C5153;
+		padding-right:10px;
+		border-radius:6px;
+	}
+	h1 {
+		font-size:1.8em;
+		top:10px;
+		left:0;
+		padding-left:0;
+	}
+	h2 {
+		font-size:1.6em;
+		line-height:1.1em;
+		padding:0px;
+	}
+	h3 {
+		font-size:1.6em;
+	}
+	 .line-pro {
+		height:4px;
+		background-color:lightblue;
+		width:100%;
+	}
+	.color-white {
+		color:white;
+		font-size:2em;
+	}
+	.grand-title {
+		font-size:2em;
+	}
+	.section-standard {
+		width:90%;
+		margin:0 auto;
+		padding-bottom:0;
+		padding-top:30px;
+	}
+	.section-white {
+		margin:0 auto;
+		width: 100%;
+	}
+	/* HOME SECTION 01 - BANNER SURGEONS MOBILE */
+	.section-banner-surgeons {
+		width:90%;
+		min-height:260px;
+		margin:0 auto;
+		/* Margen superior e inferior de 2rem y centrado horizontal */
+		margin-top:10px;
+	}
+	/* HOME SECTION 02 - INNOVATIVE MOBILE */
+	.container-pro-innovative {
+		display:grid;
+		grid-template-columns:1fr;
+		grid-template-rows:0fr 0fr 0fr 0fr;
+		column-gap:10px;
+		row-gap:10px;
+		background-position:50% 50%;
+		background-repeat:no-repeat;
+		padding:0px;
+	}
+	.grid-item-01 {
+		grid-column:1 / 2;
+	}
+	.grid-item-02 {
+		grid-column:1 / 2;
+	}
+	.grid-item-03 {
+		grid-column:1 / 2;
+	}
+	.grid-item-04 {
+		grid-column:1 / 2;
+	}
+	.card-doctora {
+		height: 220px;
+	}
+	/* HOME 03 SECTION TRANSFORMING MOBILE */
+	.container-pro-transforming {
+		display:grid;
+		grid-template-columns:1fr;
+		grid-template-rows:0fr 0fr 0fr;
+		column-gap:20px;
+		row-gap:10px;
+		background-position:left top;
+		background-repeat:no-repeat;
+		padding-top:30px;
+		padding-left:0px;
+	}
+	.grid-item-01-transforming {
+		grid-column:1 / 2;
+		grid-row:1 / 2;
+		padding-bottom: 20px;
+	}
+	.grid-item-02-transforming {
+		grid-column:1 / 2;
+		grid-row:2 / 3;
+		background-position:center;
+		/* Centra la imagen dentro del contenedor */
+		background-repeat:no-repeat;
+		/* Evita que la imagen se repita */
+		width:100%;
+		height:240px;
+		border-radius:12px;
+	}
+	.grid-item-03-transforming {
+		grid-column:1 / 2;
+		grid-row:2 / 3;
+		padding-top:260px;
+		font-size:108%;
+	}
+	.grid-item-04-transforming {
+		grid-column:1 / 2;
+		grid-row:2 / 3;
+		padding-top: 170px;
+	}
+	/* HOME 04 SECTION REIMAGINING MOBILE */
+	.container-pro-reimagining {
+		grid-template-columns:1fr;
+		grid-template-rows:0fr 0fr 0fr;
+		column-gap:20px;
+		row-gap:10px;
+		padding:0;
+	}
+	.grid-item-01-reimagining {
+		grid-column:1 / 2;
+		grid-row:1 / 2;
+	}
+	.grid-item-02-reimagining {
+		grid-column:1 / 2;
+		grid-row:3 / 4;
+		padding-top:0px;
+		font-size:108%;
+	}
+	.grid-item-03-reimagining {
+		grid-column:1 / 2;
+		grid-row:3 / 4;
+	}
+	.grid-item-04-reimagining {
+		grid-column:1 / 2;
+		grid-row: 2 / 3;
+	}
+	/* HOME PAGE - SECTION 06 - MEET THE TEAM MOBILE */
+	.section-team {
+		width:100%;
+		margin-bottom: 20px;
+	}
+	/* Container Layout Grid Mobile */
+	.container-pro-team-general {
+		display:grid;
+		grid-template-columns:1fr;
+		grid-template-rows:0fr 3fr 3fr;
+		padding:20px;
+		column-gap:30px;
+		padding-top:20px;
+	}
+	.grid-item-pro-team-general-01 {
+		grid-column:1 / 2;
+		grid-row:1 / 2;
+		color:white;
+		padding-top:20px;
+	}
+	.grid-item-pro-team-general-02 {
+		grid-column:1 / 2;
+		grid-row:2 / 3;
+		padding-top:20px;
+		font-size:108%;
+		padding-bottom:30px;
+		text-align:justify;
+		line-height:1.5em;
+	}
+	.grid-item-pro-team-general-03 {
+		grid-column:1 / 2;
+		grid-row:3 / 4;
+	}
+	.container-pro-team {
+		display:grid;
+		grid-template-columns:1fr 1fr 1fr;
+		grid-template-rows:3fr 1fr;
+		column-gap:10px;
+		row-gap:10px;
+		color:#00A099;
+	}
+	.grid-item-team-01 {
+		grid-column:1 / 2;
+		grid-row:1 / 2;
+		height:160px;
+	}
+	.grid-item-team-02 {
+		grid-column:2 / 3;
+		grid-row:1 / 2;
+		height:160px;
+	}
+	.grid-item-team-03 {
+		grid-column:3 / 4;
+		grid-row:1 / 2;
+		height:160px;
+	}
+	.grid-item-team-04 {
+		grid-column:1 / 2;
+		grid-row:2 / 3;
+		text-align:center;
+	}
+	.grid-item-team-05 {
+		grid-column:2 / 3;
+		grid-row:2 / 3;
+		text-align:center;
+	}
+	.grid-item-team-06 {
+		grid-column:3 / 4;
+		grid-row:2 / 3;
+		text-align: center;
+	}
+	/* HOME SECTION 07 - ADVISORS MOBILE */
+	.section-advisors {
+		width:100%;
+		margin:0rem auto;
+		/* Margen superior e inferior de 2rem y centrado horizontal */
+	}
+	.container-pro-advisors {
+		grid-template-columns:1fr;
+		grid-template-rows:0fr 3fr 8fr;
+		column-gap:20px;
+		row-gap:20px;
+		background-position:left top;
+		background-repeat:no-repeat;
+		padding:20px;
+	}
+	.grid-item-01-advisors {
+		grid-column:1 / 2;
+		grid-row:1 / 2;
+	}
+	.grid-item-02-advisors {
+		grid-column:1 / 2;
+		grid-row:2 / 3;
+		padding-top:0px;
+	}
+	.grid-item-03-advisors {
+		grid-column:1 / 2;
+		grid-row:3 / 4;
+		grid-template-columns:1fr 1fr 1fr 1fr;
+		grid-template-rows:0fr 0fr 0fr;
+		column-gap:10px;
+		row-gap:10px;
+	}
+	.grid-item-advisors-card-01 {
+		grid-column:1 / 2;
+		grid-row:1 / 2;
+		height:160px;
+	}
+	.grid-item-advisors-card-02 {
+		grid-column:2 / 3;
+		grid-row:1 / 2;
+		height:160px;
+	}
+	.grid-item-advisors-card-03 {
+		grid-column:3 / 4;
+		grid-row:1 / 2;
+		height:160px;
+	}
+	.grid-item-advisors-card-04 {
+		grid-column:4 / 5;
+		grid-row:1 / 2;
+		height:160px;
+	}
+	.grid-item-advisors-card-05 {
+		grid-column:1 / 2;
+		grid-row:2 / 3;
+	}
+	.grid-item-advisors-card-06 {
+		grid-column:2 / 3;
+		grid-row:2 / 3;
+	}
+	.grid-item-advisors-card-07 {
+		grid-column:3 / 4;
+		grid-row:2 / 3;
+	}
+	.grid-item-advisors-card-08 {
+		grid-column:4 / 5;
+		grid-row:2 / 3;
+	}
+	.grid-item-advisors-card-09 {
+		grid-column:1 / 2;
+		grid-row:3 / 4;
+	}
+	.grid-item-advisors-card-10 {
+		grid-column:2 / 3;
+		grid-row:3 / 4;
+	}
+	.grid-item-advisors-card-11 {
+		grid-column:3 / 4;
+		grid-row:3 / 4;
+	}
+	.grid-item-advisors-card-12 {
+		grid-column:4 / 5;
+		grid-row: 3 / 4;
+	}
+	 /* ABOUT US PAGE - SECTION 01 - ABOUT US MOBILE */
+	.container-about-about-us {
+		display:grid;
+		grid-template-columns:1fr;
+		grid-template-rows:0fr 0fr 1fr;
+		column-gap:20px;
+		row-gap:20px;
+		background-image:url('../images/back-dots-defined.png');
+		background-size:contain;
+		background-position:left top;
+		background-repeat:no-repeat;
+		padding:10px;
+	}
+	.grid-item-about-about-01 {
+		grid-column:1 / 2;
+		grid-row:1 / 2;
+	}
+	.grid-item-about-about-02 {
+		grid-column:1 / 2;
+		grid-row:2 / 3;
+		padding-top:0;
+		font-size:120%;
+	}
+	.grid-item-about-about-03 {
+		grid-column:1 / 2;
+		grid-row: 3 / 4;
+	}
+	 /* ABOUT US PAGE - SECTION 02 - TRANSFORMING MOBILE */
+	.container-about-transforming {
+		display:grid;
+		grid-template-columns:1fr;
+		grid-template-rows:0fr 0fr 1fr;
+		column-gap:20px;
+		row-gap:20px;
+		background-image:url('../images/back-dots-defined.png');
+		background-size:contain;
+		background-position:left top;
+		background-repeat:no-repeat;
+		padding:10px;
+	}
+	.grid-item-about-transform-01 {
+		grid-column:1 / 2;
+		grid-row:1 / 2;
+	}
+	.grid-item-about-transform-02 {
+		grid-column:1 / 2;
+		grid-row:2 / 3;
+		padding-top:0;
+		font-size:120%;
+	}
+	.grid-item-about-transform-03 {
+		grid-column:1 / 2;
+		grid-row: 3 / 4;
+	}
+	 /* ABOUT US PAGE - SECTION 03 - TITLE FOUNDERS MOBILE */
+	section#founders-paragraph {
+		width:100%;
+		height:90px;
+		position:relative;
+		margin:0 auto;
+		font-size:2.2em;
+		padding:0;
+		width:90%;
+		padding-top:30px;
+		padding-left: 10px;
+	}
+	 /* ABOUT US PAGE - SECTION 04 - FOUNDERS LEAH MOBILE */
+	.container-about {
+		display:grid;
+		/* grid-template-columns:1fr;*/
+		/* grid-template-rows:0fr 3fr 3fr;*/
+		grid-template-columns:none;
+		 grid-template-rows:none;
+		column-gap:20px;
+		row-gap:20px;
+		background-image:url('../images/back-dots-defined.png');
+		background-size:contain;
+		background-position:left top;
+		background-repeat:no-repeat;
+		padding:10px;
+	}
+	.grid-item-about-01 {
+		grid-column:1 / 2;
+		grid-row:1 / 2;
+	}
+	.grid-item-about-02 {
+		grid-column:1 / 2;
+		grid-row:2 / 3;
+		width:100%;
+		height:340px;
+	}
+	.grid-item-about-03 {
+		grid-column:1 / 2;
+		grid-row:3 / 4;
+		padding-top:0px;
+		padding-left:0px;
+		font-size: 120%;
+	}
+	.linkedin {
+	  background-image:url('../images/linkedin.png');
+	  background-size:cover;
+	  background-position:center;
+	  background-repeat:no-repeat;
+	  position: relative;
+	  left: 17rem;
+	}
 	
-
-        .line-pro {
-            height: 4px;
-            background-color: lightblue;
-            width: 100%;
-        }
-
-        .color-white {
-                color: white;
-                font-size: 2em;
-            }
-
-            .grand-title {
-                font-size: 2em;
-            }
-
-        .section-standard {
-            width: 90%;
-            margin: 0 auto;
-            padding-bottom: 0;
-            padding-top: 30px;
-        }
-
-            .section-white {
-                margin: 0 auto;
-                width: 100%;
-            }
-
-
-            /* HOME SECTION 01 - BANNER SURGEONS MOBILE */
-
-            .section-banner-surgeons {
-                width: 90%;
-                min-height: 260px;
-                margin: 0 auto; /* Margen superior e inferior de 2rem y centrado horizontal */
-                margin-top: 10px;
-            }
-
-
-
-
-
-            /* HOME SECTION 02 - INNOVATIVE MOBILE */
-
-            .container-pro-innovative {
-                display: grid;
-                grid-template-columns: 1fr;
-                grid-template-rows: 0fr 0fr 0fr 0fr;
-                column-gap: 10px;
-                row-gap: 10px;
-                background-position: 50% 50%;
-                background-repeat: no-repeat;
-                padding: 0px;
-            }
-
-            .grid-item-01 {
-                grid-column: 1 / 2; 
-            }
-
-            .grid-item-02 {
-                grid-column: 1 / 2;
-            }
-
-            .grid-item-03 {
-                grid-column: 1 / 2;
-            }
-
-            .grid-item-04 {
-                grid-column: 1 / 2;
-            }
-
-        .card-doctora {
-            height: 220px;
-
-        }
-
-
-            /* HOME 03 SECTION TRANSFORMING MOBILE */
-
-            .container-pro-transforming {
-                display: grid;
-                grid-template-columns: 1fr;
-                grid-template-rows: 0fr 0fr 0fr;
-                column-gap: 20px;
-                row-gap: 10px;
-                background-position: left top;
-                background-repeat: no-repeat;
-                padding-top: 30px;
-                padding-left: 0px;
-            }
-
-            .grid-item-01-transforming {
-                grid-column: 1 / 2; 
-                grid-row: 1 / 2;  
-                padding-bottom: 20px;  
-            }
-
-            .grid-item-02-transforming {
-                grid-column: 1 / 2; 
-                grid-row: 2 / 3;  
-                background-position: center; /* Centra la imagen dentro del contenedor */
-                background-repeat: no-repeat; /* Evita que la imagen se repita */
-                width: 100%;
-                height: 240px;
-                border-radius: 12px;
-            }
-
-            .grid-item-03-transforming {
-                grid-column: 1 / 2; 
-                grid-row: 2 / 3;  
-                padding-top: 260px;
-                font-size: 108%;
-            }
-
-            .grid-item-04-transforming {
-                grid-column: 1 / 2; 
-                grid-row: 2 / 3;  
-                padding-top: 170px; 
-            }
-
-
-
-            /* HOME 04 SECTION REIMAGINING MOBILE */
-
-            .container-pro-reimagining {
-                grid-template-columns: 1fr;
-                grid-template-rows: 0fr 0fr 0fr;
-                column-gap: 20px;
-                row-gap: 10px;
-                padding: 0;
-            }
-
-
-            .grid-item-01-reimagining {
-                grid-column: 1 / 2; 
-                grid-row: 1 / 2;  
-            }
-
-            .grid-item-02-reimagining {
-                grid-column: 1 / 2; 
-                grid-row: 3 / 4;  
-                padding-top: 0px;
-                font-size: 108%;
-            }
-
-            .grid-item-03-reimagining {
-                grid-column: 1 / 2; 
-                grid-row: 3 / 4;  
-            }
-
-
-            .grid-item-04-reimagining {
-                grid-column: 1 / 2; 
-                grid-row: 2 / 3;  
-
-            }
-
-
-        /* HOME PAGE - SECTION 06 - MEET THE TEAM MOBILE */
-
-        .section-team {
-            width: 100%;
-            margin-bottom: 20px;
-        }
-
-
-        /* Container Layout Grid Mobile */
-        .container-pro-team-general {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 0fr 3fr 3fr;
-            padding: 20px;
-            column-gap: 30px;
-            padding-top: 20px;
-        }
-
-
-
-        .grid-item-pro-team-general-01 {
-            grid-column: 1 / 2; 
-            grid-row: 1 / 2;    
-            color: white;
-            padding-top: 20px;
-        }
-
-
-        .grid-item-pro-team-general-02 {
-            grid-column: 1 / 2;
-            grid-row: 2 / 3;
-            padding-top: 20px;
-            font-size: 108%;
-            padding-bottom: 30px;
-            text-align: justify;
-            line-height: 1.5em;
-        }
-
-
-
-        .grid-item-pro-team-general-03 {
-            grid-column: 1 / 2; 
-            grid-row: 3 / 4;    
-        }
-
-
-
-        .container-pro-team {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 3fr 1fr;
-            column-gap: 10px;
-            row-gap: 10px;
-            color: #00A099;
-        }
-
-
-
-
-        .grid-item-team-01 {
-            grid-column: 1 / 2; 
-            grid-row: 1 / 2; 
-            height: 160px;   
-        }
-
-        .grid-item-team-02 {
-            grid-column: 2 / 3; 
-            grid-row: 1 / 2;    
-            height: 160px;  
-        }
-
-        .grid-item-team-03 {
-            grid-column: 3 / 4; 
-            grid-row: 1 / 2; 
-            height: 160px;     
-        }
-
-        .grid-item-team-04 {
-            grid-column: 1 / 2; 
-            grid-row: 2 / 3;    
-            text-align: center;
-        }
-
-        .grid-item-team-05 {
-            grid-column: 2 / 3; 
-            grid-row: 2 / 3;    
-            text-align: center;
-        }
-
-        .grid-item-team-06 {
-            grid-column: 3 / 4; 
-            grid-row: 2 / 3;  
-            text-align: center;  
-        }
-
-
-        /* HOME SECTION 07 - ADVISORS MOBILE */
-
-        .section-advisors {
-            width: 100%;
-            margin: 0rem auto; /* Margen superior e inferior de 2rem y centrado horizontal */
-        }
-
-        .container-pro-advisors {
-            grid-template-columns: 1fr;
-            grid-template-rows: 0fr 3fr 8fr;
-            column-gap: 20px;
-            row-gap: 20px;
-            background-position: left top;
-            background-repeat: no-repeat;
-            padding: 20px;
-        }
-
-        .grid-item-01-advisors {
-            grid-column: 1 / 2; 
-            grid-row: 1 / 2;    
-        }
-
-        .grid-item-02-advisors {
-            grid-column: 1 / 2; 
-            grid-row: 2 / 3;  
-            padding-top: 0px;  
-        }
-
-        .grid-item-03-advisors {
-            grid-column: 1 / 2; 
-            grid-row: 3 / 4;    
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            grid-template-rows: 0fr 0fr 0fr;
-            column-gap: 10px;
-            row-gap: 10px;
-        }
-
-
-
-        .grid-item-advisors-card-01 {
-            grid-column: 1 / 2; 
-            grid-row: 1 / 2;   
-            height: 160px; 
-        }
-
-        .grid-item-advisors-card-02 {
-            grid-column: 2 / 3; 
-            grid-row: 1 / 2;    
-            height: 160px; 
-        }
-
-        .grid-item-advisors-card-03 {
-            grid-column: 3 / 4; 
-            grid-row: 1 / 2;  
-            height: 160px;   
-        }
-
-        .grid-item-advisors-card-04 {
-            grid-column: 4 / 5; 
-            grid-row: 1 / 2;   
-            height: 160px;  
-        }
-
-        .grid-item-advisors-card-05 {
-            grid-column: 1 / 2; 
-            grid-row: 2 / 3;    
-        }
-
-        .grid-item-advisors-card-06 {
-            grid-column: 2 / 3; 
-            grid-row: 2 / 3;    
-        }
-
-        .grid-item-advisors-card-07 {
-            grid-column: 3 / 4; 
-            grid-row: 2 / 3;    
-        }
-
-        .grid-item-advisors-card-08 {
-            grid-column: 4 / 5; 
-            grid-row: 2 / 3;    
-        }
-
-        .grid-item-advisors-card-09 {
-            grid-column: 1 / 2; 
-            grid-row: 3 / 4;    
-        }
-
-        .grid-item-advisors-card-10 {
-            grid-column: 2 / 3; 
-            grid-row: 3 / 4;    
-        }
-
-        .grid-item-advisors-card-11 {
-            grid-column: 3 / 4; 
-            grid-row: 3 / 4;    
-        }
-
-        .grid-item-advisors-card-12 {
-            grid-column: 4 / 5; 
-            grid-row: 3 / 4;    
-        }
-
-
-
-    /* ABOUT US PAGE - SECTION 01 - ABOUT US MOBILE */
-
-        .container-about-about-us {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 0fr 0fr 1fr;
-            column-gap: 20px;
-            row-gap: 20px;
-            background-image: url('../images/back-dots-defined.png');
-            background-size: contain;
-            background-position: left top;
-            background-repeat: no-repeat;
-            padding: 10px;
-        }
-
-        .grid-item-about-about-01 {
-            grid-column: 1 / 2; 
-            grid-row: 1 / 2;   
-        }
-
-        .grid-item-about-about-02 {
-            grid-column: 1 / 2; 
-            grid-row: 2 / 3; 
-            padding-top: 0; 
-            font-size: 120%; 
-        }
-
-
-        .grid-item-about-about-03 {
-            grid-column: 1 / 2; 
-            grid-row: 3 / 4;   
-        }
-
-
-
-
-
-    /* ABOUT US PAGE - SECTION 02 - TRANSFORMING MOBILE */
-
-        .container-about-transforming {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 0fr 0fr 1fr;
-            column-gap: 20px;
-            row-gap: 20px;
-            background-image: url('../images/back-dots-defined.png');
-            background-size: contain;
-            background-position: left top;
-            background-repeat: no-repeat;
-            padding: 10px;
-        }
-
-        .grid-item-about-transform-01 {
-            grid-column: 1 / 2; 
-            grid-row: 1 / 2;   
-        }
-
-
-        .grid-item-about-transform-02 {
-            grid-column: 1 / 2; 
-            grid-row: 2 / 3;  
-            padding-top: 0; 
-            font-size: 120%;
-        }
-
-        .grid-item-about-transform-03 {
-            grid-column: 1 / 2; 
-            grid-row: 3 / 4;   
-        }
-
-
-
-
-
-    /* ABOUT US PAGE - SECTION 03 - TITLE FOUNDERS MOBILE */
-    section#founders-paragraph {
-        width: 100%;
-        height: 90px;
-        position: relative;
-        margin: 0 auto;
-        font-size: 2.2em;
-        padding: 0;
-        width: 90%;
-        padding-top: 30px;
-        padding-left: 10px;
-
-    }
-
-    /* ABOUT US PAGE - SECTION 04 - FOUNDERS LEAH MOBILE */
-        .container-about-leah {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 0fr 3fr 3fr;
-            column-gap: 20px;
-            row-gap: 20px;
-            background-image: url('../images/back-dots-defined.png');
-            background-size: contain;
-            background-position: left top;
-            background-repeat: no-repeat;
-            padding: 10px;
-        }
-
-        .grid-item-about-leah-01 {
-            grid-column: 1 / 2; 
-            grid-row: 1 / 2;   
-        }
-
-        .grid-item-about-leah-02 {
-            grid-column: 1 / 2; 
-            grid-row: 2 / 3;   
-            width: 100%;
-            height: 340px;
-        }
-
-
-        .grid-item-about-leah-03 {
-            grid-column: 1 / 2; 
-            grid-row: 3 / 4;  
-            padding-top: 0px;
-            padding-left: 0px;
-            font-size: 120%; 
-        }
-
-
-
-
-    /* ABOUT US PAGE - SECTION 05 - FOUNDERS MATTHEW MOBILE */
-
-        .container-about-matthew {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 0fr 2fr 2fr;
-            column-gap: 20px;
-            row-gap: 20px;
-            background-image: url('../images/back-dots-defined.png');
-            background-size: contain;
-            background-position: left top;
-            background-repeat: no-repeat;
-            padding: 10px;
-        }
-
-
-        .grid-item-about-matthew-01 {
-            grid-column: 1 / 2; 
-            grid-row: 1 / 2;   
-        }
-
-        .grid-item-about-matthew-02 {
-            grid-column: 1 / 2; 
-            grid-row: 2 / 3;   
-            width: 100%;
-            height: 340px;
-        }
-
-        .grid-item-about-matthew-03 {
-            grid-column: 1 / 2; 
-            grid-row: 3 / 4;   
-            padding-top: 0;
-            font-size: 120%;
-        }
-
-    /* ABOUT US PAGE - SECTION 06 - FOUNDERS JAMES MOBILE */
-
-
-        .container-about-james {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 0fr 0fr 0fr;
-            column-gap: 20px;
-            row-gap: 20px;
-            background-image: url('../images/back-dots-defined.png');
-            background-size: contain;
-            background-position: left top;
-            background-repeat: no-repeat;
-            padding: 10px;
-
-        }
-
-
-        .grid-item-about-james-01 {
-            grid-column: 1 / 2; 
-            grid-row: 1 / 2;   
-        }
-
-        .grid-item-about-james-02 {
-            grid-column: 1 / 2; 
-            grid-row: 2 / 3;   
-            width: 100%;
-            height: 340px;
-
-        }
-
-        .grid-item-about-james-03 {
-            grid-column: 1 / 2; 
-            grid-row: 3 / 4;  
-            padding-top: 0;
-            font-size: 120%;
-        }
-
-
-
-
-    /* ABOUT US PAGE - SECTION 07 - ADVISORS TITLE MOBILE */
-
-
-
-    /* ABOUT US SECTION 09 - ADVISORS 1 LOU Mobile */
-
-        .container-about-lou {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 0fr 0fr 0fr;
-            column-gap: 20px;
-            row-gap: 20px;
-            background-image: url('../images/back-dots-defined.png');
-            background-size: contain;
-            background-position: left top;
-            background-repeat: no-repeat;
-            padding: 10px;
-        }
-
-
-        .grid-item-about-lou-01 {
-            grid-column: 1 / 2; 
-            grid-row: 1 / 2;   
-        }
-
-        .grid-item-about-lou-02 {
-            grid-column: 1 / 2; 
-            grid-row: 2 / 3;   
-            width: 100%;
-            height: 380px;
-        }
-
-        .grid-item-about-lou-03 {
-            grid-column: 1 / 2; 
-            grid-row: 3 / 4;   
-            padding-top: 0;
-            font-size: 120%;
-        }
-
-
-
-
-
-
-        /* ABOUT US SECTION 10 - ADVISORS 2 Srinivasa Mobile */
-
-        .container-about-srinivasa {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 0fr 0fr 0fr;
-            column-gap: 20px;
-            row-gap: 20px;
-            background-image: url('../images/back-dots-defined.png');
-            background-size: contain;
-            background-position: left top;
-            background-repeat: no-repeat;
-            padding: 10px;
-        }
-
-
-        .grid-item-about-srinivasa-01 {
-            grid-column: 1 / 2; 
-            grid-row: 1 / 2;   
-        }
-
-        .grid-item-about-srinivasa-02 {
-            grid-column: 1 / 2; 
-            grid-row: 2 / 3;  
-            width: 100%; 
-            height: 410px;
-        }
-
-        .grid-item-about-srinivasa-03 {
-            grid-column: 1 / 2; 
-            grid-row: 3 / 4;   
-            padding-top: 0;
-            font-size: 115%;
-        }
-
-
-
-
-
-
-
-        /* ABOUT US SECTION 11 - ADVISORS 3 Mayur Mobile */
-
-        .container-about-mayur {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 0fr 0fr 0fr;
-            column-gap: 20px;
-            row-gap: 20px;
-            background-image: url('../images/back-dots-defined.png');
-            background-size: contain;
-            background-position: left top;
-            background-repeat: no-repeat;
-            padding: 10px;
-        }
-
-
-        .grid-item-about-mayur-01 {
-            grid-column: 1 / 2; 
-            grid-row: 1 / 2;   
-        }
-
-        .grid-item-about-mayur-02 {
-            grid-column: 1 / 2; 
-            grid-row: 2 / 3;   
-            width: 100%;
-            height: 410px;
-        }
-
-        .grid-item-about-mayur-03 {
-            grid-column: 1 / 2; 
-            grid-row: 3 / 4;   
-            padding-top: 0;
-            font-size: 120%;
-        }
-
-
-
-        /* ABOUT US SECTION 12 - ADVISORS 4 Patricia Mobile */
-
-        .container-about-patricia {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 0fr 0fr 0fr;
-            column-gap: 20px;
-            row-gap: 20px;
-            background-image: url('../images/back-dots-defined.png');
-            background-size: contain;
-            background-position: left top;
-            background-repeat: no-repeat;
-            padding: 10px;
-            margin-bottom: 30px;
-        }
-
-
-        .grid-item-about-patricia-01 {
-            grid-column: 1 / 2; 
-            grid-row: 1 / 2;   
-        }
-
-        .grid-item-about-patricia-02 {
-            grid-column: 1 / 2; 
-            grid-row: 2 / 3;   
-            width: 100%;
-            height: 420px;
-        }
-
-        .grid-item-about-patricia-03 {
-            grid-column: 1 / 2; 
-            grid-row: 3 / 4;   
-            padding-top: 0;
-            font-size: 115%;
-        }
-
-
-        /* PRODUCTS PAGE - STYLES MOBILE */
-
-
-
-
-        /* PRODUCTS PAGE - SECTION 01 - ELECTRO MOBILE */
-
-        .container-products-electro {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 0fr 0fr 0fr;
-            column-gap: 20px;
-            row-gap: 20px;
-            background-image: url('../images/back-dots-defined.png');
-            background-size: contain;
-            background-position: left top;
-            background-repeat: no-repeat;
-            padding: 10px;
-            margin-bottom: 30px;
-        }
-
-
-        .grid-item-products-electro-01 {
-            grid-column: 1 / 2; 
-            grid-row: 1 / 2;   
-        }
-
-        .grid-item-products-electro-02 {
-            grid-column: 1 / 2; 
-            grid-row: 2 / 3;   
-            height: 220px;
-        }
-
-        .grid-item-products-electro-03 {
-            grid-column: 1 / 2; 
-            grid-row: 3 / 4;   
-            margin-top: 0px;
-            font-size: 120%;
-        }
-
-
-
-
-        /* PRODUCTS PAGE SECTION 02 - REVOLUTIONIZING MOBILE */
-
-        .container-products-revolution {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 0fr 0fr 0fr;
-            column-gap: 20px;
-            row-gap: 20px;
-            background-image: url('../images/back-dots-defined.png');
-            background-size: contain;
-            background-position: left top;
-            background-repeat: no-repeat;
-            padding: 10px;
-            margin-bottom: 30px;
-        }
-
-
-        .grid-item-products-revolution-01 {
-            grid-column: 1 / 2; 
-            grid-row: 1 / 2;   
-        }
-
-        .grid-item-products-revolution-02 {
-            grid-column: 1 / 2; 
-            grid-row: 3 / 4;   
-            margin-top: 0;
-        }
-
-        .grid-item-products-revolution-03 {
-            grid-column: 1 / 2; 
-            grid-row: 2 / 3;   
-            background-image: url('../images/patients-outcomes.png');
-            background-size: cover;
-            background-position: left top;
-            background-repeat: no-repeat;
-            padding: 10px;
-            width: 100%;
-            height: 260px;
-
-        }
-
-
-
-
-
-        /* PRODUCTS PAGE - SECTION 03 - REIMAGINING MOBILE */
-
-        .container-products-reimagining {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 0fr 0fr 0fr;
-            column-gap: 20px;
-            row-gap: 20px;
-            background-image: url('../images/back-dots-defined.png');
-            background-size: contain;
-            background-position: left top;
-            background-repeat: no-repeat;
-            padding: 10px;
-            margin-bottom: 30px;
-        }
-
-
-        .grid-item-products-reimagining-01 {
-            grid-column: 1 / 2; 
-            grid-row: 1 / 2;   
-        }
-
-        .grid-item-products-reimagining-02 {
-            grid-column: 1 / 2; 
-            grid-row: 2 / 3;   
-            height: 220px;
-        }
-
-        .grid-item-products-reimagining-03 {
-            grid-column: 1 / 2; 
-            grid-row: 3 / 4;   
-            padding-top: 0;
-        }
-
-
-
-
-
-
-        /* RESEARCH PAGE -  MOBILE */
-
-
-
-
-        /* RESEARCH PAGE -  SECTION 01 - TITLE PUBLICATIONS MOBILE */
-
-        section#research-paragraph {
-            width: 100%;
-            height: 80px;
-            position: relative;
-            margin: 0px auto;
-            font-size: 2.2em;
-            padding: 30px;
-        }
-
-
-
-        /* RESEARCH PAGE - SECTION 02 UNIVERSAL WAY MOBILE */
-
-        .container-research-universal {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 0fr 0fr 0fr;
-            column-gap: 20px;
-            row-gap: 20px;
-            background-image: url('../images/back-dots-defined.png');
-            background-size: contain;
-            background-position: left top;
-            background-repeat: no-repeat;
-            padding: 10px;
-        }
-
-        .grid-item-research-universal-01 {
-            grid-column: 1 / 2; 
-            grid-row: 1 / 2;   
-        }
-
-        .grid-item-research-universal-02 {
-            grid-column: 1 / 2; 
-            grid-row: 2 / 3;   
-            width: 100%;
-            height: 115px;
-        }
-
-        .grid-item-research-universal-03 {
-            grid-column: 1 / 2; 
-            grid-row: 3 / 4;   
-        }
-
-
-        .grid-item-research-universal-04 {
-            grid-column: 1 / 2; 
-            grid-row: 4 / 5;   
-        }
-
-
-
-
-
-        /* RESEARCH PAGE - SECTION 03 REVERSIBLE MOBILE */
-
-        .container-research-reversible {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 0fr 0fr 0fr;
-            column-gap: 20px;
-            row-gap: 20px;
-            background-image: url('../images/back-dots-defined.png');
-            background-size: contain;
-            background-position: left top;
-            background-repeat: no-repeat;
-            padding: 10px;
-        }
-
-        .grid-item-research-reversible-01 {
-            grid-column: 1 / 2; 
-            grid-row: 1 / 2;   
-        }
-
-        .grid-item-research-reversible-02 {
-            grid-column: 1 / 2; 
-            grid-row: 2 / 3;   
-            width: 100%;
-            height: 310px;
-        }
-
-        .grid-item-research-reversible-03 {
-            grid-column: 1 / 2; 
-            grid-row: 3 / 4;   
-        }
-
-        .grid-item-research-reversible-04 {
-            grid-column: 1 / 2; 
-            grid-row: 4 / 5;   
-        }
-
-
-        /* RESEARCH PAGE - SECTION 04 PATENTS TITLE MOBILE */
-
-
-        /* RESEARCH PAGE - SECTION 05 - HYDROGELS MOBILE */
-
-        .container-research-hydrogels {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 0fr 0fr 0fr;
-            column-gap: 20px;
-            row-gap: 20px;
-            background-image: url('../images/back-dots-defined.png');
-            background-size: contain;
-            background-position: left top;
-            background-repeat: no-repeat;
-            padding: 10px;
-        }
-
-
-        .grid-item-research-hydrogels-01 {
-            grid-column: 1 / 2; 
-            grid-row: 1 / 2;   
-        }
-
-        .grid-item-research-hydrogels-02 {
-            grid-column: 1 / 2; 
-            grid-row: 2 / 3;   
-            height: 275px;
-        }
-
-        .grid-item-research-hydrogels-03 {
-            grid-column: 1 / 2; 
-            grid-row: 3 / 4;   
-            padding-top: 0;
-        }
-
-
-        .grid-item-research-hydrogels-04 {
-            grid-column: 1 / 2; 
-            grid-row: 4 / 5;   
-        }
-
-
-
-
-        /* NEWS PAGE - STYLES MOBILE */
-
-
-        /* NEWS SECTION - NEWS 01 y 02 MOBILE */
-
-        .container-news {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 0fr 0fr 4fr;
-            column-gap: 20px;
-            row-gap: 20px;
-            background-image: url('../images/back-dots-defined.png');
-            background-size: contain;
-            background-position: left top;
-            background-repeat: no-repeat;
-            padding: 10px;
-        }
-
-
-        .grid-item-news-01 {
-            grid-column: 1 / 2; 
-            grid-row: 1 / 2;   
-        }
-
-        .grid-item-news-02 {
-            grid-column: 1 / 2; 
-            grid-row: 2 / 3;   
-        }
-
-        .grid-item-news-03 {
-            grid-column: 1 / 2; 
-            grid-row: 3 / 4;   
-        }
-
-
-
-
-
-
-        /* CONTACT PAGE - STYLES MOBILE */
-
-        /* CONTACT A SECTION MOBILE */
-
-        .container-contact {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 0fr 0fr 0fr;
-            column-gap: 20px;
-            row-gap: 20px;
-            background-image: url('../images/back-dots-defined.png');
-            background-size: contain;
-            background-position: left top;
-            background-repeat: no-repeat;
-            padding: 10px;
-        }
-
-
-        .grid-item-contact-01 {
-            grid-column: 1 / 2; 
-            grid-row: 1 / 2;   
-        }
-
-        .grid-item-contact-02 {
-            grid-column: 1 / 2; 
-            grid-row: 2 / 3;  
-            padding-top: 0px; 
-            font-size: 120%;
-        }
-
-        iframe {
-            max-width: 320px;
-        }
-
-        .grid-item-contact-03 {
-            grid-column: 1 / 2; 
-            grid-row: 3 / 4; 
-        }
-
-        /* Home SECTION 09 - FOOTER MOBILE */
-
+	/* PRODUCTS PAGE - SECTION 01 - ELECTRO MOBILE */
+	.container-products-electro {
+		display:grid;
+		grid-template-columns:1fr;
+		grid-template-rows:0fr 0fr 0fr;
+		column-gap:20px;
+		row-gap:20px;
+		background-image:url('../images/back-dots-defined.png');
+		background-size:contain;
+		background-position:left top;
+		background-repeat:no-repeat;
+		padding:10px;
+		margin-bottom:30px;
+	}
+	.grid-item-products-electro-01 {
+		grid-column:1 / 2;
+		grid-row:1 / 2;
+	}
+	.grid-item-products-electro-02 {
+		grid-column:1 / 2;
+		grid-row:2 / 3;
+		height:220px;
+	}
+	.grid-item-products-electro-03 {
+		grid-column:1 / 2;
+		grid-row:3 / 4;
+		margin-top:0px;
+		font-size: 120%;
+	}
+	/* PRODUCTS PAGE SECTION 02 - REVOLUTIONIZING MOBILE */
+	.container-products-revolution {
+		display:grid;
+		grid-template-columns:1fr;
+		grid-template-rows:0fr 0fr 0fr;
+		column-gap:20px;
+		row-gap:20px;
+		background-image:url('../images/back-dots-defined.png');
+		background-size:contain;
+		background-position:left top;
+		background-repeat:no-repeat;
+		padding:10px;
+		margin-bottom:30px;
+	}
+	.grid-item-products-revolution-01 {
+		grid-column:1 / 2;
+		grid-row:1 / 2;
+	}
+	.grid-item-products-revolution-02 {
+		grid-column:1 / 2;
+		grid-row:3 / 4;
+		margin-top:0;
+	}
+	.grid-item-products-revolution-03 {
+		grid-column:1 / 2;
+		grid-row:2 / 3;
+		background-image:url('../images/patients-outcomes.png');
+		background-size:cover;
+		background-position:left top;
+		background-repeat:no-repeat;
+		padding:10px;
+		width:100%;
+		height: 260px;
+	}
+	/* PRODUCTS PAGE - SECTION 03 - REIMAGINING MOBILE */
+	.container-products-reimagining {
+		display:grid;
+		grid-template-columns:1fr;
+		grid-template-rows:0fr 0fr 0fr;
+		column-gap:20px;
+		row-gap:20px;
+		background-image:url('../images/back-dots-defined.png');
+		background-size:contain;
+		background-position:left top;
+		background-repeat:no-repeat;
+		padding:10px;
+		margin-bottom:30px;
+	}
+	.grid-item-products-reimagining-01 {
+		grid-column:1 / 2;
+		grid-row:1 / 2;
+	}
+	.grid-item-products-reimagining-02 {
+		grid-column:1 / 2;
+		grid-row:2 / 3;
+		height:220px;
+	}
+	.grid-item-products-reimagining-03 {
+		grid-column:1 / 2;
+		grid-row:3 / 4;
+		padding-top: 0;
+	}
+	/* RESEARCH PAGE - MOBILE */
+	/* RESEARCH PAGE - SECTION 01 - TITLE PUBLICATIONS MOBILE */
+	section#research-paragraph {
+		width:100%;
+		height:80px;
+		position:relative;
+		margin:0px auto;
+		font-size:2.2em;
+		padding: 30px;
+	}
+	/* RESEARCH PAGE - SECTION 02 UNIVERSAL WAY MOBILE */
+	.container-research-universal {
+		display:grid;
+		grid-template-columns:1fr;
+		grid-template-rows:0fr 0fr 0fr;
+		column-gap:20px;
+		row-gap:20px;
+		background-image:url('../images/back-dots-defined.png');
+		background-size:contain;
+		background-position:left top;
+		background-repeat:no-repeat;
+		padding:10px;
+	}
+	.grid-item-research-universal-01 {
+		grid-column:1 / 2;
+		grid-row:1 / 2;
+	}
+	.grid-item-research-universal-02 {
+		grid-column:1 / 2;
+		grid-row:2 / 3;
+		width:100%;
+		height:115px;
+	}
+	.grid-item-research-universal-03 {
+		grid-column:1 / 2;
+		grid-row:3 / 4;
+	}
+	.grid-item-research-universal-04 {
+		grid-column:1 / 2;
+		grid-row: 4 / 5;
+	}
+	/* RESEARCH PAGE - SECTION 03 REVERSIBLE MOBILE */
+	.container-research-reversible {
+		display:grid;
+		grid-template-columns:1fr;
+		grid-template-rows:0fr 0fr 0fr;
+		column-gap:20px;
+		row-gap:20px;
+		background-image:url('../images/back-dots-defined.png');
+		background-size:contain;
+		background-position:left top;
+		background-repeat:no-repeat;
+		padding:10px;
+	}
+	.grid-item-research-reversible-01 {
+		grid-column:1 / 2;
+		grid-row:1 / 2;
+	}
+	.grid-item-research-reversible-02 {
+		grid-column:1 / 2;
+		grid-row:2 / 3;
+		width:100%;
+		height:310px;
+	}
+	.grid-item-research-reversible-03 {
+		grid-column:1 / 2;
+		grid-row:3 / 4;
+	}
+	.grid-item-research-reversible-04 {
+		grid-column:1 / 2;
+		grid-row: 4 / 5;
+	}
+	/* RESEARCH PAGE - SECTION 04 PATENTS TITLE MOBILE */
+	/* RESEARCH PAGE - SECTION 05 - HYDROGELS MOBILE */
+	.container-research-hydrogels {
+		display:grid;
+		grid-template-columns:1fr;
+		grid-template-rows:0fr 0fr 0fr;
+		column-gap:20px;
+		row-gap:20px;
+		background-image:url('../images/back-dots-defined.png');
+		background-size:contain;
+		background-position:left top;
+		background-repeat:no-repeat;
+		padding:10px;
+	}
+	.grid-item-research-hydrogels-01 {
+		grid-column:1 / 2;
+		grid-row:1 / 2;
+	}
+	.grid-item-research-hydrogels-02 {
+		grid-column:1 / 2;
+		grid-row:2 / 3;
+		height:275px;
+	}
+	.grid-item-research-hydrogels-03 {
+		grid-column:1 / 2;
+		grid-row:3 / 4;
+		padding-top:0;
+	}
+	.grid-item-research-hydrogels-04 {
+		grid-column:1 / 2;
+		grid-row: 4 / 5;
+	}
+	/* NEWS PAGE - STYLES MOBILE */
+	/* NEWS SECTION - NEWS 01 y 02 MOBILE */
+	.container-news {
+		display:grid;
+		grid-template-columns:1fr;
+		grid-template-rows:0fr 0fr 4fr;
+		column-gap:20px;
+		row-gap:20px;
+		background-image:url('../images/back-dots-defined.png');
+		background-size:contain;
+		background-position:left top;
+		background-repeat:no-repeat;
+		padding:10px;
+	}
+	.grid-item-news-01 {
+		grid-column:1 / 2;
+		grid-row:1 / 2;
+	}
+	.grid-item-news-02 {
+		grid-column:1 / 2;
+		grid-row:2 / 3;
+	}
+	.grid-item-news-03 {
+		grid-column:1 / 2;
+		grid-row: 3 / 4;
+	}
+	/* CONTACT PAGE - STYLES MOBILE */
+	/* CONTACT A SECTION MOBILE */
+	.container-contact {
+		display:grid;
+		grid-template-columns:1fr;
+		grid-template-rows:0fr 0fr 0fr;
+		column-gap:20px;
+		row-gap:20px;
+		background-image:url('../images/back-dots-defined.png');
+		background-size:contain;
+		background-position:left top;
+		background-repeat:no-repeat;
+		padding:10px;
+	}
+	.grid-item-contact-01 {
+		grid-column:1 / 2;
+		grid-row:1 / 2;
+	}
+	.grid-item-contact-02 {
+		grid-column:1 / 2;
+		grid-row:2 / 3;
+		padding-top:0px;
+		font-size:120%;
+	}
+	iframe {
+		max-width:320px;
+	}
+	.grid-item-contact-03 {
+		grid-column:1 / 2;
+		grid-row: 3 / 4;
+	}
+	/* Home SECTION 09 - FOOTER MOBILE */
 	footer .logo {
-	  margin: 0;
-        }
-
-        .container-pro-footer {
-            grid-template-columns: 1fr;
-            grid-template-rows: 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr; 
-            column-gap: 10px;
-            row-gap: 10px;
-            padding: 20px;
-            /* width: 100%; */
-            color: #00A099;
-        }
-
-        /* VACIO */
-        .grid-item-footer-01 {
-            grid-column: 1 / 2; 
-            grid-row: 1 / 2;  
-        }
-
-        /* ABOUT US */
-        .grid-item-footer-02 {
-            grid-column: 1 / 2; 
-            grid-row: 2 / 3;    
-            align-content: center;
-        }
-
-        /* PRODUCTS */
-        .grid-item-footer-03 {
-            grid-column: 1 / 2; 
-            grid-row: 4 / 5;
-            align-content: center;
-            margin-top: 20px;
-        }
-
-        /* RESEARCH TITLE */
-        .grid-item-footer-04 {
-            grid-column: 1 / 2; 
-            grid-row: 6 / 7;  
-            align-content: center;
-            margin-top: 20px;
-        }
-
-        /* NEWS TITLE */
-        .grid-item-footer-05 {
-            grid-column: 1 / 2; 
-            grid-row: 8 / 9;   
-            align-content: center;
-            margin-top: 20px;
-        }
-
-        /* LOGO */
-        .grid-item-footer-06 {
-            grid-column: 1 / 2; 
-            grid-row: 10 / 11;    
-            align-content: center; 
-            min-height: 100px;
-        }
-
-        /* LEADERSHIP */
-        .grid-item-footer-07 {
-            grid-column: 1 / 2; 
-            grid-row: 3 / 4;  
-            text-align: center; 
-        }
-
-        /* ANASTOTAPE */
-        .grid-item-footer-08 {
-            grid-column: 1 / 2; 
-            grid-row: 5 / 6;  
-            text-align: center;   
-        }
-
-        /* PATENTS */
-        .grid-item-footer-09 {
-            grid-column: 1 / 2; 
-            grid-row: 7 / 8;  
-            text-align: center; 
-        }
-
-        /* 2024 */
-        .grid-item-footer-10 {
-            grid-column: 1 / 2; 
-            grid-row: 9 / 10;  
-            text-align: center;   
-        }
-
-        /* LINE PRO */
-        .grid-item-footer-11 {
-            grid-column: 1 / 2; 
-            grid-row: 11 / 12;  
-            min-height: 30px;
-        }
-
-        /* COPY RIGHT */
-        .grid-item-footer-12 {
-            grid-column: 1 / 2; 
-            grid-row: 12 / 13; 
-            text-align: center;   
-            min-height: 20px; 
-        }
-
-
-
-
-
-
-
-
-
-
-
-
-
-            .section-dark-green {
-                min-height: 720px;
-                padding: 1rem; /* Espaciado interno de 2rem */
-                margin: 0 auto;
-                margin-top: 30px;
-
-            }
-
-
-            .section-neon-green {
-                min-height: 720px;
-                padding: 1rem; /* Espaciado interno de 2rem */
-                margin: 0 auto;
-                margin-top: 30px;
-            }
-
-            .footer-section {
-                margin: 1rem auto; /* Margen superior e inferior de 2rem y centrado horizontal */
-                padding: 1rem; /* Espaciado interno de 2rem */
-                display: flex;
-                justify-content: space-between; /* Espacio igual entre los elementos */
-                flex-wrap: wrap; /* Permite que los elementos se envuelvan si el contenedor es demasiado pequeño */
-                align-items: center;
-                margin: 0 auto;
-                margin-bottom: 20px;
-                margin-top: 20px;
-            }
-
-
-
-            .logo-footer-img {
-              background-size: cover;
-              background-position: left;
-              background-repeat: no-repeat;
-            }
-
-
-
-
-            .button-wrapper {
-                position: relative;
-                margin-top: 30px;
-                right: 0px;
-            }
-
-
-            .button-wrapper-transforming {
-                position: relative;
-                margin-top: 30px;
-                right: 0px;
-            }
-
-
-            button {
-                background-color: #1C5153; 
-                color: #fff; /* Color del texto blanco */
-                padding: 10px 20px; /* Padding adecuado */
-                border: none; /* Sin borde */
-                border-radius: 12px; /* Bordes curvos de 12px */
-                cursor: pointer; /* Cursor de puntero al pasar sobre el botón */
-                font-size: 1em; /* Tamaño de fuente */
-                transition: background-color 0.3s ease; /* Transición suave para el hover */
-                min-width: 120px;
-            }
-
-
-
-
-
-
-            button:hover {
-                background-color: #00A099; /* Color de fondo azul en hover */
-            }
-
-
-
-
-            #home-01 .card-doctora {
-                position: absolute;
-                min-width: 110px;
-                width: 45%;
-                height: 160px;
-                right: 0;
-                top: 150px;
-            }
-
-
-        .gel-concept-green {
-            position: absolute;
-            background-image: url('../images/gelectric-ray.svg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            width: 130px;
-            height: 70px;
-            right: 27%;
-            top: 220px;
-        }
-
-
-        #news-01 .sub-title {
-            position: relative;
-            width: 300px;
-            top: -616px;
-            left: -50px;
-        }
-
-
-
-
-
-
-
-
-
-
-            .sub-title {
-                position: absolute;
-                top: 550px;
-                left: 0px;
-                max-width: 120px;
-            }
-
-            #home-01 h3 {
-                position: relative;
-                top: -28px;
-                font-size: 1.6em;
-                left: 4px;
-            }
-
-
-        .founders-card {
-            min-width: 160px; /* Ancho mínimo para que los cards no se vuelvan demasiado pequeños */
-
-        }
-
-
-
-        .surgical-technique .card-horizontal-transp {
-            position: relative;
-            left: -30px;
-            top: 990px;
-        }
-
-
-
-
-
-        .surgical-technique .card-horizontal-transp p {
-            position: relative;
-            left: -10px;
-            top: 20px;
-            width: 230px;
-        }
-
-
-
-
-
-
-        .surgical-technique h3 {
-            position: absolute;
-            font-size: 1.4em;
-            top: 970px;
-            left: 7px;
-        }
-
-        .surgical-technique .button-wrapper {
-
-
-
-            .section-white.surgical-technique {
-                min-height: 1260px;
-            }
-
-
-
-
-            .section-white.surgical-technique h2 {
-                font-size: 1.6em;
-                position: absolute;
-                min-height: 60px;
-                max-width: 120px;
-                top: 20px;
-                left: 0px;
-            }
-
-
-
-
-
-
-            .card-horizontal-strong {
-                width: 100%;
-                height: 200px;
-                right: 0px;
-                top: 240px;
-            }
-
-            .patients-out {
-                width: 114px;
-                height: 161px;
-                left: 6%;
-                top: 20px;
-            }
-
-        .patient-out-text {
-            position: absolute;
-            width: 41%;
-            right: 2%;
-            top: 20px;
-            font-size: 0.8em;
-        }
-
-        .patient-outcomes .card-horizontal-transp {
-            left: -160px;
-            width: 280px;
-            height: 500px;
-            top: 500px;
-        }
-
-        .tissue-repair .card-horizontal-transp {
-            left: -140px;
-            /* width: 280px; */
-            /* height: 300px; */
-            top: 80px;
-        }
-
-
-
-
-
-
-
-        .card-horizontal-tissue {
-            top: 300px;
-            width: 244px;
-            height: 140px;
-            right: 0px;
-        }
-
-        .card-rectangle-microscope {
-            width: 100%;
-            height: 330px;
-            right: 0px;
-            top: 276px;
-        }
-
-        .card-rectangle-skin {
-            top: 470px;
-            width: 245px;
-            height: 100px;
-            right: 0px;
-        }
-
-
-        #about-us-company h1 {
-            left: 0px;
-        }
-
-
-        .founders-horizontal {
-            width: 100%;
-            top: 190px;
-            left: 16%;
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            gap: 5.2rem;
-            /* padding: 20px 60px; */
-        }
-
-        .advisors-horizontal {
-            width: 100%;
-            top: 185px;
-            left: 16%;
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            gap: 5.2rem;
-            /* padding: 20px 60px; */
-        }
-
-
-
-
-        #home-01 h1 {
-            left: 0px;
-            top: 14px;
-        }
-
-
-
-
-
-
-
-
-        .section-dark-green.founders-section {
-            min-height: 1140px;
-        }
-
-
-
-        .section-neon-green.advisors-section {
-            min-height: 1160px;
-        }
-
-        .founders-section .card-horizontal-transp p {
-            left: 120px;
-            max-width: 180px;
-            height: 300px;
-            top: -260px;
-        }
-
-        .section-dark-green.founders-section .button-wrapper {
-            top: 1100px;
-        }
-
-
-
-
-
-        .section-neon-green.advisors-section .button-wrapper {
-            top: 1080px;
-        }
-
-
-
-
-        .patient-outcomes h3 {
-            left: 4px;
-            top: 460px;
-        }
-
-
-        .section-white.patient-outcomes h2 {
-            position: absolute;
-            left: 0;
-            top: 20px;
-            max-width: 120px;
-            font-size: 1.6em;
-        }
-
-
-
-        .patient-outcomes .card-horizontal-transp p {
-            position: absolute;
-            left: 120px;
-            top: -40px;
-            width: 230px;
-        }
-
-
-        .tissue-repair h2 {
-            position: absolute;
-            left: 10px;
-            top: 20px;
-            width: 120px;
-            font-size: 1.6em;
-        }
-
-        .tissue-repair .card-horizontal-transp p {
-            position: absolute;
-            left: 106px;
-            top: -11px;
-            width: 230px;
-        }
-
-        .tissue-repair h3 {
-            position: relative;
-            left: 0px;
-            top: 625px;
-            font-size: 1.6em;
-        }
-
-
-        .founders-section h2 {
-            position: absolute;
-            left: 0;
-            top: 20px;
-            font-size: 1.4em;
-            max-width: 140px;
-        }
-
-        .founders-section .card-horizontal-transp p {
-            left: 210px;
-            top: -280px;
-        }
-
-        .button-wrapper button.founders-button {
-
-            background-color: #00A099;
-            color: white;
-            right: 0;
-            top: -70px;
-        }
-
-
-
-
-        #about-us-company p {
-            position: absolute;
-            top: 54px;
-            left: -20px;
-            min-width: 230px;
-            width: 230px;
-            font-size: 1em;
-        }
-
-
-        section#about-us-company h3 {
-            position: absolute;
-            top: 280px;
-            right: 0px;
-            font-size: 1.6em;
-        }
-
-        section#about-us-company.section-white {
-            min-height: 590px;
-        }
-
-
-
-
-
-
-        .card-horizontal-about {
-            font-size: 1em;
-            max-width: 220px;
-            color: #141819;
-            left: 10px;
-            top: 330px;
-        }
-
-
-
-        section#transforming h3 {
-            top: 280px;
-            right: 0px;
-            font-size: 1.4em;
-        }
-
-
-
-
-
-
-        section#transforming.section-white {
-            min-height: 600px;
-        }
-
-
-
-
-
-
-
-        .founders-card-ficho {
-            width: 180px;
-            height: 200px;
-            left: 10px;
-            top: 90px;
-            margin: 0 auto;
-
-        }
-
-
-
-        .about-us-parrafos  {
-            width: 220px;
-
-            top: 530px;
-            left: -190px;
-        }
-
-        .about-us-parrafos p {
-
-        }
-
-
-
-
-
-
-
-        .founders-card-advisorficho {
-            width: 240px;
-            height: 260px;
-            right: 0px;
-            top: 120px;
-        }
-
-        .section-neon-green.advisors-section h2 {
-            position: absolute;
-            width: 160px;
-            max-width: 300px;
-            min-width: 100px;
-            left: 10px;
-            top: 20px;
-            font-size: 1.6em;
-        }
-
-
-
-
-        .parrafo-leah {
-            width: 240px;
-            color: white;
-            position: relative;
-            top: 310px;
-            left: -40px;
-        }
-
-
-
-
-
-
-
-
-
-
-
-        section#advisor3.section-neon-green {
-            min-height: 980px;
-        }
-
-
-
-        section#revolution-patients.section-dark-green {
-            min-height: 630px;
-        }
-
-
-
-
-
-        .card-horizontal-products {
-            width: 200px;
-            height: 130px;
-            right: 30px;
-            top: 330px;
-        }
-
-
-
-
-
-
-
-        section#revolution-patients.section-dark-green h3 {
-            font-size: 1.7em;
-            position: absolute;
-            top: 540px;
-            right: -160px;
-            color: #4DBECF;
-            width: 400px;
-            min-width: 400px;
-        }
-
-
-
-
-
-
-
-
-
-        .founders-section .card-horizontal-transp {
-            left: -20px;
-            top: 70px;
-            width: 100%;
-            height: 300px;
-            color: white;
-        }
-
-
-
-
-
-
-
-
-
-        .advisors-card {
-            background-color: black; /* Color de fondo blanco para los cards */
-            color: #000; /* Color de texto negro */
-            border-radius: 12px; /* Bordes curvos */
-            padding: 1rem; /* Espaciado interno */
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra ligera para los cards */
-            text-align: center; /* Centra el texto */
-            flex: 1; /* Hace que los cards sean flexibles y ocupen el mismo espacio */
-            min-width: 160px; /* Ancho mínimo para que los cards no se vuelvan demasiado pequeños */
-            max-width: calc(25% - 1rem); /* Ancho máximo para cada card considerando el gap */
-            height: 220px;
-        }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        .section-neon-green .news-area .sub-title h3 {
-            position: absolute;
-            color: #78BA5C;
-            min-width: 300px;
-            left: -280px;
-            top: -211px;
-            font-size: 0.7em;
-        }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        .card-horizontal-contact {
-            font-size: 1em;
-            width: 220px;
-            height: 160px;
-            color: #141819;
-            position: absolute;
-            left: 10px;
-            top: 260px;
-        }
-
-
-
-
-
-
-
-
-
-
-
-        .founders-names {
-            position: relative;
-            background-color: purple;
-            left: -40px;
-            top: 220px;
-            width: 200px;
-            font-size: 1.2em;
-            color: white;
-        }
-
-
-
-        .advisors-names {
-            position: relative;
-            left: 0;
-            top: 220px;
-            width: 140px;
-            font-size: 1.2em;
-            color: white;
-        }
-
-
-
-
-
-        .advisors-names-b {
-            position: absolute;
-            left: -160px;
-            top: 1200px;
-            width: 140px;
-            font-size: 1em;
-            color: white;
-        }
-
-
-        .advisors-names-c {
-            position: absolute;
-            left: -150px;
-            top: 1500px;
-            width: 140px;
-            font-size: 1em;
-            color: white;
-        }
-
-
-
-
-
-        .tissue-repair {
-            min-height: 790px;
-        }
-
-
-
-        .tissue-repair .button-wrapper {
-            top: 700px;
-        }
-
-
-        .parrafo-founders {
-            position: relative;
-            color: white;
-            width: 460px;
-            top: 60px;
-            left: -20px;
-
-        }
-
-
-        #founders h2 {
-            position: absolute;
-            top: 30px;
-            left: 10px;
-            font-size: 1.6em;
-            color: white;
-        }
-
-
-        .advisors-section .card-horizontal-transp {
-            top: 520px;
-            left: -226px;
-            min-width: 230px;
-            color: white;
-        }
-
-
-        #about-us-company .card-horizontal-transp {
-            min-width: 230px;
-        }
-
-
-        #transforming h2 {
-            font-size: 1.6em;
-            position: relative;
-            left: -40px;
-            top: -20px;
-        }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        .founders-card-advisorficho-srinivasa {
-            top: 90px;
-            width: 190px;
-            height: 220px;
-        }
-
-        .founders-card-advisorficho-mayur {
-            top: 96px;
-            width: 190px;
-            height: 220px;
-        }
-
-
-        .founders-card-advisorficho-tricia {
-            top: 80px;
-            width: 190px;
-            height: 240px;
-        }
-
-
-        #advisor1 h2 {
-                min-width: 120px;
-                font-size: 1.5em;
-                position: absolute;
-                width: 220px;
-                top: 10px;
-                left: 10px;
-            }
-        
-        .parrafo-james {
-            width: 220px;
-            color: white;
-            position: relative;
-            top: 330px;
-            left: -35px;
-        }
-
-
-
-
-
-        .about-us-parradvisors {
-            position: relative;
-            font-size: 1em;
-            padding: 20px;
-            color: white;
-            top: 320px;
-            left: 5px;
-            width: 100%;
-            min-height: 120px;
-            height: 100%;
-        }
-
-
-        #advisor1.section-neon-green {
-            min-height: 850px;
-        }
-
-
-        #advisor2 h2 {
-            width: 120px;
-            min-width: 150px;
-            font-size: 1.4em;
-            position: absolute;
-            left: 10px;
-            top: 20px;
-        }
-
-        #advisor2.section-neon-green {
-            min-height: 820px;
-        }
-
-
-        #advisor3 h2 {
-            font-size: 1.4em;
-            padding: 0px;
-            position: absolute;
-            left: 10px;
-            top: 20px;
-        }
-
-
-        #electroadhesive-gel h1 {
-            position: absolute;
-            left: 0px;
-            top: 20px;
-            padding-left: 0;
-        }
-
-
-        #electroadhesive-gel .card-tejido {
-                position: absolute;
-                background-color: #00A099;
-                width: 120px;
-                height: 160px;
-                right: 130px;
-                top: 120px;
-            }
-
-
-
-
-        #electroadhesive-gel .card-doctora {
-                position: absolute;
-                width: 120px;
-                height: 160px;
-                left: 130px;
-                top: 120px;
-
-            }
-
-
-        #electroadhesive-gel .card-horizontal-products {
-                width: 200px;
-                height: 130px;
-                right: 47px;
-                top: 295px;
-            }
-
-
-        #electroadhesive-gel h3 {
-            position: absolute;
-            font-size: 1.6em;
-            left: 147px;
-            top: 310px;
-        }
-
-
-
-        #revolution-patients h2 {
-            max-width: 180px;
-            position: absolute;
-            color: white;
-            font-size: 1.7em;
-            left: 0px;
-            top: 20px;
-        }
-
-
-        section#revolution-patients.section-dark-green p {
-            position: absolute;
-            top: 120px;
-            left: 0px;
-            color: white;
-            width: 240px;
-            min-width: 170px;
-        }
-
-
-
-
-
-        .reimaging-tissue {
-            position: absolute;
-            left: 0px;
-            width: 210px;
-            top: 20px;
-            font-size: 1.7em;
-        }
-
-
-
-        .parrafo-reparar {
-            position: absolute;
-            color: white;
-            max-width: 300px;
-            top: 90px;
-            left: 0px;
-        }
-
-
-
-
-        #tissue-reppair.section-neon-green {
-            min-height: 630px;
-        }
-
-
-
-
-
-        .section-neon-green.research-area h1 {
-            font-size: 1.6em;
-            max-width: 250px;
-            line-height: 1.2em;
-            left: 3px;
-            top: 20px;
-        }
-
-
-
-
-
-        .card-horizontal-researcharea {
-            position: relative;
-            font-size: 1em;
-            width: 230px;
-            color: white;
-            left: -40px;
-            top: 460px;
-            /* padding: 10px; */
-        }
-
-
-        #research-big {
-            min-height: 1500px;
-        }
-
-
-
-        .section-dark-green.research-area h2 {
-            font-size: 1.6em;
-            width: 260px;
-            max-width: 250px;
-            color: white;
-            position: absolute;
-            top: 20px;
-            left: 0;
-        }
-
-
-
-
-        .card-horizontal-patentsarea {
-            position: relative;
-            font-size: 1em;
-            min-width: 230px;
-            color: white;
-            width: 230px;
-            left: -40px;
-            top: 550px;
-            /* padding: 20px; */
-        }
-
-
-        #patents-big {
-            min-height: 1330px;
-        }
-
-
-        #research-last h3 {
-            position: absolute;
-            left: 0px;
-            top: 260px;
-        }
-
-
-        #patents-big h3 {
-            position: absolute;
-            top: 649px;
-            right: 0px;
-            color: white;
-            font-size: 1.6em;
-        }
-
-
-
-        #founders-leah h2, #founders-james h2  {
-            color: white;
-            position: absolute;
-            top: 30px;
-            left: 0;
-            max-width: 220px;
-            font-size: 1.6em;
-        }
-
-
-
-
-
-        #research-last.section-neon-green {
-            min-height: 990px;
-        }
-
-
-
-
-        .card-horizontal-researchlast {
-            position: relative;
-            font-size: 1em;
-            width: 230px;
-            color: white;
-            left: -36px;
-            top: 476px;
-            padding: 0;
-        }
-
-
-
-        #research-last.section-neon-green h3 {
-            position: absolute;
-            top: 900px;
-            left: 64px;
-            font-size: 1.6em;
-        }
-
-
-
-        .news-area h2 {
-            font-size: 1.4em;
-            min-width: 220px;
-            width: 220px;
-            left: -40px;
-            top: -20px;
-        }
-
-
-
-        .section-dark-green .news-area p {
-            color: white;
-            left: -250px;
-            top: -150px;
-            font-size: 1em;
-        }
-
-        #news-01 p {
-            color: white;
-            position: relative;
-            width: 230px;
-            top: 40px;
-            left: -40px;
-        }
-
-
-
-
-        #news-01.section-dark-green {
-            min-height: 1360px;
-        }
-
-
-        .section-dark-green .news-area .sub-title h3 {
-            position: absolute;
-            left: 10px;
-            top: -440px;
-            font-size: 1.6em;
-        }
-
-
-        .section-dark-green .news-area h3 {
-            position: absolute;
-            color: white;
-            min-width: 300px;
-            left: 50px;
-            top: 1270px;
-            font-size: 1.6em;
-        }
-
-
-        #news-02 p {
-            color: white;
-            position: relative;
-            min-width: 220px;
-            width: 220px;
-            top: 60px;
-            left: -37px;
-        }
-
-
-
-        .section-neon-green .news-area p {
-
-            min-width: 240px;
-            left: -250px;
-            top: -60px;
-            font-size: 1em;
-        }
-
-        #news-02.section-neon-green {
-            min-height: 1160px;
-        }
-
-
-
-        #news-02.section-neon-green h3 {
-            position: absolute;
-            top: 670px;
-            left: 0px;
-            font-size: 1.6em;
-        }
-
-
-
-
-
-        .sub-title-news-03 {
-            position: absolute;
-            top: 390px;
-            left: 20px;
-            font-size: 1.2em;
-            width: 300px;
-        }
-
-
-
-
-
-        .contact-slogan {
-            position: absolute;
-            top: 380px;
-            right: 10px;
-            font-size: 1em;
-            color: white;
-            /* width: 300px; */
-        }
-
-
-
-
-
-
-
-        .footer-card p {
-            line-height: 1.5em; /* Altura de línea */
-            font-size: 0.9em;
-            margin-bottom: 20px;
-            min-height: 70px;
-        }
-
-
-        #home-01 .card-tejido {
-            position: absolute;
-            background-color: #00A099;
-            min-width: 110px;
-            width: 45%;
-            height: 160px;
-            left: 0;
-            top: 150px;
-        }
-
-        .tissue-slogan {
-            position: absolute;
-            top: 550px;
-            left: 70px;
-            font-size: 1em;
-        }
-
-
-
-        .electro-parrafo {
-            width: 227px;
-            color: black;
-            position: relative;
-            top: 315px;
-            left: -40px;
-        }
-
-
-        #electroadhesive-gel {
-            min-height: 650px;
-        }
-
-        #research-last h2 {
-            position: absolute;
-            font-size: 1.6em;
-            width: 220px;
-            min-width: 220px;
-            left: 5px;
-            top: 20px;
-
-        }
-
-
-
-
-
-
-
-
-        .footer-card {
-            width: 100%;
-            background-color: #141819; /* Color de fondo dark green para los cards */
-            color: #fff; /* Color de texto blanco */
-            padding: 30px; /* Espaciado interno */
-            flex: 1; /* Hace que los cards sean flexibles y ocupen el mismo espacio */
-            margin: 0.8rem; /* Margen entre los cards */
-            min-width: 180px; /* Ancho mínimo para que los cards no se vuelvan demasiado pequeños */
-            max-width: 100%; /* Máximo ancho para cada card */
-            text-align: center; /* Centra el texto */
-            min-height: 220px;
-        }
-
-
-
-
-
-
-
-
-        .contact-title {
-            width: 300px;
-            color: white;
-            font-size: 1.8em;
-            position: absolute;
-            left: 10px;
-            top: 20px;
-        }
-
-
-
-
-
-
-
-        .parrafo-mat {
-            width: 240px;
-            color: white;
-            position: relative;
-            top: 320px;
-            left: -40px;
-        }
-
-        .linkedin {
-            background-image: url('../images/linkedin.png');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            position: relative;
-            left: 4%;
-            bottom: 70%;
-            width: 64px;
-            height: 64px;
-            z-index: 10;
-        }
-
-
-        #research-big h3 {
-            position: absolute;
-            top: 1400px;
-            left: 10px;
-            font-size: 1.6em;
-        }
-
-
-
-
-
-        #contacto-area.section-neon-green {
-            min-height: 460px;
-        }
-
-
-        .sub-title-news-02 {
-            position: relative;
-            top: -620px;
-            right: 38px;
-            font-size: 1em;
-            width: 310px;
-        }
-
-        }
-
+		 margin: 0;
+	}
+	.container-pro-footer {
+		grid-template-columns:1fr;
+		grid-template-rows:0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr;
+		column-gap:10px;
+		row-gap:10px;
+		padding:20px;
+		/* width:100%;*/
+		color:#00A099;
+	}
+	/* VACIO */
+	.grid-item-footer-01 {
+		grid-column:1 / 2;
+		grid-row: 1 / 2;
+	}
+	/* ABOUT US */
+	.grid-item-footer-02 {
+		grid-column:1 / 2;
+		grid-row:2 / 3;
+		align-content: center;
+	}
+	/* PRODUCTS */
+	.grid-item-footer-03 {
+		grid-column:1 / 2;
+		grid-row:4 / 5;
+		align-content:center;
+		margin-top: 20px;
+	}
+	/* RESEARCH TITLE */
+	.grid-item-footer-04 {
+		grid-column:1 / 2;
+		grid-row:6 / 7;
+		align-content:center;
+		margin-top: 20px;
+	}
+	/* NEWS TITLE */
+	.grid-item-footer-05 {
+		grid-column:1 / 2;
+		grid-row:8 / 9;
+		align-content:center;
+		margin-top: 20px;
+	}
+	/* LOGO */
+	.grid-item-footer-06 {
+		grid-column:1 / 2;
+		grid-row:10 / 11;
+		align-content:center;
+		min-height: 100px;
+	}
+	/* LEADERSHIP */
+	.grid-item-footer-07 {
+		grid-column:1 / 2;
+		grid-row:3 / 4;
+		text-align: center;
+	}
+	/* ANASTOTAPE */
+	.grid-item-footer-08 {
+		grid-column:1 / 2;
+		grid-row:5 / 6;
+		text-align: center;
+	}
+	/* PATENTS */
+	.grid-item-footer-09 {
+		grid-column:1 / 2;
+		grid-row:7 / 8;
+		text-align: center;
+	}
+	/* 2024 */
+	.grid-item-footer-10 {
+		grid-column:1 / 2;
+		grid-row:9 / 10;
+		text-align: center;
+	}
+	/* LINE PRO */
+	.grid-item-footer-11 {
+		grid-column:1 / 2;
+		grid-row:11 / 12;
+		min-height: 30px;
+	}
+	/* COPY RIGHT */
+	.grid-item-footer-12 {
+		grid-column:1 / 2;
+		grid-row:12 / 13;
+		text-align:center;
+		min-height: 20px;
+	}
+	.section-dark-green {
+		min-height:720px;
+		padding:1rem;
+		/* Espaciado interno de 2rem */
+		margin:0 auto;
+		margin-top:30px;
+	}
+	.section-neon-green {
+		min-height:720px;
+		padding:1rem;
+		/* Espaciado interno de 2rem */
+		margin:0 auto;
+		margin-top:30px;
+	}
+	.footer-section {
+		margin:1rem auto;
+		/* Margen superior e inferior de 2rem y centrado horizontal */
+		padding:1rem;
+		/* Espaciado interno de 2rem */
+		display:flex;
+		justify-content:space-between;
+		/* Espacio igual entre los elementos */
+		flex-wrap:wrap;
+		/* Permite que los elementos se envuelvan si el contenedor es demasiado pequeño */
+		align-items:center;
+		margin:0 auto;
+		margin-bottom:20px;
+		margin-top:20px;
+	}
+	.logo-footer-img {
+		background-size:cover;
+		background-position:left;
+		background-repeat:no-repeat;
+	}
+	.button-wrapper {
+		position:relative;
+		margin-top:30px;
+		right:0px;
+	}
+	.button-wrapper-transforming {
+		position:relative;
+		margin-top:30px;
+		right: 0px;
+	}
+	button {
+		background-color:#1C5153;
+		color:#fff;
+		/* Color del texto blanco */
+		padding:10px 20px;
+		/* Padding adecuado */
+		border:none;
+		/* Sin borde */
+		border-radius:12px;
+		/* Bordes curvos de 12px */
+		cursor:pointer;
+		/* Cursor de puntero al pasar sobre el botón */
+		font-size:1em;
+		/* Tamaño de fuente */
+		transition:background-color 0.3s ease;
+		/* Transición suave para el hover */
+		min-width:120px;
+	}
+	button:hover {
+		background-color:#00A099;
+		/* Color de fondo azul en hover */
+	}
+	#home-01 .card-doctora {
+		position:absolute;
+		min-width:110px;
+		width:45%;
+		height:160px;
+		right:0;
+		top:150px;
+	}
+	.gel-concept-green {
+		position:absolute;
+		background-image:url('../images/gelectric-ray.svg');
+		background-size:cover;
+		background-position:center;
+		background-repeat:no-repeat;
+		width:130px;
+		height:70px;
+		right:27%;
+		top:220px;
+	}
+	#news-01 .sub-title {
+		position:relative;
+		width:300px;
+		top:-616px;
+		left:-50px;
+	}
+	.sub-title {
+		position:absolute;
+		top:550px;
+		left:0px;
+		max-width:120px;
+	}
+	#home-01 h3 {
+		position:relative;
+		top:-28px;
+		font-size:1.6em;
+		left:4px;
+	}
+	.founders-card {
+		min-width:160px;
+		/* Ancho mínimo para que los cards no se vuelvan demasiado pequeños */
+	}
+	.surgical-technique .card-horizontal-transp {
+		position:relative;
+		left:-30px;
+		top:990px;
+	}
+	.surgical-technique .card-horizontal-transp p {
+		position:relative;
+		left:-10px;
+		top:20px;
+		width:230px;
+	}
+	.surgical-technique h3 {
+		position:absolute;
+		font-size:1.4em;
+		top:970px;
+		left:7px;
+	}
+	.surgical-technique .button-wrapper {
+		.section-white.surgical-technique {
+			min-height:1260px;
+		}
+		.section-white.surgical-technique h2 {
+			font-size:1.6em;
+			position:absolute;
+			min-height:60px;
+			max-width:120px;
+			top:20px;
+			left:0px;
+		}
+		.card-horizontal-strong {
+			width:100%;
+			height:200px;
+			right:0px;
+			top:240px;
+		}
+		.patients-out {
+			width:114px;
+			height:161px;
+			left:6%;
+			top:20px;
+		}
+		.patient-out-text {
+			position:absolute;
+			width:41%;
+			right:2%;
+			top:20px;
+			font-size:0.8em;
+		}
+		.patient-outcomes .card-horizontal-transp {
+			left:-160px;
+			width:280px;
+			height:500px;
+			top: 500px;
+		}
+		.tissue-repair .card-horizontal-transp {
+			left:-140px;
+			/* width:280px;*/
+			/* height:300px;*/
+			top:80px;
+		}
+		.card-horizontal-tissue {
+			top:300px;
+			width:244px;
+			height:140px;
+			right:0px;
+		}
+		.card-rectangle-microscope {
+			width:100%;
+			height:330px;
+			right:0px;
+			top:276px;
+		}
+		.card-rectangle-skin {
+			top:470px;
+			width:245px;
+			height:100px;
+			right:0px;
+		}
+		#about-us-company h1 {
+			left:0px;
+		}
+		.founders-horizontal {
+			width:100%;
+			top:190px;
+			left:16%;
+			display:flex;
+			justify-content:space-between;
+			flex-wrap:wrap;
+			gap:5.2rem;
+			/* padding:20px 60px;*/
+		}
+		.advisors-horizontal {
+			width:100%;
+			top:185px;
+			left:16%;
+			display:flex;
+			justify-content:space-between;
+			flex-wrap:wrap;
+			gap:5.2rem;
+			/* padding:20px 60px;*/
+		}
+		#home-01 h1 {
+			left:0px;
+			top:14px;
+		}
+		.section-dark-green.founders-section {
+			min-height:1140px;
+		}
+		.section-neon-green.advisors-section {
+			min-height:1160px;
+		}
+		.founders-section .card-horizontal-transp p {
+			left:120px;
+			max-width:180px;
+			height:300px;
+			top:-260px;
+		}
+		.section-dark-green.founders-section .button-wrapper {
+			top:1100px;
+		}
+		.section-neon-green.advisors-section .button-wrapper {
+			top:1080px;
+		}
+		.patient-outcomes h3 {
+			left:4px;
+			top:460px;
+		}
+		.section-white.patient-outcomes h2 {
+			position:absolute;
+			left:0;
+			top:20px;
+			max-width:120px;
+			font-size:1.6em;
+		}
+		.patient-outcomes .card-horizontal-transp p {
+			position:absolute;
+			left:120px;
+			top:-40px;
+			width:230px;
+		}
+		.tissue-repair h2 {
+			position:absolute;
+			left:10px;
+			top:20px;
+			width:120px;
+			font-size:1.6em;
+		}
+		.tissue-repair .card-horizontal-transp p {
+			position:absolute;
+			left:106px;
+			top:-11px;
+			width:230px;
+		}
+		.tissue-repair h3 {
+			position:relative;
+			left:0px;
+			top:625px;
+			font-size:1.6em;
+		}
+		.founders-section h2 {
+			position:absolute;
+			left:0;
+			top:20px;
+			font-size:1.4em;
+			max-width:140px;
+		}
+		.founders-section .card-horizontal-transp p {
+			left:210px;
+			top:-280px;
+		}
+		.button-wrapper button.founders-button {
+			background-color:#00A099;
+			color:white;
+			right:0;
+			top:-70px;
+		}
+		#about-us-company p {
+			position:absolute;
+			top:54px;
+			left:-20px;
+			min-width:230px;
+			width:230px;
+			font-size:1em;
+		}
+		section#about-us-company h3 {
+			position:absolute;
+			top:280px;
+			right:0px;
+			font-size:1.6em;
+		}
+		section#about-us-company.section-white {
+			min-height:590px;
+		}
+		.card-horizontal-about {
+			font-size:1em;
+			max-width:220px;
+			color:#141819;
+			left:10px;
+			top:330px;
+		}
+		section#transforming h3 {
+			top:280px;
+			right:0px;
+			font-size:1.4em;
+		}
+		section#transforming.section-white {
+			min-height:600px;
+		}
+		.founders-card-ficho {
+			width:180px;
+			height:200px;
+			left:10px;
+			top:90px;
+			margin:0 auto;
+		}
+		.about-us-parrafos {
+			width:220px;
+			top:530px;
+			left:-190px;
+		}
+		.about-us-parrafos p {
+		}
+		.founders-card-advisorficho {
+			width:240px;
+			height:260px;
+			right:0px;
+			top:120px;
+		}
+		.section-neon-green.advisors-section h2 {
+			position:absolute;
+			width:160px;
+			max-width:300px;
+			min-width:100px;
+			left:10px;
+			top:20px;
+			font-size:1.6em;
+		}
+		.parrafo-leah {
+			width:240px;
+			color:white;
+			position:relative;
+			top:310px;
+			left:-40px;
+		}
+		section#advisor3.section-neon-green {
+			min-height:980px;
+		}
+		section#revolution-patients.section-dark-green {
+			min-height:630px;
+		}
+		.card-horizontal-products {
+			width:200px;
+			height:130px;
+			right:30px;
+			top:330px;
+		}
+		section#revolution-patients.section-dark-green h3 {
+			font-size:1.7em;
+			position:absolute;
+			top:540px;
+			right:-160px;
+			color:#4DBECF;
+			width:400px;
+			min-width:400px;
+		}
+		.founders-section .card-horizontal-transp {
+			left:-20px;
+			top:70px;
+			width:100%;
+			height:300px;
+			color: white;
+		}
+		.advisors-card {
+			background-color:black;
+			/* Color de fondo blanco para los cards */
+			color:#000;
+			/* Color de texto negro */
+			border-radius:12px;
+			/* Bordes curvos */
+			padding:1rem;
+			/* Espaciado interno */
+			box-shadow:0 2px 5px rgba(0,0,0,0.1);
+			/* Sombra ligera para los cards */
+			text-align:center;
+			/* Centra el texto */
+			flex:1;
+			/* Hace que los cards sean flexibles y ocupen el mismo espacio */
+			min-width:160px;
+			/* Ancho mínimo para que los cards no se vuelvan demasiado pequeños */
+			max-width:calc(25% - 1rem);
+			/* Ancho máximo para cada card considerando el gap */
+			height:220px;
+		}
+		.section-neon-green .news-area .sub-title h3 {
+			position:absolute;
+			color:#78BA5C;
+			min-width:300px;
+			left:-280px;
+			top:-211px;
+			font-size:0.7em;
+		}
+		.card-horizontal-contact {
+			font-size:1em;
+			width:220px;
+			height:160px;
+			color:#141819;
+			position:absolute;
+			left:10px;
+			top:260px;
+		}
+		.founders-names {
+			position:relative;
+			background-color:purple;
+			left:-40px;
+			top:220px;
+			width:200px;
+			font-size:1.2em;
+			color:white;
+		}
+		.advisors-names {
+			position:relative;
+			left:0;
+			top:220px;
+			width:140px;
+			font-size:1.2em;
+			color:white;
+		}
+		.advisors-names-b {
+			position:absolute;
+			left:-160px;
+			top:1200px;
+			width:140px;
+			font-size:1em;
+			color:white;
+		}
+		.advisors-names-c {
+			position:absolute;
+			left:-150px;
+			top:1500px;
+			width:140px;
+			font-size:1em;
+			color:white;
+		}
+		.tissue-repair {
+			min-height:790px;
+		}
+		.tissue-repair .button-wrapper {
+			top:700px;
+		}
+		.parrafo-founders {
+			position:relative;
+			color:white;
+			width:460px;
+			top:60px;
+			left:-20px;
+		}
+		#founders h2 {
+			position:absolute;
+			top:30px;
+			left:10px;
+			font-size:1.6em;
+			color:white;
+		}
+		.advisors-section .card-horizontal-transp {
+			top:520px;
+			left:-226px;
+			min-width:230px;
+			color:white;
+		}
+		#about-us-company .card-horizontal-transp {
+			min-width:230px;
+		}
+		#transforming h2 {
+			font-size:1.6em;
+			position:relative;
+			left:-40px;
+			top:-20px;
+		}
+		.founders-card-advisorficho-srinivasa {
+			top:90px;
+			width:190px;
+			height:220px;
+		}
+		.founders-card-advisorficho-mayur {
+			top:96px;
+			width:190px;
+			height:220px;
+		}
+		.founders-card-advisorficho-tricia {
+			top:80px;
+			width:190px;
+			height:240px;
+		}
+		#advisor1 h2 {
+			min-width:120px;
+			font-size:1.5em;
+			position:absolute;
+			width:220px;
+			top:10px;
+			left:10px;
+		}
+		.parrafo-james {
+			width:220px;
+			color:white;
+			position:relative;
+			top:330px;
+			left:-35px;
+		}
+		.about-us-parradvisors {
+			position:relative;
+			font-size:1em;
+			padding:20px;
+			color:white;
+			top:320px;
+			left:5px;
+			width:100%;
+			min-height:120px;
+			height:100%;
+		}
+		#advisor1.section-neon-green {
+			min-height:850px;
+		}
+		#advisor2 h2 {
+			width:120px;
+			min-width:150px;
+			font-size:1.4em;
+			position:absolute;
+			left:10px;
+			top:20px;
+		}
+		#advisor2.section-neon-green {
+			min-height:820px;
+		}
+		#advisor3 h2 {
+			font-size:1.4em;
+			padding:0px;
+			position:absolute;
+			left:10px;
+			top:20px;
+		}
+		#electroadhesive-gel h1 {
+			position:absolute;
+			left:0px;
+			top:20px;
+			padding-left:0;
+		}
+		#electroadhesive-gel .card-tejido {
+			position:absolute;
+			background-color:#00A099;
+			width:120px;
+			height:160px;
+			right:130px;
+			top:120px;
+		}
+		#electroadhesive-gel .card-doctora {
+			position:absolute;
+			width:120px;
+			height:160px;
+			left:130px;
+			top:120px;
+		}
+		#electroadhesive-gel .card-horizontal-products {
+			width:200px;
+			height:130px;
+			right:47px;
+			top:295px;
+		}
+		#electroadhesive-gel h3 {
+			position:absolute;
+			font-size:1.6em;
+			left:147px;
+			top:310px;
+		}
+		#revolution-patients h2 {
+			max-width:180px;
+			position:absolute;
+			color:white;
+			font-size:1.7em;
+			left:0px;
+			top:20px;
+		}
+		section#revolution-patients.section-dark-green p {
+			position:absolute;
+			top:120px;
+			left:0px;
+			color:white;
+			width:240px;
+			min-width:170px;
+		}
+		.reimaging-tissue {
+			position:absolute;
+			left:0px;
+			width:210px;
+			top:20px;
+			font-size:1.7em;
+		}
+		.parrafo-reparar {
+			position:absolute;
+			color:white;
+			max-width:300px;
+			top:90px;
+			left:0px;
+		}
+		#tissue-reppair.section-neon-green {
+			min-height:630px;
+		}
+		.section-neon-green.research-area h1 {
+			font-size:1.6em;
+			max-width:250px;
+			line-height:1.2em;
+			left:3px;
+			top:20px;
+		}
+		.card-horizontal-researcharea {
+			position:relative;
+			font-size:1em;
+			width:230px;
+			color:white;
+			left:-40px;
+			top:460px;
+			/* padding:10px;*/
+		}
+		#research-big {
+			min-height:1500px;
+		}
+		.section-dark-green.research-area h2 {
+			font-size:1.6em;
+			width:260px;
+			max-width:250px;
+			color:white;
+			position:absolute;
+			top:20px;
+			left:0;
+		}
+		.card-horizontal-patentsarea {
+			position:relative;
+			font-size:1em;
+			min-width:230px;
+			color:white;
+			width:230px;
+			left:-40px;
+			top:550px;
+			/* padding:20px;*/
+		}
+		#patents-big {
+			min-height:1330px;
+		}
+		#research-last h3 {
+			position:absolute;
+			left:0px;
+			top:260px;
+		}
+		#patents-big h3 {
+			position:absolute;
+			top:649px;
+			right:0px;
+			color:white;
+			font-size:1.6em;
+		}
+		#founders-leah h2,#founders-james h2 {
+			color:white;
+			position:absolute;
+			top:30px;
+			left:0;
+			max-width:220px;
+			font-size:1.6em;
+		}
+		#research-last.section-neon-green {
+			min-height:990px;
+		}
+		.card-horizontal-researchlast {
+			position:relative;
+			font-size:1em;
+			width:230px;
+			color:white;
+			left:-36px;
+			top:476px;
+			padding:0;
+		}
+		#research-last.section-neon-green h3 {
+			position:absolute;
+			top:900px;
+			left:64px;
+			font-size:1.6em;
+		}
+		.news-area h2 {
+			font-size:1.4em;
+			min-width:220px;
+			width:220px;
+			left:-40px;
+			top:-20px;
+		}
+		.section-dark-green .news-area p {
+			color:white;
+			left:-250px;
+			top:-150px;
+			font-size:1em;
+		}
+		#news-01 p {
+			color:white;
+			position:relative;
+			width:230px;
+			top:40px;
+			left:-40px;
+		}
+		#news-01.section-dark-green {
+			min-height:1360px;
+		}
+		.section-dark-green .news-area .sub-title h3 {
+			position:absolute;
+			left:10px;
+			top:-440px;
+			font-size:1.6em;
+		}
+		.section-dark-green .news-area h3 {
+			position:absolute;
+			color:white;
+			min-width:300px;
+			left:50px;
+			top:1270px;
+			font-size:1.6em;
+		}
+		#news-02 p {
+			color:white;
+			position:relative;
+			min-width:220px;
+			width:220px;
+			top:60px;
+			left:-37px;
+		}
+		.section-neon-green .news-area p {
+			min-width:240px;
+			left:-250px;
+			top:-60px;
+			font-size:1em;
+		}
+		#news-02.section-neon-green {
+			min-height:1160px;
+		}
+		#news-02.section-neon-green h3 {
+			position:absolute;
+			top:670px;
+			left:0px;
+			font-size:1.6em;
+		}
+		.sub-title-news-03 {
+			position:absolute;
+			top:390px;
+			left:20px;
+			font-size:1.2em;
+			width:300px;
+		}
+		.contact-slogan {
+			position:absolute;
+			top:380px;
+			right:10px;
+			font-size:1em;
+			color:white;
+			/* width: 300px;*/
+		}
+		.footer-card p {
+			line-height:1.5em;
+			/* Altura de línea */
+			font-size:0.9em;
+			margin-bottom:20px;
+			min-height:70px;
+		}
+		#home-01 .card-tejido {
+			position:absolute;
+			background-color:#00A099;
+			min-width:110px;
+			width:45%;
+			height:160px;
+			left:0;
+			top:150px;
+		}
+		.tissue-slogan {
+			position:absolute;
+			top:550px;
+			left:70px;
+			font-size:1em;
+		}
+		.electro-parrafo {
+			width:227px;
+			color:black;
+			position:relative;
+			top:315px;
+			left:-40px;
+		}
+		#electroadhesive-gel {
+			min-height:650px;
+		}
+		#research-last h2 {
+			position:absolute;
+			font-size:1.6em;
+			width:220px;
+			min-width:220px;
+			left:5px;
+			top: 20px;
+		}
+		.footer-card {
+			width:100%;
+			background-color:#141819;
+			/* Color de fondo dark green para los cards */
+			color:#fff;
+			/* Color de texto blanco */
+			padding:30px;
+			/* Espaciado interno */
+			flex:1;
+			/* Hace que los cards sean flexibles y ocupen el mismo espacio */
+			margin:0.8rem;
+			/* Margen entre los cards */
+			min-width:180px;
+			/* Ancho mínimo para que los cards no se vuelvan demasiado pequeños */
+			max-width:100%;
+			/* Máximo ancho para cada card */
+			text-align:center;
+			/* Centra el texto */
+			min-height:220px;
+		}
+		.contact-title {
+			width:300px;
+			color:white;
+			font-size:1.8em;
+			position:absolute;
+			left:10px;
+			top:20px;
+		}
+		.parrafo-mat {
+			width:240px;
+			color:white;
+			position:relative;
+			top:320px;
+			left: -40px;
+		}
+		.linkedin {
+			background-image:url('../images/linkedin.png');
+			background-size:cover;
+			background-position:center;
+			background-repeat:no-repeat;
+			position:center;
+			 /* left:4%;*/
+			/* bottom:70%;*/
+			/* width:64px;*/
+			/* height:64px;*/
+			/* z-index:10;*/
+		}
+		#research-big h3 {
+			position:absolute;
+			top:1400px;
+			left:10px;
+			font-size:1.6em;
+		}
+		#contacto-area.section-neon-green {
+			min-height:460px;
+		}
+		.sub-title-news-02 {
+			position:relative;
+			top:-620px;
+			right:38px;
+			font-size:1em;
+			width: 310px;
+		}
+	}
