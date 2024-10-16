@@ -346,7 +346,7 @@ strong {
 .grid-item-team-03 {
 	grid-column:3 / 4;
 	grid-row:1 / 2;
-	background-image:url('../images/james.png');
+	background-image:url('../images/James.png');
 	background-size:cover;
 	/* Ajusta la imagen para cubrir todo el contenedor */
 	background-position:center;
@@ -424,7 +424,7 @@ strong {
 	height:240px;
 	grid-column:2/ 3;
 	grid-row:1 / 2;
-	background-image:url('../images/srini.jpeg');
+	background-image:url('../images/Srini.jpeg');
 	background-size:cover;
 	/* Ajusta la imagen para cubrir todo el contenedor */
 	background-position:center;
@@ -439,7 +439,7 @@ strong {
 	height:240px;
 	grid-column:3 / 4;
 	grid-row:1 / 2;
-	background-image:url('../images/mayur.jpeg');
+	background-image:url('../images/Mayur.jpeg');
 	background-size:cover;
 	/* Ajusta la imagen para cubrir todo el contenedor */
 	background-position:center;
@@ -454,7 +454,7 @@ strong {
 	height:240px;
 	grid-column:4 / 5;
 	grid-row:1 / 2;
-	background-image:url('../images/tricia.jpeg');
+	background-image:url('../images/Tricia.jpeg');
 	background-size:cover;
 	/* Ajusta la imagen para cubrir todo el contenedor */
 	background-position:center;
