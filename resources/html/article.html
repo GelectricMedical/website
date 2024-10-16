@@ -1,21 +1,56 @@
 <section class="section-standard">
-  <div class="container-research" style="
-					 {% if article.container_research is defined and article.container_research.grid_template_columns is defined %} 
-					 grid-template-columns: {{ article.container_research.grid_template_columns }}; 
-					 {% endif %}
-					 {% if article.container_research is defined and article.container_research.grid_template_rows is defined %} 
-					 grid-template-rows: {{ article.container_research.grid_template_rows }}; 
-					 {% endif %}">
-    <div class="grid-item-research-01">
+  <div class="container-research grid
+	      {% if article.container_research is defined and article.container_research.grid_template_columns is defined %}
+     grid-cols-[{{ article.container_research.grid_template_columns | replace(' ', '_') }}]
+     {% else %}
+     grid-cols-1
+     {% endif %}
+     
+     {% if article.container_research is defined and article.container_research.grid_template_rows is defined %}
+     grid-rows-[{{ article.container_research.grid_template_rows | replace(' ', '_') }}]
+     {% else %}
+     grid-rows-[0fr_0fr_0fr]
+     {% endif %}
+     
+     {% if article.container_research is defined and article.container_research.at_media is defined and article.container_research.at_media.grid_template_columns is defined %}
+     md:grid-cols-[{{ article.container_research.at_media.grid_template_columns | replace(' ', '_') }}]
+     {% endif %}
+     
+     {% if article.container_research is defined and article.container_research.at_media is defined and article.container_research.at_media.grid_template_rows is defined %}
+     md:grid-rows-[{{ article.container_research.at_media.grid_template_rows | replace(' ', '_') }}]
+     {% endif %}"
+       >
+    <div class="grid-item-research-01 col-start-1 col-end-3 row-start-1 row-end-2">
       <h2>{{ article.title }}</h2>
     </div>
-    <div class="grid-item-research-02" style="background-image: url('{{ article.image }}'); height: {{ article.image_height }}; {% if article.width %} width: {{ article.width }}; {% endif %} "></div>
-    <div class="grid-item-research-03" style="{% if article.grid_row %} grid-row: {{ article.grid_row }}; {% endif %} {% if article.grid_column %} grid-column: {{ article.grid_column }}; {% endif %}">
+    <div class="grid-item-research-02  {% if article.item_research_02 is defined %}
+        col-start-{{ article.item_research_02.col_start | default(1) }} 
+        col-end-{{ article.item_research_02.col_end | default(2) }} 
+        row-start-{{ article.item_research_02.row_start | default(2) }} 
+        row-end-{{ article.item_research_02.row_end | default(3) }} 
+    {% else %}
+        col-start-1 
+        col-end-3
+        row-start-2 
+        row-end-3 
+    {% endif %}" style=
+	 "background-image: url('{{ article.image }}'); height: {{ article.image_height }}; {% if article.width %} width: {{ article.width }}; {% endif %}
+	  {% if article.at_media is defined and article.at_media.image_height is defined %} @media (max-width: 768px): { height: {{ article.at_media.image_height }} } {% endif %}"></div>
+    <div class="grid-item-research-03 
+     {% if article.grid_column %}
+     col-start-{{ article.grid_column.split('/')[0] }} col-end-{{ article.grid_column.split('/')[1] }}
+     {% endif %}
+     
+     {% if article.grid_row %}
+     row-start-{{ article.grid_row.split('/')[0] }} row-end-{{ article.grid_row.split('/')[1] }}
+     {% endif %}
+     ">
+    <!-- <div class="grid-item-research-03 col-start-1 col-end-2 row-start-3 row-end-4" style="{% if article.grid_row %} grid-row: {{ article.grid_row }}; {% endif %} {% if article.grid_column %} grid-column: {{ article.grid_column }}; {% endif %}"> -->
       {{ article.abstract | safe }}
       <br>
       <a href="{{article.href}}" target="_blank">{{ label }}</a>
     </div>
-    <div class="grid-item-research--04">
+    <div class="grid-item-research-04 col-start-2 col-end-3 row-start-3 row-end-4">
     </div>
   </div>
 </section>

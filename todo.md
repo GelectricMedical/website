@@ -14,6 +14,7 @@
 	    also, make the headings consistently on top in mobile
 ~~14. [x] on desktop, the landing page should have the text be Left, Right, Left, Not Left, Right, Right
 ~~14. [ ] add images to news articles
+15. [ ] change Ragavhan to collaborator
 15. [ ] Create animation and place it up top!
 16. [ ] enable caching of images, css, javascript, etc ! (should use etag)~~
 17. [ ] fix mobile
