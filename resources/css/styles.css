@@ -724,7 +724,7 @@ strong {
 	grid-row:2 / 3;
 	position:relative;
 	background-color:#00A099;
-	background-image:url('../images/tape-around.png');
+	background-image:url('../images/patcher-electro.png');
 	background-size:cover;
 	background-position:center;
 	background-repeat:no-repeat;
@@ -795,7 +795,7 @@ strong {
 .grid-item-products-reimagining-02 {
 	grid-column:1 / 2;
 	grid-row:2 / 3;
-	background-image:url('../images/patcher-electro.png');
+	background-image:url('../images/tape-around.png');
 	background-size:cover;
 	background-position:center;
 	background-repeat:no-repeat;
@@ -823,16 +823,16 @@ strong {
 	padding-top:30px;
 	padding-left:30px;}
 .grid-item-research-02 {
-	background-size:cover;
+  /* background-size:cover; */
 	/* Ajusta la imagen para cubrir todo el contenedor */
 	/* background-size:101%;/\* play with this to zoom it out *\/ */
-	background-position:center;
+	/* background-position:center; */
 	/* Centra la imagen dentro del contenedor */
-	background-repeat:no-repeat;
+	/* background-repeat:no-repeat; */
 	/* Evita que la imagen se repita */
 	width:80%;
 	margin:0 auto;
-	border-radius:12px;
+	/* border-radius:12px; */
 }
 .grid-item-research-03 {
 	font-size:120%;
@@ -1064,7 +1064,7 @@ strong {
 	border-radius:12px;}
 .card-products-one {
 	position:relative;
-	background-image:url('../images/tape-around.png');
+	background-image:url('../images/patcher-electro.png');
 	background-size:cover;
 	/* Ajusta la imagen para cubrir todo el contenedor */
 	background-position:center;
@@ -1333,6 +1333,11 @@ section#founders-james .founders-card.tres {
 	font-size:2.2em;
 	left:30px;
 	top:460px;}
+.news p,a {
+  font-size: 1.25em;
+  font-weight: 300
+}
+
 #news-01 .sub-title {
 	position:relative;
 	width:300px;

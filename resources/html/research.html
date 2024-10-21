@@ -2,7 +2,7 @@
 {% set active_page = "research" %}
 {% set articles = [
     {
-'image': 'resources/images/adhesion.jpg',
+'image': 'resources/images/Figure for Reversible Electroadhesion paper no caption.jpg',
 'image_height': '580px',
 'at_media': {'image_height':'310px'},
 'title': 'Reversible electroadhesion of hydrogels to animal tissues for suture-less repair of cuts or tears',
@@ -12,7 +12,7 @@
       'href': 'https://www.nature.com/articles/s41467-021-24022-x'
     },
     {
-'image': 'resources/images/ACS_2023.gif',
+'image': 'resources/images/Figure for Capsule paper.jpg',
 'image_height':'580px',
 'at_media': {'image_height':'115px'},
       'title': 'Universal Way to “Glue” Capsules and Gels into 3D Structures by Electroadhesion
@@ -57,7 +57,7 @@
   <section id="research-paragraph">
     <p>Publications</p>
   </section>
-  {% for article in articles|sort(attribute='date')|reverse %}
+  {% for article in articles|sort(attribute='date') %}
     {% set label = 'Read Article' %}
     {% include 'article.html' %}
   {% endfor %}

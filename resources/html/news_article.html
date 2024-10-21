@@ -1,12 +1,17 @@
 <section class="section-standard">
-  <div class="container-news">
+  <div class="container-news article-container news">
     <div class="grid-item-news-01">
       <h2>{{ article.title }}</h2>
     </div>
     <div class="grid-item-news-02">
       <h3>{{ article.date }}</h3>
     </div>
-    <div class="grid-item-news-03">
-      {% include article.content_file %}
+    <div class="text-sm leading-relaxed">
+      <div class="article-content text-lg">
+	{% include article.content_file %}
+      </div>
+      <br class="toggle-link">
+      <a href="#" class="read-more text-blue-600 font-semibold hover:text-blue-800 toggle-link mt-1">Read More</a>
+      <a href="#" class="read-less text-blue-600 font-semibold hover:text-blue-800 hidden toggle-link">Read Less</a>
     </div>
 </section>
