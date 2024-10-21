@@ -923,6 +923,18 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:mr-1 {
+    margin-right: 0.25rem;
+  }
+
+  .md\:ml-1 {
+    margin-left: 0.25rem;
+  }
+
+  .md\:ml-4 {
+    margin-left: 1rem;
+  }
+
   .md\:h-80 {
     height: 20rem;
   }
