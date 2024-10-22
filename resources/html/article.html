@@ -36,7 +36,11 @@
 	{% endif %}
 	w-full mx-auto rounded-lg w-full mx-auto rounded-lg overflow-hidden h-64 md:h-80
 	">
+      {% if article.video %}
+      <video class="w-full h-full object-contain rounded-lg" src="{{ article.video}}" autoplay muted loop controls></video>
+      {% elif article.image %}
       <img src="{{ article.image }}" class="w-full h-full object-contain rounded-lg"></img>
+      {% endif %}
     </div>
     <div class="grid-item-research-03 
      {% if article.grid_column %}
