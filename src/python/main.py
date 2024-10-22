@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, Response
 from datetime import datetime
 
 app = Flask(__name__, static_folder='../../resources',
@@ -32,3 +32,7 @@ def products():
 @app.route("/contact")
 def contact():
     return render_template('contact.html')
+
+@app.route("/dots.svg")
+def dots():
+    return Response(render_template('dots.svg'), content_type='image/svg+xml')
