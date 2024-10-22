@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+  {% set dot_size = 10 %}
+  {% set green_dot_radius = 1.5 %}
+  {% set blue_dot_radius = 1.5 %}
+  {% set offset_x = 5 %}  <!-- Offset for the green dots -->
+  {% set offset_y = 6 %}  <!-- Offset for the green dots -->
+  {% set width = 800 %}  <!-- Offset for the green dots -->
+  {% set height = 600 %}  <!-- Offset for the green dots -->
+  
+  <defs>
+    <pattern id="dots-green" x="{{ offset_x }}" y="{{ offset_y }}" width="{{ dot_size }}" height="{{ dot_size }}" patternUnits="userSpaceOnUse">
+      <circle cx="{{ dot_size / 2 }}" cy="{{ dot_size / 2 }}" r="{{ green_dot_radius }}" fill="#e0f2f1" opacity="1"/>
+    </pattern>
+    <pattern id="dots-blue" x="0" y="0" width="{{ dot_size }}" height="{{ dot_size }}" patternUnits="userSpaceOnUse">
+      <circle cx="{{ dot_size / 2 }}" cy="{{ dot_size / 2 }}" r="{{ blue_dot_radius }}" fill="#e3f2fd" opacity="1"/>
+    </pattern>
+
+    <clipPath id="quarter-circle">
+      <path d="M {{ width }} 0
+               L {{ width }} {{ height }}
+               L 0 {{ height }}
+               A {{ width }} {{ height }} 0 0 0 {{ width }} 0
+               Z" />
+    </clipPath>
+  </defs>
+
+  <!-- Background with dots -->
+  <rect width="{{ width }}" height="{{ height }}" fill="url(#dots-blue)" /> <!-- Blue dots at normal position -->
+  <rect width="{{ width }}" height="{{ height }}" fill="url(#dots-green)" /> <!-- Green dots offset by set values -->
+  <g clip-path="url(#quarter-circle)">
+    <rect width="{{ width }}" height="{{ height }}" fill="white"/>
+  </g>
+</svg>
+<!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800"> -->
+<!--   {% set dot_size = 10 %} -->
+<!--   {% set green_dot_radius = 3 %} -->
+<!--   {% set blue_dot_radius = 1 %} -->
+<!--   <defs> -->
+<!--       <pattern id="dots-green" x="0" y="0" width="{{ dot_size }}" height="{{ dot_size }}" patternUnits="userSpaceOnUse"> -->
+<!--       <circle cx="{{ dot_size / 2}}" cy="{{ dot_size / 2 }}" r="{{ green_dot_radius }}" fill="#e0f2f1" opacity="1"/> -->
+<!--     </pattern> -->
+<!--     <pattern id="dots-blue" x="{{ dot_size }}" y="{{ dot_size }}" width="{{ dot_size }}" height="{{ dot_size }}" patternUnits="userSpaceOnUse"> -->
+<!--       <circle cx="{{ dot_size / 2 }}" cy="{{ dot_size / 2 }}" r="{{ blue_dot_radius }}" fill="#e3f2fd" opacity="1"/> -->
+<!--     </pattern> -->
+
+<!--      <clipPath id="quarter-circle"> -->
+<!--        <path d="M 800 0 -->
+<!-- 		L 800 800 -->
+<!-- 		L 0 800 -->
+<!--            A 800 800 0 0 0 800 0 -->
+<!--            Z" /> -->
+<!--      </clipPath> -->
+<!--   </defs> -->
+
+<!--   <!-\- Background with dots -\-> -->
+<!--   <rect width="800" height="800" fill="url(#dots-green)" /> -->
+<!--   <rect width="800" height="800" fill="url(#dots-blue)" /> -->
+<!-- </svg> -->
