@@ -1,12 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
   {% set dot_size = 10 %}
-  {% set green_dot_radius = 1.5 %}
-  {% set blue_dot_radius = 1.5 %}
+  {% set green_dot_radius = 0.5 %}
+  {% set blue_dot_radius = 0.5 %}
   {% set offset_x = 5 %}  <!-- Offset for the green dots -->
   {% set offset_y = 6 %}  <!-- Offset for the green dots -->
   {% set width = 800 %}  <!-- Offset for the green dots -->
   {% set height = 800 %}  <!-- Offset for the green dots -->
-  {% set green_color_fill = "#76d7c4" %} <!-- was "#e0f2f1" -->
+  {% set green_color_fill = "#3498db" %} <!-- was "#e0f2f1" -->
   {% set blue_color_fill = "#85c1e9" %} <!-- was #e3f2fd -->
 
   
