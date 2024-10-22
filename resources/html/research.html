@@ -56,14 +56,14 @@
 <main>
   <!-- SECTION 01 RESERACH - TITLE PUBLICATIONS -->
   <section id="research-paragraph">
-    <p>Publications</p>
+    <p id="publications">Publications</p>
   </section>
   {% for article in articles|sort(attribute='date') %}
     {% set label = 'Read Article' %}
     {% include 'article.html' %}
   {% endfor %}
   <section id="research-paragraph" class="">
-    <p>Patents</p>
+    <p id="patents">Patents</p>
   </section>
   {% for article in patents|sort(attribute='date')|reverse %}
     {% set label = 'Read Patent' %}
