@@ -5,14 +5,17 @@
   {% set offset_x = 5 %}  <!-- Offset for the green dots -->
   {% set offset_y = 6 %}  <!-- Offset for the green dots -->
   {% set width = 800 %}  <!-- Offset for the green dots -->
-  {% set height = 600 %}  <!-- Offset for the green dots -->
+  {% set height = 800 %}  <!-- Offset for the green dots -->
+  {% set green_color_fill = "#76d7c4" %} <!-- was "#e0f2f1" -->
+  {% set blue_color_fill = "#85c1e9" %} <!-- was #e3f2fd -->
+
   
   <defs>
     <pattern id="dots-green" x="{{ offset_x }}" y="{{ offset_y }}" width="{{ dot_size }}" height="{{ dot_size }}" patternUnits="userSpaceOnUse">
-      <circle cx="{{ dot_size / 2 }}" cy="{{ dot_size / 2 }}" r="{{ green_dot_radius }}" fill="#e0f2f1" opacity="1"/>
+      <circle cx="{{ dot_size / 2 }}" cy="{{ dot_size / 2 }}" r="{{ green_dot_radius }}" fill="{{ green_color_fill }}" opacity="1"/>
     </pattern>
     <pattern id="dots-blue" x="0" y="0" width="{{ dot_size }}" height="{{ dot_size }}" patternUnits="userSpaceOnUse">
-      <circle cx="{{ dot_size / 2 }}" cy="{{ dot_size / 2 }}" r="{{ blue_dot_radius }}" fill="#e3f2fd" opacity="1"/>
+      <circle cx="{{ dot_size / 2 }}" cy="{{ dot_size / 2 }}" r="{{ blue_dot_radius }}" fill="{{ blue_color_fill }}" opacity="1"/>
     </pattern>
 
     <clipPath id="quarter-circle">
