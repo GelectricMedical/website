@@ -799,7 +799,7 @@ strong {
 .grid-item-products-reimagining-02 {
 	grid-column:1 / 2;
 	grid-row:2 / 3;
-	/* background-image:url('../images/tape-around.png'); */
+	background-image:url('../images/tape-around.png');
 	background-size:cover;
 	background-position:center;
 	background-repeat:no-repeat;
