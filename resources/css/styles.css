@@ -1,4 +1,3 @@
-
 /* GELECTRIC CSS 31 AGO 2024 */
 /*we have to manually add these in because tailwind can't see dynamic classes*/
 .grid-rows-\[0fr_0fr_0fr\] {
@@ -24,7 +23,10 @@
 
 html,body {
 	max-width:100%;
-	overflow-x:hidden;
+	/* overflow-x:hidden; */
+	-webkit-overflow-scrolling: touch; /* smooth scrolling on iOS */
+	scroll-behavior: smooth; /* Smooth scroll behavior */
+
 	/* Evita el desplazamiento horizontal */}
 *,::before,*::after {
 	margin:0;
@@ -33,7 +35,9 @@ html,body {
 body,html {
 	margin:0;
 	padding:0;
-	overflow-x:hidden;
+	/* overflow-x:hidden; */
+	-webkit-overflow-scrolling: touch; /* smooth scrolling on iOS */
+	scroll-behavior: smooth; /* Smooth scroll behavior */
 	/* Previene desbordamiento horizontal */}
 body {
 	font-family:'Saira',sans-serif;
@@ -795,7 +799,7 @@ strong {
 .grid-item-products-reimagining-02 {
 	grid-column:1 / 2;
 	grid-row:2 / 3;
-	background-image:url('../images/tape-around.png');
+	/* background-image:url('../images/tape-around.png'); */
 	background-size:cover;
 	background-position:center;
 	background-repeat:no-repeat;
