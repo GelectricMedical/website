@@ -1,14 +1,15 @@
 <section class="section-standard">
   <div class="container-about">
     <div class="grid-item-about-01">
-      <h2>{{ team_member.name}}</h2>
+      <h2>{{team_member.name}}</h2>
     </div>
     <div class="grid-item-about-02" style="background-image: url('{{ team_member.photo }}')">
+      <a href="{{ team_member.linkedin }}" target="_blank">
+        <div class="linkedin"></div></a>
     </div>
     <div class="grid-item-about-03">
-      <p>
-	{{ team_member.description }}
-      </p>
+      <P>{{ team_member.description }} </P>
+      <br>
     </div>
   </div>
 </section>
