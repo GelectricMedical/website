@@ -7,10 +7,11 @@
 'image_height': '580px',
 'at_media': {'image_height':'310px'},
 'title': 'Reversible electroadhesion of hydrogels to animal tissues for suture-less repair of cuts or tears',
-      'journal': 'Nat. Commun',
+      'journal': 'Nature Commun',
       'date': 'Jul 2021',
       'abstract': '<p>Electroadhesion, i.e., adhesion induced by an electric field, occurs between non-sticky cationic and anionic hydrogels. Here, we demonstrate electroadhesion between cationic gels and animal (bovine) tissues. When gel and tissue are placed under an electric field (DC, 10 V) for 20 s, the pair strongly adhere, and the adhesion persists indefinitely thereafter.</p><br><p>Applying the DC field with reversed polarity eliminates the adhesion. Electroadhesion works with the aorta, cornea, lung, and cartilage. We demonstrate the use of electroadhesion to seal cuts or tears in tissues or model anionic gels. Electroadhered gel-patches provide a robust seal over openings in bovine aorta, and a gel sleeve is able to rejoin pieces of a severed gel tube.</p><br><p> These studies raise the possibility of using electroadhesion in surgery while obviating the need for sutures. Advantages include the ability to achieve adhesion on-command, and moreover the ability to reverse this adhesion in case of error.</p>',
-      'href': 'https://www.nature.com/articles/s41467-021-24022-x'
+'href': 'https://www.nature.com/articles/s41467-021-24022-x',
+'author': 'Borden et al.'
     },
     {
 'image': 'resources/images/Figure for Capsule paper.jpg',
@@ -21,7 +22,8 @@
       'journal': 'ACS Appl. Mater. Interfaces',
       'date': 'Mar 2023',
       'abstract': '<p>We demonstrate the use of electroadhesion (EA), i.e., adhesion induced by an electric field, to connect a variety of soft materials into 3D structures. EA requires a cationic and an anionic material, but these can be of diverse origin, including covalently cross-linked hydrogels made by polymerizing charged monomers or physical gels/capsules formed by the ionic cross-linking of biopolymers (e.g., alginate and chitosan).</p><br><p>Between each cationic/anionic pair, EA is induced rapidly (in ∼10 s) by low voltages (∼10 V DC)─and the adhesion is permanent after the field is turned off. The adhesion is strong enough to allow millimeter-scale capsules/gels to be assembled in 3D into robust structures such as capsule–capsule chains, capsule arrays on a base gel, and a 3D cube of capsules. EA-based assembly of spherical building blocks can be done more precisely, rapidly, and easily than by any alternative techniques.</p><br><p>Moreover, the adhesion can be reversed (by switching the polarity of the field)─hence any errors during assembly can be undone and fixed. EA can also be used for selective sorting of charged soft matter─for example, a ‘finger robot’ can selectively ‘pick up’ capsules of the opposite charge by EA and subsequently ‘drop off’ these structures by reversing the polarity. Overall, our work shows how electric fields can be used to connect soft matter without the need for an adhesive or glue.</p>',
-      'href': 'https://pubs.acs.org/doi/abs/10.1021/acsami.2c20793'
+'href': 'https://pubs.acs.org/doi/abs/10.1021/acsami.2c20793',
+'author': 'Borden et al.'
     },
 ] %}
 {% set patents = [
@@ -45,9 +47,10 @@
 'item_research_02':
 {'col_start': 1, 'col_end': 2, 'row_start': 2, 'row_end': 3},
 'abstract': '<p>Electroadhesion, adhesion induced by an electric field, occurs between non-sticky cationic and anionic hydrogels. When gel and tissue are placed under an electric field, the pair strongly adhere, and the adhesion persists indefinitely thereafter. Applying a direct current (DC) field with reversed polarity eliminates the adhesion.</p><br><p> The use of electroadhesion can seal cuts or tears in tissues or model anionic gels. In an example, electroadhesion gel-patches provide a robust seal over opening in bovine aorta, and a gel sleeve is able to rejoin pieces of a severed gel tube</p>',
-'href': 'https://patentcenter.uspto.gov/applications/PCT%2FUS22%2F73562',
-'journal':'PCT/US22/73562',
-'date': 'Jul 2022',
+'href': 'https://patents.google.com/patent/US20240315683A1/en',
+'journal':'US 2024/0315683 Al',
+'date': 'Sep 2024',
+'author': 'Borden et al.'
 }]
 %}
 %}
@@ -59,14 +62,14 @@
     <p id="publications">Publications</p>
   </section>
   {% for article in articles|sort(attribute='date') %}
-    {% set label = 'Read Article' %}
+    <!-- {% set label = 'Read Article' %} -->
     {% include 'article.html' %}
   {% endfor %}
   <section id="research-paragraph" class="">
     <p id="patents">Patents</p>
   </section>
   {% for article in patents|sort(attribute='date')|reverse %}
-    {% set label = 'Read Patent' %}
+    <!-- {% set label = 'Read Patent' %} -->
     {% include 'article.html' %}
   {% endfor %}
 </main>

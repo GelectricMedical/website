@@ -21,7 +21,11 @@
      {% endif %}"
        >
     <div class="grid-item-research-01 col-start-1 col-end-3 row-start-1 row-end-2">
-      <h2>{{ article.title }}</h2>
+      <a href="{{article.href}}" target="_blank"><h2>{{ article.title }}</h2></a>
+      <div>
+	<br>
+	<div class="text-2xl">{{ article.journal }} - {{ article.date }}</div>
+	</div>
     </div>
     <div class="grid-item-research-02  {% if article.item_research_02 is defined %}
         col-start-{{ article.item_research_02.col_start | default(1) }} 
@@ -54,7 +58,7 @@
     <!-- <div class="grid-item-research-03 col-start-1 col-end-2 row-start-3 row-end-4" style="{% if article.grid_row %} grid-row: {{ article.grid_row }}; {% endif %} {% if article.grid_column %} grid-column: {{ article.grid_column }}; {% endif %}"> -->
       {{ article.abstract | safe }}
       <br>
-      <a href="{{article.href}}" target="_blank">{{ label }}</a>
+      <!-- <a href="{{article.href}}" target="_blank">{{ article.journal }} {{ article.date }}</a> -->
     </div>
     <div class="grid-item-research-04 col-start-2 col-end-3 row-start-3 row-end-4">
     </div>
